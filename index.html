@@ -869,11 +869,15 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
 .site-header{
   position:fixed;inset:0 0 auto 0;z-index:100;
   background:transparent;color:var(--t-2);border-bottom:1px solid transparent;
-  transition:background-color 400ms ease,border-color 300ms ease,box-shadow 300ms ease;
+  transition:background-color 400ms ease,border-color 300ms ease,box-shadow 300ms ease,
+             opacity 260ms ease,transform 260ms ease;
 }
 .js:not(.low) .site-header{
   opacity:var(--header-story-opacity,0);
   transform:translate3d(0,var(--header-story-y,-12px),0);
+}
+.js:not(.low) .site-header.is-video-playing{
+  opacity:0!important;transform:translate3d(0,-100%,0)!important;pointer-events:none;
 }
 .site-header.is-stuck{
   background:rgba(10,14,18,.72);
@@ -5746,6 +5750,18 @@ void main(){
     };
   }
 
+  function setAnatomyHeaderHidden(hidden) {
+    if (!header) return;
+    header.classList.toggle('is-video-playing', hidden);
+    if (hidden) {
+      header.setAttribute('inert', '');
+      header.setAttribute('aria-hidden', 'true');
+    } else {
+      header.removeAttribute('inert');
+      header.removeAttribute('aria-hidden');
+    }
+  }
+
   /* 두 번째 영상은 휠 한 번으로 원본의 24fps·10초 길이를 끝까지 재생합니다.
      위로 올리면 현재 프레임에서 첫 장면까지 같은 속도로 되감습니다. */
   function playAnatomyBodySequence(direction) {
@@ -5761,11 +5777,13 @@ void main(){
     var startedAt = performance.now();
     var previousScrollBehavior = root.style.scrollBehavior;
     anatomyBodyAuto.active = true;
+    setAnatomyHeaderHidden(true);
     root.style.scrollBehavior = 'auto';
 
     function finish() {
       anatomyBodyAuto.raf = 0;
       anatomyBodyAuto.active = false;
+      setAnatomyHeaderHidden(false);
       root.style.scrollBehavior = previousScrollBehavior;
       onScroll();
     }
@@ -6271,8 +6289,8 @@ void main(){
           hero.style.setProperty('--hero-bottom', (exit * (mobileHero ? 2.5 : 6)).toFixed(2) + 'vh');
           hero.style.setProperty('--hero-radius', (exit * (mobileHero ? 22 : 36)).toFixed(1) + 'px');
 
-          /* 제목이 나타날 때 고양이를 오른쪽으로 비켜 세워 글자와 얼굴이 겹치지 않게 합니다. */
-          var shiftX = titleIn * window.innerWidth * (mobileHero ? .13 : .24);
+          /* 제목이 나타난 뒤에도 마지막 영상 프레임의 가로 위치를 유지합니다. */
+          var shiftX = 0;
           var shiftY = yawnProgress * (mobileHero ? 4 : 8) + titleIn * (mobileHero ? -10 : 12);
           var zoom = (mobileHero ? 1.20 : 1.28)
                    - yawnProgress * (mobileHero ? .10 : .16)
