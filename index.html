@@ -187,6 +187,53 @@ body{
   font-optical-sizing:auto;
   font-synthesis:none;
 }
+
+/* 두 번째 영상에 크기와 농도를 달리해 흩뿌린 제미나이형 워터마크 */
+.body-sequence__sparkles{
+  position:absolute;inset:0;z-index:2;overflow:hidden;pointer-events:none;
+  mix-blend-mode:plus-lighter;
+  -webkit-mask-image:radial-gradient(ellipse 70% 78% at 50% 54%,transparent 0 64%,rgba(0,0,0,.38) 72%,#000 82%);
+          mask-image:radial-gradient(ellipse 70% 78% at 50% 54%,transparent 0 64%,rgba(0,0,0,.38) 72%,#000 82%);
+}
+.body-sequence__sparkle{
+  --sparkle-size:28px;--sparkle-opacity:.1;--sparkle-x:12px;--sparkle-y:-10px;
+  position:absolute;width:var(--sparkle-size);aspect-ratio:1;opacity:var(--sparkle-opacity);
+  background:linear-gradient(145deg,rgba(255,255,255,.72),rgba(213,224,232,.4));
+  -webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Cpath%20d='M50%200C56%2028%2072%2044%20100%2050C72%2056%2056%2072%2050%20100C44%2072%2028%2056%200%2050C28%2044%2044%2028%2050%200Z'%20fill='black'/%3E%3C/svg%3E") center/contain no-repeat;
+          mask:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Cpath%20d='M50%200C56%2028%2072%2044%20100%2050C72%2056%2056%2072%2050%20100C44%2072%2028%2056%200%2050C28%2044%2044%2028%2050%200Z'%20fill='black'/%3E%3C/svg%3E") center/contain no-repeat;
+  filter:drop-shadow(0 0 5px rgba(232,240,245,.18));
+  animation:body-sparkle-drift var(--sparkle-duration,18s) ease-in-out var(--sparkle-delay,0s) infinite alternate;
+  animation-play-state:paused;
+  will-change:transform;
+}
+.body-sequence.is-near .body-sequence__sparkle{animation-play-state:running}
+.body-sequence__sparkle:nth-child(1){--sparkle-size:18px;--sparkle-opacity:.24;--sparkle-duration:15s;--sparkle-delay:-7s;--sparkle-x:10px;--sparkle-y:-8px;left:3%;top:12%}
+.body-sequence__sparkle:nth-child(2){--sparkle-size:34px;--sparkle-opacity:.15;--sparkle-duration:22s;--sparkle-delay:-13s;--sparkle-x:-10px;--sparkle-y:11px;left:4%;top:79%}
+.body-sequence__sparkle:nth-child(3){--sparkle-size:23px;--sparkle-opacity:.20;--sparkle-duration:17s;--sparkle-delay:-4s;--sparkle-x:13px;--sparkle-y:8px;left:23%;top:4%}
+.body-sequence__sparkle:nth-child(4){--sparkle-size:52px;--sparkle-opacity:.10;--sparkle-duration:27s;--sparkle-delay:-18s;--sparkle-x:-14px;--sparkle-y:-10px;left:43%;top:2%}
+.body-sequence__sparkle:nth-child(5){--sparkle-size:29px;--sparkle-opacity:.18;--sparkle-duration:19s;--sparkle-delay:-9s;--sparkle-x:11px;--sparkle-y:-12px;left:70%;top:5%}
+.body-sequence__sparkle:nth-child(6){--sparkle-size:64px;--sparkle-opacity:.11;--sparkle-duration:30s;--sparkle-delay:-21s;--sparkle-x:-12px;--sparkle-y:11px;right:1%;top:18%}
+.body-sequence__sparkle:nth-child(7){--sparkle-size:16px;--sparkle-opacity:.26;--sparkle-duration:14s;--sparkle-delay:-6s;--sparkle-x:9px;--sparkle-y:10px;right:3%;top:70%}
+.body-sequence__sparkle:nth-child(8){--sparkle-size:41px;--sparkle-opacity:.12;--sparkle-duration:24s;--sparkle-delay:-16s;--sparkle-x:-9px;--sparkle-y:-11px;left:1%;top:46%}
+.body-sequence__sparkle:nth-child(9){--sparkle-size:24px;--sparkle-opacity:.18;--sparkle-duration:18s;--sparkle-delay:-11s;--sparkle-x:12px;--sparkle-y:-8px;left:78%;top:91%}
+.body-sequence__sparkle:nth-child(10){--sparkle-size:31px;--sparkle-opacity:.12;--sparkle-duration:21s;--sparkle-delay:-3s;--sparkle-x:-9px;--sparkle-y:10px;left:48%;top:92%}
+.body-sequence__sparkle:nth-child(11){--sparkle-size:13px;--sparkle-opacity:.22;--sparkle-duration:13s;--sparkle-delay:-5s;--sparkle-x:8px;--sparkle-y:-7px;left:14%;top:7%}
+.body-sequence__sparkle:nth-child(12){--sparkle-size:47px;--sparkle-opacity:.09;--sparkle-duration:29s;--sparkle-delay:-20s;--sparkle-x:-15px;--sparkle-y:9px;left:31%;top:91%}
+.body-sequence__sparkle:nth-child(13){--sparkle-size:20px;--sparkle-opacity:.17;--sparkle-duration:16s;--sparkle-delay:-12s;--sparkle-x:11px;--sparkle-y:7px;left:58%;top:6%}
+.body-sequence__sparkle:nth-child(14){--sparkle-size:38px;--sparkle-opacity:.10;--sparkle-duration:25s;--sparkle-delay:-8s;--sparkle-x:-12px;--sparkle-y:-9px;right:11%;top:89%}
+.body-sequence__sparkle:nth-child(15){--sparkle-size:14px;--sparkle-opacity:.24;--sparkle-duration:12s;--sparkle-delay:-9s;--sparkle-x:7px;--sparkle-y:10px;right:2%;top:34%}
+.body-sequence__sparkle:nth-child(16){--sparkle-size:28px;--sparkle-opacity:.14;--sparkle-duration:20s;--sparkle-delay:-15s;--sparkle-x:10px;--sparkle-y:-12px;left:2%;top:62%}
+.body-sequence__sparkle:nth-child(17){--sparkle-size:56px;--sparkle-opacity:.07;--sparkle-duration:32s;--sparkle-delay:-23s;--sparkle-x:-18px;--sparkle-y:12px;right:31%;top:1%}
+.body-sequence__sparkle:nth-child(18){--sparkle-size:21px;--sparkle-opacity:.16;--sparkle-duration:17s;--sparkle-delay:-2s;--sparkle-x:12px;--sparkle-y:8px;right:9%;top:77%}
+@keyframes body-sparkle-drift{
+  0%{transform:translate3d(0,0,0) rotate(-7deg) scale(.94)}
+  52%{transform:translate3d(var(--sparkle-x),var(--sparkle-y),0) rotate(6deg) scale(1.06)}
+  100%{transform:translate3d(0,0,0) rotate(-3deg) scale(.98)}
+}
+@media (max-width:767px){
+  .body-sequence__sparkles{opacity:.92}
+  .body-sequence__sparkle:nth-child(n+9){display:none}
+}
 h1,h2,h3,h4{font-family:var(--ff-display)}
 dd{margin-inline-start:0}
 ::selection{background:rgba(224,174,107,.28);color:var(--t-1)}
@@ -551,12 +598,13 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
 .body-sequence__frame{
   position:relative;width:100%;height:100svh;
   min-height:320px;overflow:hidden;border-radius:0;
-  background:var(--f-void) url("assets/mov/cat-body-frames/frame-0000.jpg") center/cover no-repeat;box-shadow:var(--sh-2);
+  background:var(--f-void) url("assets/img/lifespan-3-dark.png") center/cover no-repeat;box-shadow:var(--sh-2);
   transform:scale(var(--body-seq-scale,1));transform-origin:50% 50%;
   transition:box-shadow .24s ease;will-change:transform;
 }
 .body-sequence__frame::after{
-  content:"";position:absolute;inset:0;pointer-events:none;
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:rgba(3,6,8,.38);
   box-shadow:inset 0 0 0 1px var(--b-strong),inset 0 -60px 80px -70px rgba(0,0,0,.9);
   border-radius:inherit;
 }
@@ -566,9 +614,23 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
   filter:saturate(var(--body-seq-sat,1)) contrast(var(--body-seq-contrast,1));
   will-change:transform;backface-visibility:hidden;
 }
+.body-sequence__play{
+  display:none;position:absolute;z-index:3;left:50%;bottom:max(24px,env(safe-area-inset-bottom));
+  align-items:center;gap:9px;min-height:46px;padding:0 17px;border:1px solid rgba(232,190,132,.48);
+  border-radius:999px;background:rgba(8,13,17,.86);color:#F4F8FA;
+  font:600 .82rem/1 var(--ff-text);letter-spacing:.02em;transform:translateX(-50%);
+  box-shadow:0 12px 34px -18px rgba(0,0,0,.9);transition:opacity 180ms ease,transform 180ms ease;
+  -webkit-tap-highlight-color:transparent;touch-action:manipulation;
+}
+.body-sequence__play svg{width:13px;height:15px;fill:var(--a-copper);flex:none}
+.body-sequence.is-playing .body-sequence__play{opacity:0;transform:translateX(-50%) translateY(8px);pointer-events:none}
 @media (max-width:767px){
-  .body-sequence{height:210svh}
-  .body-sequence__frame{height:100svh;min-height:320px}
+  .body-sequence{height:200svh;height:200dvh}
+  .body-sequence__frame{
+    height:100svh;height:100dvh;min-height:320px;background-size:contain;background-color:#050b18;
+    background-image:url("assets/img/lifespan-3-dark-mobile.jpg");
+  }
+  .body-sequence__play{display:flex}
 }
 
 /* 5-8 출처 */
@@ -1107,6 +1169,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
   color:#B8CAD6;text-decoration:none;
 }
 .hero__scroll svg{width:28px;height:40px;overflow:visible}
+.hero__play-label{display:none;font-size:.74rem;font-weight:650;letter-spacing:.025em;color:#E8BE84}
 .hero__credit{
   font-family:var(--ff-figure);font-size:clamp(.62rem,.8vw,.72rem);font-weight:500;
   line-height:1.4;letter-spacing:.055em;color:#91A5B2;text-align:center;
@@ -1153,11 +1216,14 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
   transition:none!important;will-change:transform,opacity;
 }
 @media (max-width:767px){
-  .hero-stage{height:330svh}
+  .hero-stage{height:330svh;height:330dvh}
+  .hero-stage .hero{height:100svh;height:100dvh;min-height:100svh;min-height:100dvh}
   .js:not(.low) .hero-stage .hero__title{font-size:clamp(2.7rem,12vw,4.25rem);max-width:78vw}
   .hero-stage .hero__sub{font-size:clamp(.75rem,3.35vw,1rem);max-width:76vw}
   .hero-stage .hero__stats{margin-top:var(--sp-3);padding:14px 16px}
-  .hero-stage .hero__scroll{bottom:22px}
+  .hero-stage .hero__scroll{bottom:max(18px,env(safe-area-inset-bottom));gap:5px}
+  .hero__play-label{display:block}
+  .hero__credit{font-size:.58rem;max-width:92vw}
 }
 
 /* ==========================================================================
@@ -1378,6 +1444,13 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
   opacity:1;background:radial-gradient(180px 180px at 22% 0%, rgba(214,232,244,.07), rgba(214,232,244,0) 70%);
 }
 
+/* 모바일에서는 프레임 영상은 유지하고, 합성 비용이 큰 유리 효과만 줄입니다. */
+.mobile-lite .site-header.is-stuck,.mobile-lite .sheet.is-open,.mobile-lite .hero__stats,.mobile-lite .hotspot__figure{
+  -webkit-backdrop-filter:none!important;backdrop-filter:none!important;
+}
+.mobile-lite .site-header.is-stuck{background:rgba(10,14,18,.94)}
+.mobile-lite .hero__stats{background:rgba(20,28,35,.88)}
+
 /* ==========================================================================
    9. REDUCED MOTION
    ========================================================================== */
@@ -1415,6 +1488,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
   .js #galleryTrack > .gallery__card .img-slot__frame img{transform:none!important}
   .dots i{transition:none!important}
   .section-head::before{transform:none!important}
+  .body-sequence__sparkle{animation:none!important}
   .card::after,.stat::after,.gallery__card::after,.img-slot__frame::after{
     opacity:1;background:radial-gradient(180px 180px at 22% 0%, rgba(214,232,244,.07), rgba(214,232,244,0) 70%);
   }
@@ -1424,7 +1498,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
    10. PRINT  (다크 전용 결정의 대안 경로)
    ========================================================================== */
 @media print{
-  .site-header,.sheet,.hero__bg,.hero__veil,.hero__fx,.gallery__nav,.iconbtn,.totop{display:none!important}
+  .site-header,.sheet,.hero__bg,.hero__veil,.hero__fx,.body-sequence__sparkles,.gallery__nav,.iconbtn,.totop{display:none!important}
   html,body{background:#fff!important;color:#000!important}
   .section,.section--alt,.section--dark,.hero{background:#fff!important;color:#000!important;padding-block:16px!important;min-height:0!important}
   .section--dark::after,.section-head::before{display:none!important}
@@ -1677,12 +1751,13 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
     </div>
 
   </div>
-  <a class="hero__scroll" href="#hero-intro" aria-label="마우스 아이콘을 누르거나 스페이스바를 눌러 하품 영상 재생">
+  <a class="hero__scroll" href="#hero-intro" aria-label="하품 영상 재생">
     <svg viewBox="0 0 24 36" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
       <rect x="5" y="1" width="14" height="22" rx="7"/>
       <path class="hero__scroll-wheel" d="M12 6v4"/>
       <path class="hero__scroll-chevron" d="m8.5 28 3.5 3.5 3.5-3.5"/>
     </svg>
+    <span class="hero__play-label">탭하거나 위로 밀어 재생</span>
     <span class="hero__credit">Planned with Opus 5 · Images created with ChatGPT 5.6 Sol · Video created with Gemini 3.6 Flash</span>
   </a>
 </section>
@@ -1873,6 +1948,30 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
                   aria-label="골든 브리티시 숏헤어의 옆모습입니다. 아래로 스크롤하면 고양이의 짧은 등, 넓은 어깨, 굵은 다리와 둥근 발을 여러 각도에서 볼 수 있습니다.">
             골든 브리티시 숏헤어의 몸을 여러 각도에서 보여주는 장면입니다.
           </canvas>
+          <div class="body-sequence__sparkles" aria-hidden="true">
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+            <span class="body-sequence__sparkle"></span>
+          </div>
+          <button class="body-sequence__play" id="anatomyBodyPlay" type="button" aria-label="몸의 특징 영상 재생">
+            <svg viewBox="0 0 12 14" aria-hidden="true"><path d="M1 1.2v11.6L11 7 1 1.2Z"/></svg>
+            <span>영상 재생</span>
+          </button>
         </div>
       </figure>
     </div>
@@ -2699,7 +2798,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
              width="1672" height="941" loading="lazy" decoding="async"
              alt="달빛 아래 나뭇가지에 누운 둥근 체셔 고양이의 꼬리가 안개처럼 사라지는 그림.">
         <h4 class="card__title">체셔 고양이 <span class="pill pill--common">닮은 이야기</span></h4>
-        <p class="card__body">브리티시 숏헤어가 모델이었다고 알려졌지만 확인된 기록은 없습니다. 체셔 고양이의 기원에는 서로 다른 이야기가 세 가지 있습니다.</p>
+        <p class="card__body">소설 '이상한 나라의 엘리스'에서 체셔 고양이는 브리티시 숏헤어가 모델이었다고 알려졌지만 확인된 기록은 없습니다.</p>
         <p class="card__cap">설명 이미지: 원작의 특정 삽화를 복제하지 않고 새로 제작</p>
       </article>
       <article class="card media-card">
@@ -2708,7 +2807,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
              width="1672" height="941" loading="lazy" decoding="async"
              alt="장화와 깃털 모자, 망토를 착용한 골든 브리티시 숏헤어 모습의 동화 속 검객.">
         <h4 class="card__title">『장화 신은 고양이』의 푸스 <span class="pill pill--common">닮은 모습</span></h4>
-        <p class="card__body">골든 브리티시 숏헤어를 떠올리게 하지만 공식 소개는 푸스의 품종을 밝히지 않습니다.</p>
+        <p class="card__body">골든 브리티시 숏헤어를 떠올리게 하지만 공식적으로 고양이의 품종을 밝힌 적은 없습니다.</p>
         <p class="card__cap">설명 이미지: 고전 동화의 검객을 골든 브리티시 숏헤어 모습으로 새로 제작</p>
       </article>
       <article class="card media-card">
@@ -5382,12 +5481,18 @@ void main(){
   }
   onMq(mqReduce, function (e) { REDUCED = e.matches; });
 
-  /* 저사양 판정 (사양서 8-4). WebGL·블러·틸트를 끄는 전역 플래그 */
-  var LOW = (navigator.hardwareConcurrency || 8) <= 4 ||
-            (navigator.deviceMemory || 8) <= 4 ||
-            (window.matchMedia('(pointer:coarse)').matches && window.innerWidth < 400);
-  if (LOW) root.classList.add('low');
   var COARSE = window.matchMedia('(hover:none),(pointer:coarse)').matches;
+  var MOBILE_LITE = window.innerWidth < 768;
+  var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+  var MOBILE_FRAME_STEP = MOBILE_LITE && connection &&
+    (connection.saveData || /(^|-)2g$|3g/.test(connection.effectiveType || '')) ? 3 : (MOBILE_LITE ? 2 : 1);
+
+  /* 모바일은 프레임 수와 부가 효과를 줄여 영상을 유지합니다. low는 데스크톱의
+     실제 저사양 환경에서만 정적 대체 화면으로 전환합니다. */
+  var LOW = !MOBILE_LITE && ((navigator.hardwareConcurrency || 8) <= 4 ||
+            (navigator.deviceMemory || 8) <= 4);
+  if (LOW) root.classList.add('low');
+  if (MOBILE_LITE) root.classList.add('mobile-lite');
 
   function $(sel, ctx) { return (ctx || document).querySelector(sel); }
   function $$(sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); }
@@ -5398,7 +5503,7 @@ void main(){
   var STORY_SCENE_DATA = [
     { id:'hero-intro', src:'assets/img/storybook-curiosity.png', side:'right', position:'72% 50%' },
     { id:'profile', src:'assets/img/lifespan-3.png', side:'right', position:'68% 50%' },
-    { id:'anatomy', src:'assets/mov/cat-body-frames/frame-0120.jpg', side:'right', position:'70% 50%' },
+    { id:'anatomy', src:'assets/mov/cat-mov-frames/frame-0120.jpg', side:'right', position:'70% 50%' },
     { id:'coat-colors', src:'assets/img/coat-colors-10.png', side:'right', position:'70% 42%' },
     { id:'temperament', src:'assets/img/temperament-1.png', side:'left', position:'30% 50%' },
     { id:'lookalike', src:'assets/img/lookalike-1.png', side:'right', position:'70% 46%' },
@@ -5602,12 +5707,13 @@ void main(){
   var anatomyBodySticky = $('#anatomyBodySticky');
   var anatomyBodyFrameWrap = $('#anatomyBodyFrameWrap');
   var anatomyBodyFrame = $('#anatomyBodyFrame');
+  var anatomyBodyPlay = $('#anatomyBodyPlay');
   var anatomyBodyFrameCount = anatomyBodySequence ? parseInt(anatomyBodySequence.getAttribute('data-frame-count'), 10) || 240 : 0;
   var anatomyBodyFrameNow = -1;
   var anatomyBodyFramePainted = -1;
   var anatomyBodyFrameCache = new Map();
   var anatomyBodyFrameLoading = new Map();
-  var anatomyBodyFrameCacheMax = 24;
+  var anatomyBodyFrameCacheMax = MOBILE_LITE ? 12 : 24;
   var anatomyBodyCtx = anatomyBodyFrame && anatomyBodyFrame.getContext ? anatomyBodyFrame.getContext('2d', { alpha: false }) : null;
   var ANATOMY_BODY_DURATION = 10000;
   var anatomyBodyAuto = { active: false, raf: 0 };
@@ -5629,16 +5735,23 @@ void main(){
     return 'assets/mov/cat-frames/frame-' + String(index).padStart(4, '0') + '.jpg';
   }
 
+  function normalizeSequenceFrame(index, count) {
+    index = Math.max(0, Math.min(count - 1, index));
+    if (!MOBILE_LITE || MOBILE_FRAME_STEP === 1 || index >= count - 2) return index;
+    return Math.min(count - 1, Math.round(index / MOBILE_FRAME_STEP) * MOBILE_FRAME_STEP);
+  }
+
   function setHeroFrame(index) {
     if (!heroSequence || !heroFrameCount) return;
-    index = Math.max(0, Math.min(heroFrameCount - 1, index));
+    index = normalizeSequenceFrame(index, heroFrameCount);
     if (index === heroFrameNow) return;
     heroFrameNow = index;
     heroSequence.src = heroFrameSrc(index);
   }
 
   function anatomyBodyFrameSrc(index) {
-    return 'assets/mov/cat-body-frames/frame-' + String(index).padStart(4, '0') + '.jpg';
+    if (index === 0) return MOBILE_LITE ? 'assets/img/lifespan-3-dark-mobile.jpg' : 'assets/img/lifespan-3-dark.png';
+    return 'assets/mov/cat-mov-frames/frame-' + String(index).padStart(4, '0') + '.jpg';
   }
 
   function rememberAnatomyBodyFrame(index, image) {
@@ -5685,7 +5798,7 @@ void main(){
     var rect = anatomyBodyFrame.getBoundingClientRect();
     if (!rect.width || !rect.height) return;
 
-    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var dpr = Math.min(window.devicePixelRatio || 1, MOBILE_LITE ? 1.35 : 2);
     var canvasWidth = Math.max(1, Math.round(rect.width * dpr));
     var canvasHeight = Math.max(1, Math.round(rect.height * dpr));
     var resized = anatomyBodyFrame.width !== canvasWidth || anatomyBodyFrame.height !== canvasHeight;
@@ -5698,28 +5811,39 @@ void main(){
 
     var imageRatio = image.naturalWidth / image.naturalHeight;
     var canvasRatio = canvasWidth / canvasHeight;
-    var sourceWidth = image.naturalWidth;
-    var sourceHeight = image.naturalHeight;
-    var sourceX = 0;
-    var sourceY = 0;
-
-    if (imageRatio > canvasRatio) {
-      sourceWidth = image.naturalHeight * canvasRatio;
-      sourceX = (image.naturalWidth - sourceWidth) / 2;
-    } else {
-      sourceHeight = image.naturalWidth / canvasRatio;
-      sourceY = (image.naturalHeight - sourceHeight) / 2;
-    }
-
-    anatomyBodyCtx.fillStyle = '#080d11';
+    anatomyBodyCtx.fillStyle = '#050b18';
     anatomyBodyCtx.fillRect(0, 0, canvasWidth, canvasHeight);
-    anatomyBodyCtx.drawImage(image, sourceX, sourceY, sourceWidth, sourceHeight, 0, 0, canvasWidth, canvasHeight);
+
+    if (MOBILE_LITE && canvasRatio < 1) {
+      /* 세로 화면에서는 고양이 전신을 자르지 않고 어두운 여백 안에 맞춥니다. */
+      var targetWidth = canvasWidth;
+      var targetHeight = targetWidth / imageRatio;
+      if (targetHeight > canvasHeight) {
+        targetHeight = canvasHeight;
+        targetWidth = targetHeight * imageRatio;
+      }
+      anatomyBodyCtx.drawImage(image, 0, 0, image.naturalWidth, image.naturalHeight,
+        (canvasWidth - targetWidth) / 2, (canvasHeight - targetHeight) / 2, targetWidth, targetHeight);
+    } else {
+      var sourceWidth = image.naturalWidth;
+      var sourceHeight = image.naturalHeight;
+      var sourceX = 0;
+      var sourceY = 0;
+      if (imageRatio > canvasRatio) {
+        sourceWidth = image.naturalHeight * canvasRatio;
+        sourceX = (image.naturalWidth - sourceWidth) / 2;
+      } else {
+        sourceHeight = image.naturalWidth / canvasRatio;
+        sourceY = (image.naturalHeight - sourceHeight) / 2;
+      }
+      anatomyBodyCtx.drawImage(image, sourceX, sourceY, sourceWidth, sourceHeight, 0, 0, canvasWidth, canvasHeight);
+    }
     anatomyBodyFramePainted = index;
   }
 
   function setAnatomyBodyFrame(index) {
     if (!anatomyBodyFrame || !anatomyBodyCtx || !anatomyBodyFrameCount) return;
-    index = Math.max(0, Math.min(anatomyBodyFrameCount - 1, index));
+    index = normalizeSequenceFrame(index, anatomyBodyFrameCount);
     anatomyBodyFrameNow = index;
     if (anatomyBodyFrameCache.has(index)) {
       drawAnatomyBodyFrame(index, anatomyBodyFrameCache.get(index));
@@ -5751,6 +5875,7 @@ void main(){
   }
 
   function setAnatomyHeaderHidden(hidden) {
+    if (anatomyBodySequence) anatomyBodySequence.classList.toggle('is-playing', hidden);
     if (!header) return;
     header.classList.toggle('is-video-playing', hidden);
     if (hidden) {
@@ -5958,6 +6083,47 @@ void main(){
   window.addEventListener('wheel', onHeroWheel, { passive: false, capture: true });
   window.addEventListener('wheel', onAnatomyBodyWheel, { passive: false, capture: true });
 
+  /* 모바일에서는 세로 스와이프 한 번을 휠 한 번과 같은 재생 동작으로 취급합니다. */
+  var sequenceTouch = { startY: 0, handled: false, blocked: false };
+  window.addEventListener('touchstart', function (event) {
+    if (!event.touches || event.touches.length !== 1) return;
+    sequenceTouch.startY = event.touches[0].clientY;
+    sequenceTouch.handled = false;
+    sequenceTouch.blocked = !!(event.target && event.target.closest &&
+      event.target.closest('a,button,input,textarea,select,[contenteditable="true"]'));
+  }, { passive: true, capture: true });
+
+  window.addEventListener('touchmove', function (event) {
+    if (sequenceTouch.blocked || !event.touches || event.touches.length !== 1) return;
+    var delta = sequenceTouch.startY - event.touches[0].clientY;
+    if (Math.abs(delta) < 24) return;
+    var direction = delta > 0 ? 1 : -1;
+
+    if (heroYawnAuto.active) {
+      event.preventDefault();
+      if (!sequenceTouch.handled && heroYawnAuto.skip) heroYawnAuto.skip(direction);
+      sequenceTouch.handled = true;
+      return;
+    }
+    if (anatomyBodyAuto.active) {
+      event.preventDefault();
+      sequenceTouch.handled = true;
+      return;
+    }
+    if (!sequenceTouch.handled && (playHeroYawn(direction) || playAnatomyBodySequence(direction))) {
+      event.preventDefault();
+      sequenceTouch.handled = true;
+    }
+  }, { passive: false, capture: true });
+
+  function resetSequenceTouch() {
+    sequenceTouch.startY = 0;
+    sequenceTouch.handled = false;
+    sequenceTouch.blocked = false;
+  }
+  window.addEventListener('touchend', resetSequenceTouch, { passive: true, capture: true });
+  window.addEventListener('touchcancel', resetSequenceTouch, { passive: true, capture: true });
+
   function playHeroFromControl() {
     var m = heroStoryMetrics();
     if (!m || !m.pinned || REDUCED || LOW) return false;
@@ -5997,17 +6163,49 @@ void main(){
     });
   }
 
-  /* 프레임은 여섯 장씩 미리 받아 둡니다. 디코딩된 이미지 240장을 메모리에
-     붙잡아 두지 않고 브라우저 캐시에만 저장해 긴 페이지의 메모리 사용을 줄입니다. */
+  function playAnatomyFromControl() {
+    var metrics = anatomyBodyMetrics();
+    if (!metrics || REDUCED || LOW) return false;
+    if (anatomyBodyAuto.active) return true;
+
+    if (!metrics.pinned || metrics.progress >= .998) {
+      var previousScrollBehavior = root.style.scrollBehavior;
+      root.style.scrollBehavior = 'auto';
+      window.scrollTo(0, metrics.top - metrics.stickyTop);
+      setAnatomyBodyFrame(0);
+      requestAnimationFrame(function () {
+        root.style.scrollBehavior = previousScrollBehavior;
+        onScroll();
+        playAnatomyBodySequence(1);
+      });
+      return true;
+    }
+    return playAnatomyBodySequence(1);
+  }
+
+  if (anatomyBodyPlay) {
+    anatomyBodyPlay.addEventListener('click', function () { playAnatomyFromControl(); });
+  }
+
+  function buildFramePreloadQueue(count) {
+    var queue = [];
+    for (var i = MOBILE_FRAME_STEP; i < count - 1; i += MOBILE_FRAME_STEP) queue.push(i);
+    if (count > 1) queue.push(count - 1);
+    return queue;
+  }
+
+  /* 데스크톱은 전 프레임, 모바일은 연결 상태에 따라 2~3장 중 한 장만 받아
+     원본 재생 시간을 유지하면서 전송량과 디코딩 부하를 줄입니다. */
   function preloadHeroFrames() {
     if (!heroSequence || REDUCED || LOW || heroFrameCount < 2) return;
-    var next = 1;
+    var queue = buildFramePreloadQueue(heroFrameCount);
+    var next = 0;
     var active = 0;
-    var maxActive = 6;
+    var maxActive = MOBILE_LITE ? 3 : 6;
     function pump() {
-      while (active < maxActive && next < heroFrameCount) {
+      while (active < maxActive && next < queue.length) {
         var img = new Image();
-        var frame = next++;
+        var frame = queue[next++];
         active++;
         img.decoding = 'async';
         img.onload = img.onerror = function () {
@@ -6023,19 +6221,19 @@ void main(){
   if (document.readyState === 'complete') preloadHeroFrames();
   else window.addEventListener('load', preloadHeroFrames, { once: true });
 
-  /* 몸의 특징 영상은 화면에 가까워졌을 때부터 여덟 장씩 불러옵니다.
-     240장을 DOM에 쌓지 않고 이미지 캐시에만 저장해 스크롤 중 깜빡임을 줄입니다. */
+  /* 몸의 특징 영상은 화면에 가까워졌을 때만 같은 적응형 큐로 불러옵니다. */
   var anatomyBodyPreloadStarted = false;
   function preloadAnatomyBodyFrames() {
     if (anatomyBodyPreloadStarted || !anatomyBodyFrame || REDUCED || LOW || anatomyBodyFrameCount < 2) return;
     anatomyBodyPreloadStarted = true;
-    var next = 1;
+    var queue = buildFramePreloadQueue(anatomyBodyFrameCount);
+    var next = 0;
     var active = 0;
-    var maxActive = 8;
+    var maxActive = MOBILE_LITE ? 3 : 8;
     function pump() {
-      while (active < maxActive && next < anatomyBodyFrameCount) {
+      while (active < maxActive && next < queue.length) {
         var img = new Image();
-        var frameIndex = next++;
+        var frameIndex = queue[next++];
         active++;
         img.decoding = 'async';
         img.onload = img.onerror = function () {
@@ -6059,6 +6257,18 @@ void main(){
     window.addEventListener('load', preloadAnatomyBodyFrames, { once: true });
   }
 
+  /* 화면에서 멀어진 뒤에는 장식 애니메이션의 합성 작업을 멈춥니다. */
+  if (anatomyBodySequence && 'IntersectionObserver' in window) {
+    var anatomyBodyEffectsIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        anatomyBodySequence.classList.toggle('is-near', entry.isIntersecting);
+      });
+    }, { rootMargin: '35% 0px', threshold: 0 });
+    anatomyBodyEffectsIO.observe(anatomyBodySequence);
+  } else if (anatomyBodySequence) {
+    anatomyBodySequence.classList.add('is-near');
+  }
+
   /* 스크롤 진행률을 계속 반영하는 시네마틱 대상.
      한 번 나타나고 끝나는 reveal과 달리 위로 되돌리면 역방향으로 재생됩니다. */
   var cineHeads = [];
@@ -6067,7 +6277,7 @@ void main(){
   var cineMedia = [];
   var cineScenes = [];
   var cinePairs = [];
-  if (!REDUCED && !LOW) {
+  if (!REDUCED && !LOW && !MOBILE_LITE) {
     cineHeads = $$('main .section-head');
     cineFrames = $$('main .img-slot').filter(function (el) { return !el.closest('#hero'); });
     cineGroups = $$('main .grid[data-reveal="stagger"], #historyTimeline, .history-media');
@@ -6292,9 +6502,9 @@ void main(){
           /* 제목이 나타난 뒤에도 마지막 영상 프레임의 가로 위치를 유지합니다. */
           var shiftX = 0;
           var shiftY = yawnProgress * (mobileHero ? 4 : 8) + titleIn * (mobileHero ? -10 : 12);
-          var zoom = (mobileHero ? 1.20 : 1.28)
-                   - yawnProgress * (mobileHero ? .10 : .16)
-                   - titleIn * (mobileHero ? .04 : .06);
+          var zoom = (mobileHero ? 1.07 : 1.28)
+                   - yawnProgress * (mobileHero ? .035 : .16)
+                   - titleIn * (mobileHero ? .015 : .06);
           heroBg.style.transform = 'translate3d(' + shiftX.toFixed(1) + 'px,' + shiftY.toFixed(1) + 'px,0) scale(' + zoom.toFixed(4) + ')';
           if (heroVeil) heroVeil.style.setProperty('--veil', (.16 + titleIn * .48 + exit * .22).toFixed(3));
 
@@ -6818,7 +7028,7 @@ void main(){
      ====================================================================== */
   var heroScene = null, geneScene = null;
 
-  if (window.BSH3D && !LOW) {
+  if (window.BSH3D && !LOW && !MOBILE_LITE) {
     /* 17-1 히어로 털 장 */
     var heroBgEl = $('#heroBg');
     if (heroBgEl) {
