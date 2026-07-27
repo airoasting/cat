@@ -949,13 +949,15 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
   .nav__brand:is(:hover,:focus-visible) .nav__brand-logo,
   .nav__brand:is(:hover,:focus-visible) .nav__brand-letter{animation:none}
 }
+@media (max-width:767px){
+  .nav__brand-name,
+  .nav__brand-divider{display:none}
+}
 @media (max-width:599px){
   .nav{padding-inline:14px;gap:10px}
   .nav__brand{gap:6px;font-size:.68rem}
   .nav__brand-logo{width:17px;height:17px}
   .nav__brand-copy{display:grid;grid-template-columns:auto;gap:1px}
-  .nav__brand-divider{display:none}
-  .nav__brand-name{font-size:.62rem}
   .nav__brand-title{font-size:.68rem}
 }
 .nav__spacer{flex:1}
