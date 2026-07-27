@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>브리티시 숏헤어 백과사전 | AI ROASTING</title>
-<meta name="description" content="브리티시 숏헤어를 영국 고양이 등록 단체·미국 고양이 애호가 협회·국제고양이협회·국제고양이연맹 표준 원문과 수의학 문헌으로 정리한 백과사전. 기대수명 9.58년, 과체중 47.7%, 이중모 논쟁까지 출처를 함께 적었습니다.">
+<meta name="description" content="초등학교 고학년 어린이도 쉽게 읽는 브리티시 숏헤어 안내서. 생김새, 성격, 돌봄, 건강 신호와 가족이 되기 전 준비를 사진과 쉬운 말로 설명합니다.">
 <meta name="theme-color" content="#0E1419">
 <link rel="canonical" href="https://airoasting-cat.vercel.app/">
 <script>document.documentElement.classList.add('js');</script>
@@ -107,7 +107,7 @@ table{border-collapse:collapse;border-spacing:0}
   --nav-h:56px;
 
   /* 폭 (이름 고정. 인라인 style이 참조합니다) */
-  --w-text:1120px;
+  --w-text:760px;
   --w-wide:1200px;
 
   /* 간격 (인라인 style이 --sp-1~--sp-8을 참조합니다) */
@@ -1053,6 +1053,9 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
 .site-footer .foot-title{font-size:1.05rem;font-weight:700;color:var(--t-1);margin-bottom:var(--sp-1)}
 .site-footer .foot-grid{display:grid;gap:var(--sp-4)}
 @media (min-width:768px){.site-footer .foot-grid{grid-template-columns:2fr 1fr}}
+.site-footer .foot-actions{justify-self:end;align-self:start;text-align:right}
+.site-footer .foot-actions p{margin:16px 0 0}
+@media (min-width:768px){.site-footer .foot-actions p{margin-top:0}}
 .site-footer .foot-credit{
   margin-top:var(--sp-6);padding-top:var(--sp-3);border-top:1px solid var(--b-hair);
   font-family:var(--ff-figure);font-size:var(--fs-micro);letter-spacing:.04em;color:var(--t-2);
@@ -1559,7 +1562,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
       "name": "다른 고양이나 개와 잘 지내나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "단체 기술로는 그렇습니다. 영국 고양이 등록 단체는 사람과 강한 유대를 맺고 참을성 있고 관대한 동반자라고 적고 국제고양이협회 표준은 기질이 도전적이지 않아야 하며 명백한 도전의 징후를 실격 사유로 둡니다. 다만 다묘 가정은 별개의 위험 요인이기도 합니다. Cornell Feline Health Center는 다묘 가정과 일상 변화 같은 환경 스트레스를 고양이 하부요로기질환 위험 인자로 꼽습니다. 화장실을 고양이 수보다 하나 더 두고 사료와 물과 잠자리를 서로 떨어뜨려 배치하십시오."
+        "text": "품종보다 각 고양이의 성격과 이전 경험이 더 중요합니다. 처음에는 서로 다른 공간에서 지내게 하고 냄새부터 천천히 익숙해지게 하세요. 화장실은 고양이 수보다 하나 더 준비하고 밥그릇과 물그릇, 잠자리를 여러 곳에 나누면 경쟁과 스트레스를 줄이는 데 도움이 됩니다."
       }
     },
     {
@@ -1568,7 +1571,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
       "name": "얼마나 크나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "문서마다 숫자가 다릅니다. 영국 고양이 등록 단체 품종 소개 페이지는 수컷 약 4.1~7.7kg, 암컷 약 3.2~5.4kg으로 적습니다. 국제고양이협회는 수컷 약 4.5~7.3kg, 암컷 약 3.6~5.0kg으로 적습니다. 미국 고양이 애호가 협회 품종 소개 페이지는 수컷이 약 7.7kg까지 자랄 수 있다고 설명합니다. 미국 고양이 애호가 협회 품종 표준에는 체중 규정이 없습니다. 호주 1차 진료 기록에서 어른 고양이의 평균 체중은 5.4kg이었습니다. 조사한 고양이 중 47.7%가 과체중이었으므로 이 값을 건강한 체중으로 생각하면 안 됩니다."
+        "text": "중형에서 대형으로 자라는 편입니다. 국제고양이협회 소개 페이지는 다 자란 수컷을 약 4.5~7.3kg, 암컷을 약 3.6~5.0kg으로 안내합니다. 숫자 하나만으로 건강한 몸무게를 정할 수는 없으므로 갈비뼈와 허리 모양을 함께 보고 수의사에게 알맞은 체중을 물어보세요."
       }
     },
     {
@@ -1577,7 +1580,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
       "name": "언제 다 크나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "천천히 자랍니다. 미국 고양이 애호가 협회의 2026년 표준은 완전히 자라는 데 3~5년이 걸린다고 설명합니다. 영국 고양이 등록 단체의 문서는 3~4세로 적습니다. 생후 9개월부터 2년 사이에는 몸이 길쭉하고 말라 보일 수 있지만 결점은 아닙니다. 뼈가 자라는 최소 만 1년까지는 새끼 고양이용 사료를 먹이라고 권합니다."
+        "text": "천천히 자라며 자료에 따라 완전히 자라는 데 약 3~5년이 걸린다고 설명합니다. 생후 9개월부터 2년 사이에는 몸이 잠시 길고 말라 보일 수 있지만 자연스러운 성장 과정입니다."
       }
     },
     {
@@ -1586,7 +1589,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
       "name": "안기는 걸 싫어하나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "싫어한다기보다 선호하지 않습니다. 이 항목은 세 단체가 드물게 같은 방향으로 기술하는 대목입니다. 미국 고양이 애호가 협회 품종 소개는 무릎으로 뛰어들기보다 초대를 기다려 옆자리 소파에 앉는다고 적고 국제고양이협회 표준은 네 발을 바닥에 두는 품종이며 부드럽고 단단하게 다루고 안아 올릴 때 몸을 받쳐야 한다고 규정합니다. 영국 고양이 등록 단체도 어른 고양이에게 게으른 경향이 있다고 적습니다. 핵심은 안느냐 마느냐가 아니라 들어 올릴 때 몸을 받치느냐입니다."
+        "text": "브리티시 숏헤어는 무릎보다 옆자리를 편안해하는 고양이로 자주 소개됩니다. 하지만 실제 성격은 고양이마다 다릅니다. 몸을 빼거나 귀를 뒤로 눕히면 만지기를 멈추고, 꼭 안아야 할 때는 가슴과 엉덩이를 함께 받쳐 주세요."
       }
     },
     {
@@ -1595,7 +1598,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
       "name": "살이 잘 찌나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "그렇습니다. 호주 동물병원 기록에서 브리티시 숏헤어 2,540마리를 살펴보니 어른 고양이의 47.7%가 과체중이거나 비만이었습니다. 중성화한 수컷의 평균 몸 상태 점수는 6.1점으로 과체중 범위에 들었습니다. 사료를 늘 꺼내 두기보다 하루 양을 나누어 주고 갈비뼈와 허리 모양을 자주 살펴보세요. 살을 뺄 때는 일주일에 몸무게의 1~2%를 줄이는 것을 목표로 수의사와 함께 계획해야 합니다."
+        "text": "묵직한 체형이라 살이 쪄도 알아차리기 어려울 수 있습니다. 보호자가 정한 하루 사료 양을 지키고 매일 놀아 주세요. 갈비뼈와 허리 모양을 살펴보고 체중을 줄여야 할 때는 반드시 수의사와 계획해야 합니다."
       }
     },
     {
@@ -1613,7 +1616,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
       "name": "유전병은 없나요?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "유전병이 없다는 설명은 틀립니다. 덴마크에서 브리티시 숏헤어 329마리를 조사했더니 8.5%가 비대성 심근증 양성이었습니다. 수컷은 20.4%, 암컷은 2.1%였습니다. 이 품종에 맞는 유전자 검사는 없으므로 심장 초음파 검사가 필요합니다. 다낭성 신장병은 유전자 검사로 확인할 수 있습니다. 영국 고양이 등록 단체는 2025년 3월 1일부터 번식 가능한 고양이로 등록할 때 이 검사를 의무화했습니다. 자가면역 림프증식 증후군은 지금까지 이 품종에서만 확인됐으며 치료법이 없습니다. B형 혈액형도 25.4%이므로 번식 전에 확인해야 합니다."
+        "text": "어떤 품종도 모든 병에서 자유롭지는 않습니다. 브리티시 숏헤어는 비대성 심근증과 다낭성 신장병 등을 살펴야 할 수 있습니다. 필요한 검사는 나이와 몸 상태에 따라 다르므로 보호자와 수의사가 결정해야 합니다."
       }
     }
   ]
@@ -1664,15 +1667,15 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
           <li><a href="#grooming">털은 어떻게 돌볼까요?</a></li>
           <li><a href="#diet">얼마나 먹어야 할까요?</a></li>
           <li><a href="#lifespan">몇 살까지 살까요?</a></li>
-          <li><a href="#health">무엇을 검사할까요?</a></li>
-          <li><a href="#adoption">입양 전에 무엇을 볼까요?</a></li>
+          <li><a href="#health">아프면 어떻게 알까요?</a></li>
+          <li><a href="#adoption">가족이 될 준비가 됐을까요?</a></li>
         </ul>
       </li>
       <li class="nav__chapter" data-chapter="color-genetics standards faq sources">
         <a class="nav__link" href="#color-genetics">더 깊이 볼까요?</a>
         <ul class="nav__sub">
           <li><a href="#color-genetics">털 색은 어떻게 생길까요?</a></li>
-          <li><a href="#standards">대회에서는 무엇을 볼까요?</a></li>
+          <li><a href="#standards">모습이 달라도 괜찮을까요?</a></li>
           <li><a href="#faq">또 무엇이 궁금한가요?</a></li>
           <li><a href="#sources">사실은 어떻게 확인했을까요?</a></li>
         </ul>
@@ -1701,11 +1704,11 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
   <a href="#grooming">털은 어떻게 돌볼까요?</a>
   <a href="#diet">얼마나 먹어야 할까요?</a>
   <a href="#lifespan">몇 살까지 살까요?</a>
-  <a href="#health">무엇을 검사할까요?</a>
-  <a href="#adoption">입양 전에 무엇을 볼까요?</a>
+  <a href="#health">아프면 어떻게 알까요?</a>
+  <a href="#adoption">가족이 될 준비가 됐을까요?</a>
   <h2>더 깊이 볼까요?</h2>
   <a href="#color-genetics">털 색은 어떻게 생길까요?</a>
-  <a href="#standards">대회에서는 무엇을 볼까요?</a>
+  <a href="#standards">모습이 달라도 괜찮을까요?</a>
   <a href="#faq">또 무엇이 궁금한가요?</a>
   <a href="#sources">사실은 어떻게 확인했을까요?</a>
 </div>
@@ -1734,19 +1737,19 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
 
     <div class="hero__stats" data-reveal="stagger">
       <div class="stat hero__stat">
-        <span class="stat__label">영국에서 가장 많이 등록된 품종</span>
-        <span class="stat__num"><span data-count-to="1" data-count-decimals="0">1</span><small>위</small></span>
-        <span class="stat__cap">2024년 6,415마리. 등록 고양이 18,535마리 가운데 34.6%</span>
+        <span class="stat__label">분명한 기록이 시작된 해</span>
+        <span class="stat__num">1871<small>년</small></span>
+        <span class="stat__cap">런던 크리스탈 팰리스 고양이 대회 기록</span>
       </div>
       <div class="stat hero__stat">
         <span class="stat__label">몸이 다 자랄 때까지</span>
         <span class="stat__num">3~5<small>년</small></span>
-        <span class="stat__cap">미국 고양이 애호가 협회 표준. 영국 고양이 등록 단체 문서는 3~4세</span>
+        <span class="stat__cap">다른 고양이보다 천천히 다 자란 체형이 됩니다.</span>
       </div>
       <div class="stat hero__stat">
-        <span class="stat__label">병원 기록으로 계산한 평균 수명</span>
-        <span class="stat__num"><span data-count-to="9.58" data-count-decimals="2">9.58</span><small>년</small></span>
-        <span class="stat__cap">영국 1차 진료 생명표, 고양이 의학·외과 학술지 2024</span>
+        <span class="stat__label">가장 잘 알려진 털 색</span>
+        <span class="stat__num stat__num--sm">블루</span>
+        <span class="stat__cap">검은 색소가 옅게 보여 청회색처럼 보입니다.</span>
       </div>
     </div>
 
@@ -1774,7 +1777,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
       <p class="body" data-reveal="up">1871년 7월 13일, 런던의 커다란 유리 궁전에 고양이들이 모였습니다. 영국에서 처음 열린 고양이 대회였습니다. 그날 잉글리시 숏헤어가 가장 뛰어난 고양이로 뽑혔습니다. 이 고양이가 오늘날 브리티시 숏헤어의 조상입니다.</p>
       <p class="body" data-reveal="up">150여 년이 흐른 지금, 브리티시 숏헤어는 영국에서 가장 많이 등록되는 품종이 됐습니다. 둥근 얼굴과 빽빽한 털 덕분에 세계 여러 나라에서도 사랑받습니다.</p>
       <p class="body" data-reveal="up">유명한 만큼 헷갈리는 이야기도 많습니다. 정말 무릎에 앉는 것을 싫어할까요? 회색 털만 있을까요? 체셔 고양이의 모델이었을까요? 사진과 기록을 보면서 하나씩 답을 찾아봅니다.</p>
-      <p class="note" data-reveal="up">숫자와 건강 이야기는 어른과 함께 읽어 주세요. 어려운 말은 처음 나올 때 쉬운 뜻을 붙였습니다.</p>
+      <p class="note" data-reveal="up">숫자와 건강 이야기는 ‘더 자세히 보기’에서 확인할 수 있습니다. 어려운 말은 처음 나올 때 쉬운 뜻을 붙였습니다.</p>
 
       <nav class="curiosity-path" aria-label="궁금한 내용 바로 찾기" data-reveal="up">
         <h3 class="block-title">무엇부터 궁금한가요?</h3>
@@ -1798,33 +1801,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
         </div>
       </nav>
 
-      <details class="accordion term-guide" data-reveal="up">
-        <summary id="term-guide-title">어려운 말이 나오면 여기서 찾아보세요</summary>
-        <div class="accordion__body">
-        <p>고양이 단체와 건강에 관한 낱말을 쉬운 뜻으로 모았습니다.</p>
-        <dl>
-          <div><dt>영국 고양이 등록 단체 <span lang="en">(Governing Council of the Cat Fancy)</span></dt><dd>영국에서 품종 등록과 쇼 기준을 관리하는 단체입니다.</dd></div>
-          <div><dt>미국 고양이 애호가 협회 <span lang="en">(Cat Fanciers’ Association)</span></dt><dd>미국을 중심으로 품종 표준과 고양이 쇼를 운영하는 단체입니다.</dd></div>
-          <div><dt>국제고양이협회 <span lang="en">(The International Cat Association)</span></dt><dd>여러 나라에서 품종 등록과 고양이 쇼를 운영하는 국제 단체입니다.</dd></div>
-          <div><dt>국제고양이연맹 <span lang="en">(International Feline Federation)</span></dt><dd>유럽 여러 나라의 고양이 단체가 모인 국제 연맹입니다.</dd></div>
-          <div><dt>비대성 심근증 <span lang="en">(Hypertrophic Cardiomyopathy)</span></dt><dd>심장 근육이 비정상적으로 두꺼워지는 질환입니다.</dd></div>
-          <div><dt>다낭성 신장병 <span lang="en">(Polycystic Kidney Disease)</span></dt><dd>신장에 물혹이 생기는 유전질환입니다.</dd></div>
-          <div><dt>자가면역 림프증식 증후군 <span lang="en">(Autoimmune Lymphoproliferative Syndrome)</span></dt><dd>면역세포가 비정상적으로 쌓이는 유전질환입니다.</dd></div>
-          <div><dt>몸 상태 점수 <span lang="en">(Body Condition Score)</span></dt><dd>고양이가 마르거나 살찐 정도를 1점부터 9점까지 표시한 값입니다.</dd></div>
-          <div><dt>고양이 하부요로기질환 <span lang="en">(Feline Lower Urinary Tract Disease)</span></dt><dd>방광과 요도 등 소변길 아래쪽에 생기는 여러 질환을 묶어 부르는 말입니다.</dd></div>
-          <div><dt>95% 신뢰구간 <span lang="en">(95% Confidence Interval)</span></dt><dd>같은 조사를 여러 번 했을 때 실제 값이 들어 있을 것으로 예상하는 범위입니다.</dd></div>
-          <div><dt>오즈비 <span lang="en">(Odds Ratio)</span></dt><dd>두 집단에서 어떤 일이 나타날 가능성을 비교한 숫자입니다. 1보다 클수록 첫 번째 집단에서 나타날 가능성이 더 높습니다.</dd></div>
-        </dl>
-        </div>
-      </details>
-
-      <div class="myth-box" data-reveal="up">
-        <p class="myth-box__tag">숫자를 다시 확인해 봐요</p>
-        <dl>
-          <div><dt>널리 퍼진 말</dt><dd class="is-myth">영국에서 등록되는 새끼 고양이의 약 절반이 브리티시 숏헤어입니다.</dd></div>
-          <div><dt>확인한 숫자</dt><dd class="is-truth">2024년에는 18,535마리 가운데 6,415마리가 등록됐습니다. 비율은 34.6%입니다. 브리티시 롱헤어를 더해도 39.1%입니다.</dd></div>
-        </dl>
-      </div>
+      <blockquote class="callout callout--accent" data-reveal="up">처음부터 끝까지 읽지 않아도 괜찮습니다. 위의 네 질문 중 가장 궁금한 곳부터 시작하세요.</blockquote>
 
       <details class="src">
         <summary>이 섹션의 출처</summary>
@@ -1844,88 +1821,47 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
     <header class="section-head">
       <p class="eyebrow" data-reveal="fade">한눈에 보기</p>
       <h2 class="section-title" id="profile-title" data-reveal="up">얼마나 크고 언제 다 자랄까요?</h2>
-      <p class="lede" data-reveal="up">몸은 천천히 자랍니다. 완전히 어른이 되려면 3~5년이 걸립니다.</p>
+      <p class="lede" data-reveal="up">몸은 천천히 자랍니다. 완전히 다 자란 체형이 되기까지 약 3~5년이 걸립니다.</p>
     </header>
 
-    <div style="max-width:var(--w-text);margin-inline:auto;margin-bottom:var(--sp-6)">
-      <div class="section-body">
-        <p class="body" data-reveal="up">“브리티시 숏헤어는 몇 킬로그램인가요?” 한 숫자로 답하기는 어렵습니다. 수컷과 암컷의 크기가 다르고 고양이마다 자라는 속도도 다르기 때문입니다.</p>
-        <p class="body" data-reveal="up">고양이 대회가 정한 수컷의 기준 체중은 4.5~7.3kg입니다. 호주 동물병원에서 어른 고양이를 직접 재 보니 평균은 5.4kg이었습니다.</p>
-        <p class="body" data-reveal="up">평균이 곧 알맞은 몸무게라는 뜻도 아닙니다. 조사한 고양이 가운데 47.7%가 과체중이거나 비만이었습니다. 몸무게와 함께 갈비뼈와 허리 모양도 살펴야 합니다.</p>
-      </div>
+    <div class="section-body" style="max-width:var(--w-text);margin-inline:auto;margin-bottom:var(--sp-6)">
+      <p class="body" data-reveal="up">브리티시 숏헤어는 중형에서 대형으로 자라는 묵직한 고양이입니다. 수컷이 암컷보다 더 크고 볼이 두툼해지는 경우가 많습니다.</p>
+      <p class="body" data-reveal="up">국제고양이협회 소개 페이지는 다 자란 수컷을 약 4.5~7.3kg, 암컷을 약 3.6~5.0kg으로 안내합니다. 실제 크기는 고양이마다 다릅니다.</p>
+      <p class="body" data-reveal="up">몸무게 숫자만 보고 건강을 판단하지 마세요. 갈비뼈를 가볍게 만질 수 있는지, 위에서 봤을 때 허리가 조금 보이는지를 보호자와 함께 살펴봅니다.</p>
     </div>
 
-    <div class="grid grid--4" data-reveal="stagger">
+    <div class="grid grid--4" data-reveal="stagger" style="margin-bottom:var(--sp-8)">
       <article class="stat">
-        <span class="stat__label">기록으로 만나는 첫해</span>
-        <span class="stat__num">1871<small>년</small></span>
-        <span class="stat__cap">7월 13일 런던 크리스탈 팰리스에서 열린 영국 최초의 고양이 대회 기록입니다.</span>
+        <span class="stat__label">다 자란 수컷의 안내 범위</span>
+        <span class="stat__num stat__num--sm">4.5~7.3<small>kg</small></span>
+        <span class="stat__cap">국제고양이협회 품종 소개 페이지의 일반적인 범위입니다.</span>
       </article>
       <article class="stat">
-        <span class="stat__label">동물병원에서 잰 평균 몸무게</span>
-        <span class="stat__num"><span data-count-to="5.4" data-count-decimals="1">5.4</span><small>kg</small></span>
-        <span class="stat__cap">호주 1차 진료 기록 2,540마리, Frontiers in Veterinary Science 2023. 중성화한 수컷 5.8kg, 중성화한 암컷 4.8kg</span>
-      </article>
-      <article class="stat">
-        <span class="stat__label">고양이 대회의 몸무게 기준</span>
-        <span class="stat__num stat__num--sm">수컷 4.5~7.3kg<br>암컷 3.6~5.0kg</span>
-        <span class="stat__cap">국제고양이협회 기준. 미국 고양이 애호가 협회 품종 소개 페이지는 수컷 최대 7.7kg, 영국 고양이 등록 단체는 수컷 4.1~7.7kg. 미국 고양이 애호가 협회 품종 표준 자체에는 체중 규정이 없습니다 <span class="pill pill--split">단체별 상이</span></span>
+        <span class="stat__label">다 자란 암컷의 안내 범위</span>
+        <span class="stat__num stat__num--sm">3.6~5.0<small>kg</small></span>
+        <span class="stat__cap">개체마다 뼈대와 알맞은 체중은 다릅니다.</span>
       </article>
       <article class="stat">
         <span class="stat__label">몸이 다 자랄 때까지</span>
         <span class="stat__num">3~5<small>년</small></span>
-        <span class="stat__cap">미국 고양이 애호가 협회 Show Standard 2026 개정 기준. 영국 고양이 등록 단체 품종자문위원회 문서는 3~4세로 적어 문서마다 다릅니다</span>
-      </article>
-      <article class="stat flip" id="stat-lifespan">
-        <button class="flip__btn" type="button" aria-expanded="false" aria-controls="stat-lifespan-back">
-          ?<span class="visually-hidden">기대수명 수치가 두 개인 이유 보기</span>
-        </button>
-        <span class="stat__label">병원 기록으로 계산한 평균 수명</span>
-        <span class="stat__num"><span data-count-to="9.58" data-count-decimals="2">9.58</span><small>년</small></span>
-        <span class="stat__cap">95% 신뢰구간 8.73~10.43. 영국 1차 진료 생명표, 고양이 의학·외과 학술지 2024. 브리티시 블루와 브리티시 롱헤어를 묶은 그룹의 값</span>
-        <div class="flip__back" id="stat-lifespan-back">
-          <strong>왜 수명 숫자가 다를까요?</strong> 9.58년은 영국 동물병원에 온 고양이 1,254,484마리 가운데 사망한 7,936마리의 기록으로 계산했습니다. 어린 나이에 죽은 고양이도 포함합니다. 한 고양이가 살 수 있는 가장 많은 나이를 뜻하지는 않습니다.
-        </div>
-      </article>
-      <article class="stat flip" id="stat-weight">
-        <button class="flip__btn" type="button" aria-expanded="false" aria-controls="stat-weight-back">
-          ?<span class="visually-hidden">어릴 때 체중과 수명의 관계 보기</span>
-        </button>
-        <span class="stat__label">살이 너무 찐 고양이의 비율</span>
-        <span class="stat__num"><span data-count-to="47.7" data-count-decimals="1">47.7</span><small>%</small></span>
-        <span class="stat__cap">호주 어른 고양이를 조사한 결과입니다. 평균 몸 상태 점수는 9점 만점에 5.8점이었습니다</span>
-        <div class="flip__back" id="stat-weight-back">
-          <strong>어릴 때 몸무게도 살펴야 할까요?</strong> 생후 12개월 안에 한 번이라도 3.3kg 이상이었던 고양이는 집단의 20%가 사망하거나 안락사된 시점이 6.6세였습니다. 3.3kg 미만이었던 고양이는 12.3세였습니다. 이 숫자는 절반이 그 나이에 죽었다는 뜻이 아닙니다. 원인과 결과를 증명한 연구도 아닙니다.
-        </div>
+        <span class="stat__cap">다른 고양이보다 천천히 다 자란 체형이 됩니다.</span>
       </article>
       <article class="stat">
-        <span class="stat__label">심장 근육이 두꺼워진 고양이</span>
-        <span class="stat__num"><span data-count-to="8.5" data-count-decimals="1">8.5</span><small>%</small></span>
-        <span class="stat__cap">덴마크 329마리 심초음파, 수의내과학술지 2011. 수컷 20.4% 대 암컷 2.1%</span>
-      </article>
-      <article class="stat">
-        <span class="stat__label">B형 혈액형인 고양이</span>
-        <span class="stat__num"><span data-count-to="25.4" data-count-decimals="1">25.4</span><small>%</small></span>
-        <span class="stat__cap">혈액형에 관여하는 유전자를 검사한 429마리 가운데 25.4%가 B형이었습니다.</span>
+        <span class="stat__label">분명한 기록이 시작된 해</span>
+        <span class="stat__num">1871<small>년</small></span>
+        <span class="stat__cap">런던 크리스탈 팰리스 고양이 대회 기록입니다.</span>
       </article>
     </div>
 
-    <div class="container--text" style="max-width:var(--w-text);margin-inline:auto;margin-top:var(--sp-6)">
+    <div style="max-width:var(--w-text);margin-inline:auto">
       <div class="section-body">
-        <blockquote class="callout" data-reveal="up">숫자에는 언제, 어디에서, 몇 마리를 조사했는지 함께 적었습니다. 숫자만 떼어 보면 뜻을 잘못 이해할 수 있습니다.</blockquote>
-
-        <p class="note" data-reveal="fade">이 페이지의 통계는 2026년 7월 25일 기준으로 확인한 자료입니다. 영국 고양이 등록 단체 등록 통계는 2023~2024년, 호주 체중 자료는 2008~2017년 진료 기록, 영국 생명표는 2019년 사망 사례 기준입니다.</p>
-
+        <blockquote class="callout callout--accent" data-reveal="up">묵직한 체형과 비만은 다릅니다. 다른 고양이와 비교하지 말고 정기 검진에서 우리 고양이에게 알맞은 몸 상태를 확인하세요.</blockquote>
         <details class="src">
           <summary>이 섹션의 출처</summary>
           <ol>
-            <li>영국 고양이 등록 단체, Registered Cats By Breed 2023-2024</li>
-            <li>Nicholson et al., Frontiers in Veterinary Science, 2023 (호주 1차 진료 기록 2,540마리, 체중 기록 9,339건, 2008~2017년)</li>
-            <li>국제고양이협회 British Breed Group Standard / 미국 고양이 애호가 협회 품종 소개 페이지 / 영국 고양이 등록 단체 품종 소개 페이지 (체중 범위)</li>
-            <li>미국 고양이 애호가 협회 Show Standard, 2026 개정 · 영국 고양이 등록 단체 품종자문위원회 Breeding Policy (완전 성숙)</li>
-            <li>Teng, Brodbelt, Church &amp; O'Neill, 고양이 의학·외과 학술지, 2024 (기대수명)</li>
-            <li>Granström et al., Journal of Veterinary Internal Medicine 25(4):866, 2011 (비대성 심근증)</li>
-            <li>Kehl, Mueller &amp; Giger, Animal Genetics, 2019 (혈액형)</li>
+            <li>국제고양이협회 British Shorthair 품종 소개 (크기와 체중 범위)</li>
+            <li>미국 고양이 애호가 협회 British Shorthair 품종 자료 (3~5년의 성숙 기간)</li>
+            <li>영국 고양이 등록 단체와 미국 고양이 애호가 협회의 1871년 기록</li>
           </ol>
         </details>
       </div>
@@ -2001,7 +1937,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
       </article>
       <article class="card">
         <h3 class="card__title"><span class="card__index">5</span>코</h3>
-        <p class="card__body">코는 넓고 너무 납작하지 않습니다. 옆에서 보면 코의 선이 부드럽게 들어갑니다. 갑자기 꺾인 코는 알맞은 모습이 아닙니다.</p>
+        <p class="card__body">코는 넓고 너무 납작하지 않습니다. 코 모양보다 편하게 숨 쉬고 먹을 수 있는지가 더 중요합니다.</p>
       </article>
       <article class="card">
         <h3 class="card__title"><span class="card__index">6</span>꼬리</h3>
@@ -2013,7 +1949,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
       <figure class="img-slot img-slot--square">
         <div class="img-slot__frame">
           <img src="assets/img/anatomy-2.png" width="1000" height="1000" loading="lazy" decoding="async"
-               alt="브리티시 숏헤어 어른 고양이의 정면 얼굴. 둥근 머리, 작은 귀, 넓게 떨어진 구리색 눈이 보입니다.">
+               alt="다 자란 브리티시 숏헤어의 정면 얼굴. 둥근 머리, 작은 귀, 넓게 떨어진 구리색 눈이 보입니다.">
         </div>
         <figcaption>정면에서는 둥근 머리와 넓게 떨어진 눈이 잘 보입니다.</figcaption>
       </figure>
@@ -2031,62 +1967,38 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
         <h3 class="block-title" data-reveal="up" style="margin-bottom:var(--sp-2)">궁금하면 열어 보세요</h3>
         <div data-reveal="up">
           <details class="accordion">
-            <summary>등록 단체마다 몸을 보는 기준이 조금씩 달라요</summary>
+            <summary>자라는 동안 잠시 길쭉해 보일 수 있어요</summary>
             <div class="accordion__body">
-              <p>고양이 등록 단체는 품종의 특징을 규칙으로 정합니다. 큰 방향은 비슷하지만 작은 부분은 다르게 설명합니다.</p>
-              <div class="table-wrap" role="region" tabindex="0" aria-label="등록 단체별 몸 특징 기준. 가로로 스크롤할 수 있습니다.">
-                <table>
-                  <thead><tr><th scope="col">살펴볼 곳</th><th scope="col">단체별 기준</th></tr></thead>
-                  <tbody>
-                    <tr><th scope="row">몸통</th><td>영국 고양이 등록 단체는 짧고 넓은 코비 체형으로 설명합니다. 국제고양이협회는 코비보다 조금 긴 세미 코비 체형으로 봅니다. 미국 고양이 애호가 협회는 몸이 너무 길면 점수를 깎습니다.</td></tr>
-                    <tr><th scope="row">머리</th><td>미국 고양이 애호가 협회는 머리 위에 작고 평평한 부분이 있을 수 있다고 봅니다. 국제고양이협회는 코 위의 머리가 평평하지 않아야 한다고 적습니다.</td></tr>
-                    <tr><th scope="row">코</th><td>미국 고양이 애호가 협회와 영국 고양이 등록 단체는 코선이 갑자기 꺾이는 모양을 좋게 보지 않습니다. 국제고양이협회는 짧고 곧으며 살짝 올라간 코를 기준으로 삼습니다.</td></tr>
-                    <tr><th scope="row">꼬리</th><td>미국 고양이 애호가 협회는 몸에 어울리는 중간 길이를 기준으로 삼습니다. 국제고양이협회는 몸길이의 3분의 2 정도를 기준으로 삼습니다.</td></tr>
-                    <tr><th scope="row">성장기</th><td>영국 고양이 등록 단체는 생후 9개월부터 2살 사이의 고양이가 잠시 길고 날씬해 보일 수 있다고 설명합니다.</td></tr>
-                  </tbody>
-                </table>
-              </div>
+              <p>브리티시 숏헤어는 천천히 자라는 편입니다. 생후 9개월부터 2살 무렵에는 다 자란 고양이처럼 둥글고 단단해지기 전이라 몸이 잠시 길고 날씬해 보일 수 있습니다.</p>
+              <p>그 모습만 보고 너무 마르거나 품종답지 않다고 판단하지 마세요. 밥을 먹는 양이나 몸무게가 갑자기 달라졌다면 보호자에게 알리고 수의사에게 확인하는 편이 안전합니다.</p>
             </div>
           </details>
 
           <details class="accordion">
-            <summary>수컷의 큰 볼살은 지방이 아니에요</summary>
+            <summary>수컷은 볼이 더 두툼해질 수 있어요</summary>
             <div class="accordion__body">
-              <p>중성화하지 않은 수컷은 어른 고양이가 되면서 볼이 두툼해질 수 있습니다. 이 볼살을 ‘스터드 졸’이라고 부릅니다. 단순히 지방이 붙은 것이 아니라, 피부와 그 아래 조직이 두꺼워진 것입니다.</p>
-              <p>미국 고양이 애호가 협회도 암컷은 수컷보다 몸집이 작고 수컷은 볼살이 더 크다고 설명합니다. 다만 이 볼살이 정확히 몇 살에 완성되는지 밝힌 수의학 논문은 없습니다.</p>
+              <p>다 자란 수컷은 암컷보다 몸집과 볼이 더 크게 보이는 경우가 있습니다. 하지만 성별만으로 모습을 단정할 수는 없습니다. 고양이마다 얼굴과 몸집이 다릅니다.</p>
             </div>
           </details>
 
           <details class="accordion" id="double-coat">
-            <summary>털 속층은 단체마다 다르게 설명해요</summary>
+            <summary>짧은 털인데 왜 이렇게 폭신할까요?</summary>
             <div class="accordion__body">
-              <p>언더코트는 겉털 아래에 자라는 부드러운 속털을 뜻합니다.</p>
-              <div class="table-wrap" role="region" tabindex="0" aria-label="등록 단체별 털 기준. 가로로 스크롤할 수 있습니다.">
-                <table>
-                  <thead><tr><th scope="col">단체</th><th scope="col">털을 보는 방법</th></tr></thead>
-                  <tbody>
-                    <tr><th scope="row">미국 고양이 애호가 협회</th><td>짧고 매우 빽빽하며 단단하고 탄력 있는 털을 기준으로 삼습니다. 이중모나 양털 같은 질감은 아니라고 적습니다.</td></tr>
-                    <tr><th scope="row">영국 고양이 등록 단체</th><td>‘이중모’라는 말을 쓰지 않습니다.</td></tr>
-                    <tr><th scope="row">국제고양이연맹</th><td>속털이 충분히 자라야 한다고 적습니다.</td></tr>
-                    <tr><th scope="row">국제고양이협회</th><td>속털이 부족하면 점수를 깎습니다.</td></tr>
-                  </tbody>
-                </table>
-              </div>
-              <p>털 속층은 하나로 단정할 수 없습니다. 단체마다 기준이 다릅니다.</p>
+              <p>짧은 털이 아주 촘촘하게 자라서 손을 대면 탄탄하고 폭신하게 느껴집니다. 털갈이철에는 빠지는 털이 늘 수 있으므로 억지로 잡아당기지 말고 부드럽게 빗어 주세요.</p>
             </div>
           </details>
 
           <details class="accordion">
             <summary>코가 너무 짧으면 숨쉬기 어려울 수 있어요</summary>
             <div class="accordion__body">
-              <p>영국 고양이 등록 단체와 미국 고양이 애호가 협회는 머리뼈가 너무 짧아 콧구멍이 좁아진 고양이를 인정하지 않거나 실격 처리할 수 있습니다. 고양이가 편하게 숨쉬려면 코가 지나치게 짧아지지 않아야 합니다.</p>
+              <p>코가 지나치게 짧고 콧구멍이 좁으면 편하게 숨쉬기 어려울 수 있습니다. 더 납작한 얼굴보다 편안하게 숨 쉬고 먹을 수 있는 건강한 얼굴이 중요합니다.</p>
             </div>
           </details>
 
           <details class="accordion">
             <summary>몸길이와 키는 몇 센티미터일까요?</summary>
             <div class="accordion__body">
-              <p>영국 고양이 등록 단체, 미국 고양이 애호가 협회, 국제고양이협회의 품종 기준에는 몸길이와 키가 몇 센티미터인지 적혀 있지 않습니다. 출처가 분명하지 않은 숫자는 이 사이트에 싣지 않았습니다.</p>
+              <p>믿을 만한 공식 자료에는 이 품종의 몸길이와 키가 몇 센티미터인지 정해진 숫자가 없습니다. 고양이마다 다르므로 인터넷에서 본 한 가지 숫자로 크기를 판단하지 마세요.</p>
             </div>
           </details>
         </div>
@@ -2094,10 +2006,9 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
         <details class="src">
           <summary>이 섹션의 출처</summary>
           <ol>
-            <li>미국 고양이 애호가 협회 Show Standard, 2026 개정 (머리, 코, 머즐, 귀, 다리와 발, 꼬리, 성적 이형, 털, 실격과 감점)</li>
-            <li>영국 고양이 등록 단체 Standard of Points (코비 정의, 증서 보류 사유, 9개월~2년 개체 허용)</li>
-            <li>국제고양이협회 British Breed Group Standard (세미 코비, 코 규정, 꼬리 비율, 언더코트 감점)</li>
-            <li>국제고양이연맹 표준 (언더코트 요구)</li>
+            <li>미국 고양이 애호가 협회 British Shorthair 품종 소개</li>
+            <li>영국 고양이 등록 단체 British Shorthair 품종 소개</li>
+            <li>국제고양이협회 British Shorthair 품종 소개</li>
           </ol>
         </details>
       </div>
@@ -2114,7 +2025,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
     </header>
 
     <div class="section-body" style="max-width:var(--w-text);margin-bottom:var(--sp-6)">
-      <p class="body" data-reveal="up">브리티시 숏헤어라고 하면 청회색 털을 먼저 떠올립니다. 이 색을 ‘블루’라고 부릅니다. 19세기 사람들이 블루 고양이를 골라 교배하면서 가장 널리 알려진 색이 됐습니다.</p>
+      <p class="body" data-reveal="up">브리티시 숏헤어라고 하면 청회색 털을 먼저 떠올립니다. 이 색을 ‘블루’라고 부릅니다. 19세기부터 기록과 그림에 자주 등장해 가장 널리 알려진 색이 됐습니다.</p>
       <p class="body" data-reveal="up">검정, 흰색, 크림, 초콜릿, 은빛과 금빛 고양이도 있습니다. 줄무늬와 점무늬도 있고 얼굴과 발과 꼬리만 짙은 컬러포인트도 있습니다.</p>
       <p class="body" data-reveal="up">눈 색도 털과 짝을 이룹니다. 한 가지 색으로 된 고양이는 구리색이나 진한 금색 눈이 많습니다. 골든 팁드와 블랙 팁드는 초록색 눈, 컬러포인트는 파란 눈이 기준입니다.</p>
     </div>
@@ -2127,7 +2038,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
         <article class="gallery__card" data-group="self">
           <figure class="img-slot img-slot--portrait"><div class="img-slot__frame">
             <img src="assets/img/coat-colors-1.png" width="900" height="1100" loading="lazy" decoding="async"
-                 alt="중성 회색 배경 앞에서 4분의 3 각도로 앉은 브리티시 블루 셀프 어른 고양이의 상반신. 전신이 고른 청회색이고 눈은 구리색입니다."></div></figure>
+                 alt="중성 회색 배경 앞에서 4분의 3 각도로 앉은 다 자란 브리티시 블루 셀프 고양이의 상반신. 전신이 고른 청회색이고 눈은 구리색입니다."></div></figure>
           <h3>블루 셀프</h3>
           <p class="gallery__eye"><span class="swatch" style="--sw:#B6762E"></span>코퍼, 오렌지, 진한 골드</p>
         </article>
@@ -2212,112 +2123,25 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
   <div class="container" style="margin-top:var(--sp-8)">
     <div style="max-width:var(--w-text);margin-inline:auto">
       <div class="section-body">
-        <details class="accordion" data-reveal="up">
-          <summary>대회에서는 털 색을 어떻게 나눌까요?</summary>
+        <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-6)">
+          <summary>털 무늬 이름은 무슨 뜻일까요?</summary>
           <div class="accordion__body">
-        <div data-reveal="up">
-          <p class="table-caption">영국 고양이 등록 단체 공인 색과 패턴 그룹 7개</p>
-          <div class="table-wrap" role="region" tabindex="0" aria-label="영국 고양이 등록 단체 공인 색과 패턴 그룹 표. 가로로 스크롤할 수 있습니다.">
-            <table>
-              <thead><tr><th scope="col">그룹</th><th scope="col">포함되는 색과 패턴</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">셀프</th><td>화이트, 블랙, 블루, 초콜릿, 라일락, 레드, 크림, 시나몬, 폰</td></tr>
-                <tr><th scope="row">태비</th><td>클래식, 매커럴, 스팟티드, 틱드</td></tr>
-                <tr><th scope="row">팁드</th><td>실버, 셀프, 골든, 토티, 토티골든</td></tr>
-                <tr><th scope="row">스모크</th><td>스모크 계열</td></tr>
-                <tr><th scope="row">토티</th><td>토티 계열</td></tr>
-                <tr><th scope="row">바이컬러 계열</th><td>바이컬러, 트라이컬러, 밴, 할리퀸</td></tr>
-                <tr><th scope="row">컬러포인트</th><td>컬러포인티드</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div data-reveal="up">
-          <p class="table-caption">백색 비율 규정 (영국 고양이 등록 단체)</p>
-          <div class="table-wrap" role="region" tabindex="0" aria-label="바이컬러, 할리퀸, 밴의 백색 비율 규정 표. 가로로 스크롤할 수 있습니다.">
-            <table>
-              <thead><tr><th scope="col">구분</th><th scope="col">백색 비율</th><th scope="col">추가 조건</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">바이컬러</th><td>1/3 이상 1/2 이하</td><td>꼬리는 전부 유색</td></tr>
-                <tr><th scope="row">할리퀸</th><td>2/3 이상</td><td>얼굴에 반드시 색이 있어야 함</td></tr>
-                <tr><th scope="row">밴</th><td>위 두 경우보다 넓음</td><td>색이 머리와 꼬리에 국한</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-
-        <div data-reveal="up">
-          <p class="table-caption">팁핑 깊이 (미국 고양이 애호가 협회)</p>
-          <div class="table-wrap" role="region" tabindex="0" aria-label="친칠라와 셰이디드의 착색 깊이 비교 표. 가로로 스크롤할 수 있습니다.">
-            <table>
-              <thead><tr><th scope="col">구분</th><th scope="col">착색 깊이</th><th scope="col">설명</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">친칠라</th><td class="t-num">털 길이의 약 1/8</td><td>끝부분만 옅게 착색</td></tr>
-                <tr><th scope="row">셰이디드</th><td class="t-num">털 길이의 약 1/3</td><td>친칠라보다 깊게 착색</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="note" style="margin-top:10px">미국 고양이 애호가 협회는 실버와 골든 계열, 곧 셰이디드 실버, 친칠라 실버, 셰이디드 골든, 친칠라 골든, 그리고 블랙과 블루와 초콜릿과 라일락 골든에 그린 또는 블루그린 눈을 요구합니다.</p>
-        </div>
-
-
-        <div class="grid grid--2" data-reveal="stagger">
-          <div>
-            <p class="table-caption">눈 색 조합 규칙 (영국 고양이 등록 단체)</p>
-            <div class="table-wrap" role="region" tabindex="0" aria-label="영국 고양이 등록 단체 모색별 요구 눈 색 표. 가로로 스크롤할 수 있습니다.">
-              <table style="min-width:280px">
-                <thead><tr><th scope="col">모색 계열</th><th scope="col">요구되는 눈 색</th></tr></thead>
-                <tbody>
-                  <tr><th scope="row">셀프 계열</th><td>코퍼, 오렌지, 진한 골드</td></tr>
-                  <tr><th scope="row">블랙 실버 태비</th><td>그린 계열</td></tr>
-                  <tr><th scope="row">블랙 팁드</th><td>그린 계열</td></tr>
-                  <tr><th scope="row">골든 팁드</th><td>그린 계열</td></tr>
-                  <tr><th scope="row">컬러포인트</th><td>명확한 파란색</td></tr>
-                </tbody>
-              </table>
+            <div class="grid grid--2">
+              <article class="card"><h3 class="card__title">셀프</h3><p class="card__body">몸 전체가 한 가지 바탕색으로 보이는 털을 말합니다.</p></article>
+              <article class="card"><h3 class="card__title">태비</h3><p class="card__body">줄무늬, 소용돌이무늬 또는 점무늬가 나타나는 털을 말합니다.</p></article>
+              <article class="card"><h3 class="card__title">팁드</h3><p class="card__body">털의 밑부분은 밝고 끝부분만 진해 은빛이나 금빛으로 반짝여 보입니다.</p></article>
+              <article class="card"><h3 class="card__title">컬러포인트</h3><p class="card__body">몸통은 밝고 얼굴, 귀, 발과 꼬리 같은 끝부분이 더 진하게 보입니다.</p></article>
             </div>
-          </div>
-          <div>
-            <p class="table-caption">국제고양이연맹 눈 색 코드</p>
-            <div class="table-wrap" role="region" tabindex="0" aria-label="국제고양이연맹 눈 색 코드 표. 가로로 스크롤할 수 있습니다.">
-              <table style="min-width:280px">
-                <thead><tr><th scope="col">코드</th><th scope="col">눈 색</th></tr></thead>
-                <tbody>
-                  <tr><th scope="row">A</th><td>딥블루</td></tr>
-                  <tr><th scope="row">B</th><td>코퍼, 딥오렌지</td></tr>
-                  <tr><th scope="row">C</th><td>오드아이</td></tr>
-                  <tr><th scope="row">D</th><td>그린, 블루그린</td></tr>
-                  <tr><th scope="row">E</th><td>그린, 옐로이시그린</td></tr>
-                  <tr><th scope="row">F</th><td>강렬한 딥 샴 블루</td></tr>
-                </tbody>
-              </table>
-            </div>
-            <p class="note" style="margin-top:10px">국제고양이연맹은 녹색 눈 고양이와 구리빛 눈 고양이를 서로 다른 부문에서 심사합니다.</p>
-          </div>
-        </div>
-
           </div>
         </details>
 
-        <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">골든도 정식 색일까요?</p>
-          <dl>
-            <div><dt>널리 퍼진 말</dt><dd class="is-myth">미국 고양이 애호가 협회는 골든 색을 인정하지 않습니다.</dd></div>
-            <div><dt>확인한 사실</dt><dd class="is-truth">2026년 기준에는 셰이디드 골든과 친칠라 골든 등 여러 골든 색이 정식으로 들어 있습니다. 골든 자체가 실격 이유는 아닙니다. 발가락이나 가슴과 목에 흰색이 나타나 CORIN 유전자의 흔적이 드러날 때 실격합니다.</dd></div>
-          </dl>
-        </div>
-
-        <blockquote class="callout callout--accent" data-reveal="up">브리티시 숏헤어의 표준은 등록 단체마다 다릅니다. 이 페이지는 영국 고양이 등록 단체, 미국 고양이 애호가 협회, 국제고양이협회, 국제고양이연맹의 원문을 구분해 표기합니다. 어느 한 단체의 규정을 품종 전체의 정의처럼 쓰지 않습니다.</blockquote>
+        <blockquote class="callout callout--accent" data-reveal="up">어떤 털 색이나 눈 색이 더 귀하거나 더 값진 것은 아닙니다. 색은 관찰하고 배우는 특징이지 고양이의 가치를 매기는 점수가 아닙니다.</blockquote>
 
         <details class="src">
           <summary>이 섹션의 출처</summary>
           <ol>
-            <li>영국 고양이 등록 단체 Standard of Points (공인 색과 패턴 그룹, 백색 비율, 눈 색 규칙, 증서 보류 사유)</li>
-            <li>미국 고양이 애호가 협회 Show Standard, 2026 개정 (친칠라와 셰이디드 팁핑, 실버와 골든의 눈 색, 태비 패턴 세 가지, 시나몬과 폰의 AOV 분류)</li>
-            <li>국제고양이연맹 표준 (눈 색 코드, 별도 클래스 심사)</li>
-            <li>국제고양이협회 품종 소개 (블루의 인기)</li>
+            <li>영국 고양이 등록 단체와 국제고양이협회의 British Shorthair 색·무늬 설명</li>
+            <li>미국 고양이 애호가 협회 British Shorthair 품종 자료 (셀프, 태비, 팁드 계열 설명)</li>
           </ol>
         </details>
       </div>
@@ -2330,134 +2154,64 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
     <header class="section-head">
       <p class="eyebrow" data-reveal="fade">성격과 행동</p>
       <h2 class="section-title" id="temperament-title" data-reveal="up">안기는 걸 좋아할까요?</h2>
-      <p class="lede" data-reveal="up">품에 오래 있기보다 사람 옆에 조용히 앉아 있는 것을 더 좋아합니다.</p>
+      <p class="lede" data-reveal="up">옆에 있고 싶어도 안기기는 싫을 수 있습니다. 고양이의 선택을 먼저 존중해 주세요.</p>
     </header>
 
     <div class="split" style="margin-bottom:var(--sp-8)">
       <div class="section-body">
-        <p class="body" data-reveal="up">무릎에 올라오지 않으면 사람을 싫어하는 걸까요? 그렇지 않습니다. 브리티시 숏헤어는 품에 오래 안기기보다 같은 방이나 바로 옆자리에 머무는 것을 좋아합니다.</p>
-        <p class="body" data-reveal="up">미국 고양이 애호가 협회는 이 고양이가 먼저 달려들기보다 초대를 기다린다고 설명합니다. 영국 고양이 등록 단체는 조용하고 사람과 잘 어울린다고 소개합니다.</p>
-        <p class="body" data-reveal="up">안아야 할 때는 앞다리만 들어 올리지 마세요. 가슴과 엉덩이를 함께 받쳐 몸 전체가 흔들리지 않게 잡아 주세요.</p>
+        <p class="body" data-reveal="up">브리티시 숏헤어는 사람 옆에 조용히 머무는 성격으로 자주 소개됩니다. 무릎에 올라오지 않아도 같은 방에 있거나 가까운 의자에 앉는 것으로 마음을 표현할 수 있습니다.</p>
+        <p class="body" data-reveal="up">하지만 품종 이름만으로 한 고양이의 성격을 정할 수는 없습니다. 자란 환경과 경험, 나이와 그날의 기분에 따라 행동이 달라집니다.</p>
+        <p class="body" data-reveal="up">고양이가 몸을 빼거나 귀를 뒤로 눕히고 꼬리를 세게 흔들면 만지기를 멈추세요. 다시 다가올 때까지 기다리는 것이 친해지는 가장 빠른 방법입니다.</p>
       </div>
-      <div class="stack">
-        <figure class="img-slot img-slot--wide" data-reveal="scale">
-          <div class="img-slot__frame">
-            <img src="assets/img/temperament-1.png" width="1400" height="800" loading="lazy" decoding="async"
-                 alt="소파에 앉은 사람 옆자리에 네 발을 바닥에 두고 앉아 있는 브리티시 블루 어른 고양이. 사람의 무릎 위가 아니라 옆자리에 자리를 잡고 정면을 보고 있습니다.">
-          </div>
-          <figcaption>무릎보다 옆자리. 가까이 있지만 자기 발은 바닥에 두고 싶어 합니다.</figcaption>
-        </figure>
-      </div>
+      <figure class="img-slot img-slot--wide" data-reveal="scale">
+        <div class="img-slot__frame">
+          <img src="assets/img/temperament-1.png" width="1400" height="800" loading="lazy" decoding="async"
+               alt="소파에 앉은 사람 옆자리에 네 발을 바닥에 두고 앉아 있는 브리티시 숏헤어">
+        </div>
+        <figcaption>무릎보다 옆자리. 가까이 머무는 것도 애정을 표현하는 방법입니다.</figcaption>
+      </figure>
     </div>
 
-    <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-4)">
-      <summary>고양이 단체는 성격을 어떻게 설명할까요?</summary>
-      <div class="accordion__body">
-    <div class="grid grid--3" data-reveal="stagger">
+    <div class="grid grid--3" data-reveal="stagger" style="margin-bottom:var(--sp-8)">
       <article class="card card--accent">
-        <h4 class="card__title">국제고양이협회가 설명한 기본 기질 <span class="pill pill--fact">표준 본문</span></h4>
-        <p class="card__body">국제고양이협회는 기질이 약간 내성적이고 네 발을 바닥에 두는 품종이며 부드럽고 단단하게 다루고 안아 올릴 때 몸을 받쳐야 한다고 기술합니다.</p>
-        <p class="card__cap">근거: 국제고양이협회 British Breed Group Standard</p>
+        <h3 class="card__title"><span class="card__index">1</span>먼저 손 내밀지 않기</h3>
+        <p class="card__body">손을 얼굴에 들이밀기보다 가만히 기다립니다. 고양이가 다가와 냄새를 맡으면 천천히 인사합니다.</p>
       </article>
       <article class="card card--accent">
-        <h4 class="card__title">국제고양이협회의 심사 기준 <span class="pill pill--fact">심사 규정</span></h4>
-        <p class="card__body">국제고양이협회는 기질이 도전적이지 않아야 하며 명백한 도전의 징후는 실격이라고 규정합니다.</p>
-        <p class="card__cap">근거: 국제고양이협회 심사 규정</p>
+        <h3 class="card__title"><span class="card__index">2</span>싫다는 신호 듣기</h3>
+        <p class="card__body">몸을 굳히거나 피하고, 귀를 뒤로 눕히거나 꼬리를 세게 흔들면 손을 멈추고 거리를 둡니다.</p>
       </article>
-      <article class="card">
-        <h4 class="card__title">미국 고양이 애호가 협회가 설명한 거리감 <span class="pill pill--common">소개 페이지</span></h4>
-        <p class="card__body">미국 고양이 애호가 협회는 차분하고 조용하며 사람을 좋아하고 무릎으로 뛰어들기보다 초대를 기다려 옆자리 소파에 앉는다고 기술합니다.</p>
-        <p class="card__cap">근거: 미국 고양이 애호가 협회 품종 소개 페이지</p>
+      <article class="card card--accent">
+        <h3 class="card__title"><span class="card__index">3</span>안아야 할 때 받치기</h3>
+        <p class="card__body">꼭 이동해야 한다면 가슴과 엉덩이를 함께 받쳐 몸 전체가 흔들리지 않게 합니다. 오래 붙잡아 두지 않습니다.</p>
       </article>
-      <article class="card">
-        <h4 class="card__title">미국 고양이 애호가 협회가 설명한 가족 관계 <span class="pill pill--common">소개 페이지</span></h4>
-        <p class="card__body">미국 고양이 애호가 협회는 가족 구성원 한 명을 고르기보다 각자에게 관심과 애정을 나눈다고 기술합니다.</p>
-        <p class="card__cap">근거: 미국 고양이 애호가 협회 품종 소개 페이지</p>
-      </article>
-      <article class="card">
-        <h4 class="card__title">영국 고양이 등록 단체가 설명한 성격 <span class="pill pill--common">소개 페이지</span></h4>
-        <p class="card__body">영국 고양이 등록 단체는 수다스러운 품종이 아니며 사람과 강한 유대를 맺는 참을성 있고 관대한 동반자이고 어른 고양이에게는 게으른 경향이 있다고 기술합니다.</p>
-        <p class="card__cap">근거: 영국 고양이 등록 단체 품종 소개 페이지</p>
-      </article>
-    </div>
-      </div>
-    </details>
-
-    <div style="max-width:var(--w-text);margin-inline:auto;margin-bottom:var(--sp-8)">
-      <p class="note" data-reveal="fade">자료의 종류에 따라 정보의 무게도 다릅니다. 표준 본문은 고양이 쇼에서 직접 쓰는 심사 기준입니다. 심사 규정은 실격 여부를 가릅니다. 소개 페이지는 일반 독자를 위한 설명입니다. 직접 측정한 연구 결과가 아니라 관찰한 내용을 적은 경우가 많습니다.</p>
     </div>
 
     <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-8)">
-      <summary>성격에 관한 자료를 더 볼까요?</summary>
+      <summary>품종 소개에는 성격이 어떻게 적혀 있을까요?</summary>
       <div class="accordion__body">
-    <div>
-      <div data-reveal="up" style="margin-bottom:var(--sp-4)">
-        <p class="table-caption">표 1. 흔한 서술과 실제 근거</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="흔한 서술과 그에 대응하는 실제 근거를 나란히 놓은 대조표. 가로로 스크롤할 수 있습니다.">
-          <table style="min-width:760px">
-            <thead>
-              <tr><th scope="col">흔한 서술</th><th scope="col">실제 근거</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">테디베어 같은 외모</th><td>영국 고양이 등록 단체는 새끼 고양이가 테디베어처럼 보인다고 소개합니다. 새끼 고양이의 인상을 설명한 말이며 품종 심사 기준은 아닙니다.</td></tr>
-              <tr><th scope="row">이중모</th><td>미국 고양이 애호가 협회 표준은 이중모가 아니라고 정반대를 명시하고 국제고양이협회는 언더코트 부실을 감점합니다. 두 단체가 충돌합니다 <span class="pill pill--split">단체별 상이</span></td></tr>
-              <tr><th scope="row">체셔 고양이의 모델</th><td>등록 단체 문서 어디에도 없습니다. 체셔 고양이의 기원은 밝혀지지 않았습니다</td></tr>
-              <tr><th scope="row">무릎냥이</th><td>미국 고양이 애호가 협회와 국제고양이협회와 영국 고양이 등록 단체 세 단체가 모두 반대 방향으로 기술합니다</td></tr>
-              <tr><th scope="row">저알레르기 품종</th><td>과학적으로 확인된 저알레르기 고양이 품종은 없습니다</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div data-reveal="up">
-        <p class="table-caption">표 2. 성별 차이와 생활 특성</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="성별 차이, 수직 이동, 실내 사육, 발성 빈도, 분리불안에 관한 서술과 근거 등급 표. 가로로 스크롤할 수 있습니다.">
-          <table style="min-width:820px">
-            <thead>
-              <tr><th scope="col">항목</th><th scope="col">서술</th><th scope="col">근거 등급</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">성별 차이</th><td>국제고양이협회는 수컷을 happy-go-lucky, 암컷을 more serious로 기술합니다</td><td>관찰 서술이며 측정 데이터가 아닙니다</td></tr>
-              <tr><th scope="row">수직 이동</th><td>미국 고양이 애호가 협회는 신체 구조상 이 품종이 주방 조리대에 올라갈 가능성이 낮다고 기술하고 영국 고양이 등록 단체도 네 발을 바닥에 두는 것을 선호한다고 적습니다</td><td>소개 페이지</td></tr>
-              <tr><th scope="row">실내 사육</th><td>영국 고양이 등록 단체는 실내 전용 반려묘로 적합하되 적절한 자극이 필요하다고 기술합니다</td><td>소개 페이지</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
+        <p>여러 고양이 단체는 브리티시 숏헤어를 차분하고 조용하며 사람 곁에 머무는 고양이로 소개합니다. 안겨 있기보다 네 발을 바닥에 두는 것을 편안해한다고도 설명합니다.</p>
+        <p class="note">이 설명은 흔한 경향일 뿐 모든 고양이에게 똑같이 적용되는 규칙이 아닙니다. 실제 성격은 눈앞의 고양이와 천천히 지내며 알아가야 합니다.</p>
       </div>
     </details>
 
     <div style="max-width:var(--w-text);margin-inline:auto">
       <div class="section-body">
         <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">무릎에 앉지 않으면 싫어하는 걸까요?</p>
+          <p class="myth-box__tag">무릎에 앉지 않으면 나를 싫어할까요?</p>
           <dl>
-            <div><dt>널리 퍼진 말</dt><dd class="is-myth">품에 안겨 오래 있는 것을 좋아합니다.</dd></div>
-            <div><dt>단체의 설명</dt><dd class="is-truth">무릎보다 바닥이나 옆자리를 좋아합니다. 가까이 머무는 것도 애정을 나타내는 방법입니다.</dd></div>
-          </dl>
-        </div>
-
-        <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">모든 단체가 성격을 심사할까요?</p>
-          <dl>
-            <div><dt>국제고양이협회</dt><dd class="is-truth">성격을 품종 기준에 적었습니다.</dd></div>
-            <div><dt>미국 고양이 애호가 협회</dt><dd class="is-myth">100점을 모두 생김새에 줍니다. 성격 점수는 없습니다.</dd></div>
+            <div><dt>흔한 오해</dt><dd class="is-myth">안기지 않는 고양이는 사람을 좋아하지 않습니다.</dd></div>
+            <div><dt>확인할 행동</dt><dd class="is-truth">가까운 곳에서 쉬거나 천천히 눈을 깜빡이고, 스스로 다가오는 것도 편안함과 친밀감을 나타낼 수 있습니다.</dd></div>
           </dl>
         </div>
 
         <details class="src">
           <summary>이 섹션의 출처</summary>
           <ol>
-            <li>국제고양이협회 British Breed Group Standard (기질 서술, 심사 규정)</li>
-            <li>미국 고양이 애호가 협회 Show Standard, 2026 개정 (기질 항목 부재, 배점)</li>
-            <li>미국 고양이 애호가 협회 품종 소개 페이지 (차분함, 옆자리 선호, 가족 구성원 대응, 조리대)</li>
-            <li>영국 고양이 등록 단체 품종 소개 페이지 (조용한 성격, 참을성, 활동량이 줄어드는 경향, 새끼 고양이의 테디베어 같은 인상, 실내 생활)</li>
-            <li>국제고양이협회 품종 소개 페이지 (성별 차이 서술)</li>
-            <li>영국 고양이 등록 단체 품종자문위원회 Breeding Policy, 2018년 6월 (기질 서술의 각주 출처)</li>
-            <li>IAABC Foundation Journal · PLOS ONE (고양이 일반의 분리 관련 문제, 2차 자료)</li>
+            <li>국제고양이협회 British Shorthair 품종 소개와 British Breed Group Standard (옆자리 선호와 안전하게 몸 받치기)</li>
+            <li>미국 고양이 애호가 협회 British Shorthair 품종 소개 (차분함과 사람 곁에 머무는 경향)</li>
+            <li>영국 고양이 등록 단체 British Shorthair 품종 소개 (조용한 성격과 가족 관계)</li>
+            <li>미국 고양이병원협회·국제고양이의학회 고양이 친화적 상호작용 지침</li>
           </ol>
         </details>
       </div>
@@ -2482,146 +2236,77 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
     <div class="grid grid--3" data-reveal="stagger" style="margin-bottom:var(--sp-8)">
       <figure class="img-slot img-slot--square">
         <div class="img-slot__frame">
-          <img src="assets/img/lookalike-1.png" width="1200" height="1200" loading="lazy" decoding="async"
-               alt="브리티시 숏헤어 블루 개체의 정면 3/4 상반신 사진, 코퍼색 눈이 보이는 기준 이미지">
+          <img src="assets/img/lookalike-1.png" width="1254" height="1254" loading="lazy" decoding="async"
+               alt="브리티시 숏헤어 블루의 눈높이 3/4 흉상 사진, 둥근 얼굴과 코퍼색 눈이 보이는 기준 이미지">
         </div>
         <figcaption>브리티시 숏헤어 블루. 둥근 얼굴과 구리빛 눈.</figcaption>
       </figure>
       <figure class="img-slot img-slot--square">
         <div class="img-slot__frame">
-          <img src="assets/img/lookalike-2.png" width="1200" height="1200" loading="lazy" decoding="async"
-               alt="샤르트뢰의 정면 3/4 상반신 사진, 좁고 뾰족한 머즐과 높이 달린 귀가 보이는 이미지">
+          <img src="assets/img/lookalike-2.png?v=20260727-2" width="1254" height="1254" loading="lazy" decoding="async"
+               alt="샤르트뢰의 눈높이 3/4 흉상 사진, 골드-코퍼색 눈과 작고 좁아지는 머즐, 높이 선 귀가 보이는 이미지">
         </div>
-        <figcaption>샤르트뢰. 구리빛에서 금빛 사이의 눈.</figcaption>
+        <figcaption>샤르트뢰. 골드-코퍼 눈과 작고 좁아지는 머즐.</figcaption>
       </figure>
       <figure class="img-slot img-slot--square">
         <div class="img-slot__frame">
-          <img src="assets/img/lookalike-3.png" width="1200" height="1200" loading="lazy" decoding="async"
-               alt="러시안 블루의 정면 3/4 상반신 사진, 선명한 녹색 눈과 크고 뾰족한 귀가 보이는 이미지">
+          <img src="assets/img/lookalike-3.png" width="1254" height="1254" loading="lazy" decoding="async"
+               alt="러시안 블루의 눈높이 3/4 흉상 사진, 선명한 녹색 눈과 쐐기형 머리, 크고 뾰족한 귀가 보이는 이미지">
         </div>
         <figcaption>러시안 블루. 크고 뾰족한 귀와 초록색 눈.</figcaption>
       </figure>
       <figure class="img-slot img-slot--square">
         <div class="img-slot__frame">
-          <img src="assets/img/lookalike-5.png" width="1200" height="1200" loading="lazy" decoding="async"
-               alt="귀가 접힌 스코티시 폴드와 귀가 접히지 않은 개체를 나란히 놓아 브리티시 숏헤어와의 구별이 어려움을 보여주는 사진">
+          <img src="assets/img/lookalike-5.png" width="1254" height="1254" loading="lazy" decoding="async"
+               alt="블루 스코티시 폴드의 눈높이 3/4 흉상 사진, 앞으로 아래로 접힌 작은 귀와 둥근 얼굴이 보이는 이미지">
         </div>
-        <figcaption>스코티시 폴드. 귀가 펴진 고양이는 혈통서를 함께 봐야 합니다.</figcaption>
+        <figcaption>스코티시 폴드. 아래로 접힌 작은 귀와 둥근 얼굴.</figcaption>
       </figure>
       <figure class="img-slot img-slot--square">
         <div class="img-slot__frame">
-          <img src="assets/img/lookalike-6.png" width="1200" height="1200" loading="lazy" decoding="async"
-               alt="브리티시 롱헤어의 정면 3/4 상반신 사진, 긴 털가 보이는 이미지">
+          <img src="assets/img/lookalike-6.png?v=20260727-2" width="1254" height="1254" loading="lazy" decoding="async"
+               alt="브리티시 롱헤어 블루의 눈높이 3/4 흉상 사진, 둥근 얼굴과 구리색 눈, 풍성한 목 러프가 보이는 이미지">
         </div>
-        <figcaption>브리티시 롱헤어. 닮은 품종이 아니라 같은 뿌리에서 갈라진 품종입니다.</figcaption>
+        <figcaption>브리티시 롱헤어. 풍성한 목 러프와 세미롱 코트.</figcaption>
       </figure>
     </div>
-    <p class="note" data-reveal="fade" style="margin-bottom:var(--sp-8)">다섯 장 모두 같은 각도와 배경, 같은 크롭으로 맞췄습니다. 사진 아래의 눈 색과 털 길이를 먼저 비교해 보세요.</p>
-
-    <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-8)">
-      <summary>네 품종을 표로 자세히 비교할까요?</summary>
-      <div class="accordion__body">
-      <p class="table-caption">미국 고양이 애호가 협회의 품종 기준으로 비교했습니다.</p>
-      <div class="table-wrap" role="region" tabindex="0" aria-label="브리티시 숏헤어와 샤르트뢰, 러시안 블루, 스코티시 폴드의 항목별 비교 표. 가로로 스크롤할 수 있습니다.">
-        <table style="min-width:900px">
-          <caption class="visually-hidden">닮은 네 품종의 원산지, 공인 모색, 눈 색, 머리, 체형, 코트, 브리티시와의 관계 비교</caption>
-          <thead>
-            <tr><th scope="col">항목</th><th scope="col">브리티시 숏헤어</th><th scope="col">샤르트뢰</th><th scope="col">러시안 블루</th><th scope="col">스코티시 폴드</th></tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">원산지</th><td>영국</td><td>프랑스</td><td>러시아</td><td>스코틀랜드</td></tr>
-            <tr><th scope="row">공인 모색</th><td>전 색·전 패턴 <span class="pill pill--split">단체별 상이</span></td><td>블루그레이 하나</td><td>블루 하나</td><td>유전적으로 가능한 모든 색과 무늬</td></tr>
-            <tr><th scope="row">눈 색</th><td>셀프 계열은 코퍼·오렌지·진한 골드, 모색에 따라 그린 계열과 블루도 있음</td><td>코퍼에서 골드, <span class="pill pill--split">녹색은 실격</span></td><td>선명한 녹색</td><td>털 색에 맞는 눈 색. 흰색·바이컬러·반 무늬는 파란 눈과 오드아이도 허용</td></tr>
-            <tr><th scope="row">머리</th><td>둥글고 육중, 귀는 중간 크기에 밑동이 넓고 끝이 둥글며 넓게 벌어짐</td><td>둥글고 넓되 구형이 아님, 머즐이 좁고 뾰족, 귀가 높이 달리고 곧추섬</td><td>매끄러운 형태, 귀가 크고 끝이 뾰족함</td><td>접힌 귀</td></tr>
-            <tr><th scope="row">체형</th><td>중형에서 대형, 사각형 코비</td><td>중간 길이의 튼튼한 몸, 넓은 어깨와 깊은 가슴</td><td>가늘고 긴 체형</td><td>중형, 어깨부터 골반까지 둥글고 고른 몸</td></tr>
-            <tr><th scope="row">코트</th><td>짧고 매우 조밀하며 단단하고 바삭하고 탄력 있음. 미국 고양이 애호가 협회는 이중모가 아니라고 명시</td><td>중간보다 짧고 약간 양털 같은 이중모</td><td>이중모가 몸에서 떠 있고 실크 촉감</td><td>숏헤어는 짧고 조밀하며 폭신하고 부드러움</td></tr>
-            <tr><th scope="row">브리티시와의 관계</th><td>기준 개체</td><td>별개 품종</td><td>별개 품종</td><td>미국 고양이 애호가 협회 표준상 브리티시 숏헤어를 아웃크로스로 삼음</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="note" style="margin-top:var(--sp-2)">샤르트뢰와 스코티시 폴드 항목은 미국 고양이 애호가 협회가 공개한 현행 품종 표준을 기준으로 정리했습니다.</p>
-      </div>
-    </details>
-
-    <h3 class="block-title" data-reveal="up" style="margin-bottom:var(--sp-3)">어디부터 살펴볼까요?</h3>
-    <div class="grid grid--3" data-reveal="stagger" style="margin-bottom:var(--sp-8)">
+    <h3 class="block-title" data-reveal="up" style="margin-bottom:var(--sp-3)">사진에서 어떤 차이가 보이나요?</h3>
+    <div class="grid grid--2" data-reveal="stagger" style="margin-bottom:var(--sp-8)">
       <article class="card">
-        <h4 class="card__title">1. 눈 색</h4>
-        <p class="card__body">먼저 눈 색을 봅니다. 샤르트뢰의 눈은 구리색부터 금색까지이며 녹색 눈은 품종 기준에서 실격입니다. 러시안 블루는 선명한 녹색 눈을 가져야 합니다.</p>
-        <p class="card__cap">근거: 미국 고양이 애호가 협회 샤르트뢰·러시안 블루 표준</p>
+        <h4 class="card__title">눈 색은 단서예요</h4>
+        <p class="card__body">브리티시 숏헤어 블루와 샤르트뢰는 구리빛이나 금빛 눈이 자주 보입니다. 러시안 블루는 선명한 초록색 눈으로 알려져 있습니다.</p>
       </article>
       <article class="card">
-        <h4 class="card__title">2. 귀</h4>
-        <p class="card__body">귀를 봅니다. 샤르트뢰는 귀가 높이 달려 곧추서고 러시안 블루는 귀가 크고 끝이 뾰족합니다. 브리티시 숏헤어는 귀가 넓게 벌어져 머리의 둥근 윤곽을 해치지 않습니다.</p>
-        <p class="card__cap">근거: 미국 고양이 애호가 협회 각 품종 표준</p>
+        <h4 class="card__title">귀와 얼굴도 달라요</h4>
+        <p class="card__body">브리티시 숏헤어는 넓고 둥근 얼굴, 러시안 블루는 길고 매끄러운 쐐기형 얼굴과 큰 귀가 눈에 띕니다.</p>
       </article>
       <article class="card">
-        <h4 class="card__title">3. 털의 느낌</h4>
-        <p class="card__body">털의 느낌도 다릅니다. 브리티시 숏헤어의 털은 빽빽하고 단단하며 탄력이 있습니다. 러시안 블루의 털은 속털과 겉털로 나뉘며 몸에서 살짝 떠 있고 비단처럼 부드럽습니다.</p>
-        <p class="card__cap">근거: 미국 고양이 애호가 협회 각 품종 표준</p>
+        <h4 class="card__title">털의 길이와 느낌을 봐요</h4>
+        <p class="card__body">브리티시 숏헤어는 짧고 빽빽하며 탄력 있는 털, 러시안 블루는 몸에서 살짝 뜨는 부드러운 털이 특징으로 소개됩니다.</p>
       </article>
       <article class="card">
-        <h4 class="card__title">4. 털 색</h4>
-        <p class="card__body">샤르트뢰와 러시안 블루는 푸른빛이 도는 회색만 품종의 색으로 인정받습니다. 다른 색이라면 이 두 품종이 아닙니다.</p>
-        <p class="card__cap">근거: 미국 고양이 애호가 협회 각 품종 표준</p>
+        <h4 class="card__title">긴 털이라면 롱헤어일 수 있어요</h4>
+        <p class="card__body">브리티시 롱헤어는 둥근 얼굴과 묵직한 몸이 닮았지만 목 주변과 꼬리에 더 길고 풍성한 털이 보입니다.</p>
       </article>
-      <article class="card card--accent">
-        <h4 class="card__title">5. 스코티시 폴드는 예외</h4>
-        <p class="card__body">귀가 접히지 않은 스코티시 폴드는 생김새만으로 확실하게 구별하기 어렵습니다. 브리티시 숏헤어와 교배할 수 있기 때문입니다. 이런 경우에는 혈통서를 확인해야 합니다.</p>
-        <p class="card__cap">근거: 미국 고양이 애호가 협회 스코티시 폴드 표준</p>
-      </article>
-    </div>
-
-    <div class="split split--even" style="margin-bottom:var(--sp-8)">
-      <div data-reveal="up">
-        <p class="table-caption">브리티시 롱헤어</p>
-        <div class="table-wrap" role="region" tabindex="0" aria-label="브리티시 롱헤어의 기원과 단체별 인정 연도 표. 가로로 스크롤할 수 있습니다.">
-          <table>
-            <caption class="visually-hidden">브리티시 롱헤어의 기원, 단체별 인정 시점, 표준 관리 방식, 아웃크로스 지위</caption>
-            <thead>
-              <tr><th scope="col">항목</th><th scope="col">내용</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">기원</th><td>1차 세계대전 후 브리더들이 도입한 페르시안에서 유입된 장모 유전자 (영국 고양이 등록 단체)</td></tr>
-              <tr><th scope="row">국제고양이협회 인정</th><td>2009년 5월</td></tr>
-              <tr><th scope="row">영국 고양이 등록 단체 인정</th><td>2017년 인정, 2021년 챔피언십 지위</td></tr>
-              <tr><th scope="row">국제고양이연맹 인정</th><td>2017년</td></tr>
-              <tr><th scope="row">표준 관리</th><td>국제고양이협회와 국제고양이연맹은 숏헤어와 롱헤어를 한 표준 문서에서 다룹니다. 미국 고양이 애호가 협회 표준에는 롱헤어 항목이 없습니다.</td></tr>
-              <tr><th scope="row">아웃크로스</th><td>영국 고양이 등록 단체는 2025년 3월 1일부터 브리티시 롱헤어를 승인된 아웃크로스로 다시 인정</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <blockquote class="callout callout--accent" data-reveal="up">국제고양이협회는 브리티시 숏헤어가 다른 품종과 교배하는 것을 허용하지 않습니다. 반대로 스코티시 폴드는 브리티시 숏헤어와 교배할 수 있습니다.</blockquote>
     </div>
 
     <div style="max-width:var(--w-text);margin-inline:auto">
       <div class="section-body">
-        <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">오해 바로잡기</p>
-          <dl>
-            <div><dt>흔한 오해</dt><dd class="is-myth">회색빛 파란 고양이는 대체로 브리티시 숏헤어입니다.</dd></div>
-            <div><dt>실제</dt><dd class="is-truth">샤르트뢰와 러시안 블루는 블루 계열만 공인하는 별개 품종이며 눈 색 규정이 정반대입니다. 샤르트뢰는 녹색 눈이 실격이고 러시안 블루는 선명한 녹색 눈을 요구합니다.</dd></div>
-          </dl>
-        </div>
+        <blockquote class="callout callout--accent" data-reveal="up">눈 색, 귀와 얼굴 모양은 관찰 단서일 뿐입니다. 사진 한 장이나 생김새만으로 품종을 확정하지 마세요. 비슷하게 생긴 믹스묘도 많습니다.</blockquote>
 
         <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">오해 바로잡기</p>
+          <p class="myth-box__tag">회색 고양이는 모두 같은 품종일까요?</p>
           <dl>
-            <div><dt>흔한 오해</dt><dd class="is-myth">스코티시 폴드는 귀만 보면 구별됩니다.</dd></div>
-            <div><dt>실제</dt><dd class="is-truth">귀가 접히지 않은 개체는 브리티시 숏헤어와 매우 닮아 혈통서 외에는 확실한 구별법이 없습니다. 미국 고양이 애호가 협회 표준상 스코티시 폴드는 브리티시 숏헤어를 아웃크로스로 삼습니다.</dd></div>
+            <div><dt>흔한 오해</dt><dd class="is-myth">푸른빛 회색 털이면 브리티시 숏헤어입니다.</dd></div>
+            <div><dt>확인한 사실</dt><dd class="is-truth">샤르트뢰와 러시안 블루, 믹스묘도 비슷한 회색 털을 가질 수 있습니다. 얼굴과 눈, 귀, 몸과 털을 함께 봐야 합니다.</dd></div>
           </dl>
         </div>
 
         <details class="src">
           <summary>이 섹션의 출처</summary>
           <ol>
-            <li>샤르트뢰의 모색·눈 색·머리: 미국 고양이 애호가 협회 샤르트뢰 표준</li>
-            <li>러시안 블루의 모색·눈 색·체형·코트: 미국 고양이 애호가 협회 러시안 블루 표준</li>
-            <li>스코티시 폴드의 기원과 아웃크로스, 최초 개체 "수지": 미국 고양이 애호가 협회 스코티시 폴드 표준</li>
-            <li>브리티시 숏헤어의 코트·귀·체형: 미국 고양이 애호가 협회 Show Standard(2026 개정) · 영국 고양이 등록 단체 Standard of Points</li>
-            <li>허용 아웃크로스 "None": 국제고양이협회 British Breed Group Standard</li>
-            <li>브리티시 롱헤어의 기원과 단체별 인정 연도, 2025년 아웃크로스 재인정: 영국 고양이 등록 단체 · 국제고양이연맹 · 국제고양이협회</li>
+            <li>미국 고양이 애호가 협회의 브리티시 숏헤어·샤르트뢰·러시안 블루·스코티시 폴드 품종 설명</li>
+            <li>국제고양이협회의 British Shorthair·British Longhair 품종 설명</li>
           </ol>
         </details>
       </div>
@@ -2640,7 +2325,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
     <div class="split" style="margin-bottom:var(--sp-8)">
       <div class="section-body">
         <p class="body" data-reveal="up">브리티시 숏헤어의 분명한 기록은 1871년부터 시작됩니다. 7월 13일 런던 크리스탈 팰리스에서 영국 최초의 고양이 대회가 열렸습니다. 고양이 170마리가 출품됐고 잉글리시 숏헤어가 가장 뛰어난 고양이로 뽑혔습니다. 대회를 만든 사람은 자연사 화가 해리슨 위어였습니다.</p>
-        <p class="body" data-reveal="up">두 차례의 세계대전이 지나며 브리티시 숏헤어의 수가 크게 줄었습니다. 사람들은 페르시안, 러시안 블루, 버미즈, 샤르트뢰와 교배해 품종을 이어 갔습니다. 이 과정에서 긴 털 유전자가 들어왔고 훗날 브리티시 롱헤어가 태어났습니다.</p>
+        <p class="body" data-reveal="up">두 차례의 세계대전이 지나며 브리티시 숏헤어의 수가 크게 줄었습니다. 이후 다른 품종이 섞인 역사가 생겼고, 이 과정에서 들어온 긴 털 특징은 훗날 브리티시 롱헤어로 이어졌습니다.</p>
       </div>
       <div class="stack history-media">
         <figure class="img-slot img-slot--wide" data-reveal="scale">
@@ -2674,99 +2359,31 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
       <li class="timeline__item" data-reveal="up">
         <span class="timeline__node" aria-hidden="true"></span>
         <div class="timeline__card">
-          <span class="timeline__time">1887년</span>
-          <h4 class="block-title">내셔널 캣 클럽이 생겼어요 <span class="pill pill--fact">기록으로 확인</span></h4>
-          <p>해리슨 위어가 창립했습니다. 위어는 자연사 화가였고 1871년 쇼를 조직하고 심사를 맡았으며 캣 팬시의 아버지로 불립니다.</p>
-        </div>
-      </li>
-      <li class="timeline__item" data-reveal="up">
-        <span class="timeline__node" aria-hidden="true"></span>
-        <div class="timeline__card">
-          <span class="timeline__time">1900년 무렵</span>
-          <h4 class="block-title">털 무늬별 대회가 생겼어요 <span class="pill pill--fact">기록으로 확인</span></h4>
-          <p>자기 색, 태비, 스모크처럼 털 무늬에 따라 나누는 부문이 생길 만큼 널리 알려졌습니다. 1900년대 초에는 페르시안 같은 장모종이 인기를 얻으면서 관심이 줄었습니다.</p>
-        </div>
-      </li>
-      <li class="timeline__item" data-reveal="up">
-        <span class="timeline__node" aria-hidden="true"></span>
-        <div class="timeline__card">
-          <span class="timeline__time">1901년</span>
-          <h4 class="block-title">아메리카에 처음 등록됐어요 <span class="pill pill--fact">기록으로 확인</span></h4>
-          <p>제인 캐스카트가 수입한 수컷 레드 태비 "Belle of Bradford"가 아메리카 대륙 최초로 등록된 단모종입니다.</p>
-        </div>
-      </li>
-      <li class="timeline__item" data-reveal="up">
-        <span class="timeline__node" aria-hidden="true"></span>
-        <div class="timeline__card">
           <span class="timeline__time">1914~1918년</span>
-          <h4 class="block-title">1차 세계대전 뒤 다시 늘렸어요 <span class="pill pill--fact">기록으로 확인</span></h4>
-          <p>전쟁으로 개체 수가 크게 줄자 번식가들은 등록되지 않은 집고양이와 페르시안을 교배했습니다. 영국 등록 기관은 브리티시 숏헤어와 3세대에 걸쳐 다시 교배한 고양이만 등록했습니다. 이때 들어온 긴 털 유전자가 훗날 브리티시 롱헤어의 기원이 되었습니다.</p>
+          <h4 class="block-title">1차 세계대전 뒤 수가 줄었어요 <span class="pill pill--fact">기록으로 확인</span></h4>
+          <p>전쟁으로 고양이 수가 크게 줄었습니다. 이후 다른 집고양이와 페르시안이 섞인 역사가 생겼고, 이때 들어온 긴 털 특징은 훗날 브리티시 롱헤어로 이어졌습니다.</p>
         </div>
       </li>
       <li class="timeline__item" data-reveal="up">
         <span class="timeline__node" aria-hidden="true"></span>
         <div class="timeline__card">
           <span class="timeline__time">1945년 이후</span>
-          <h4 class="block-title">2차 세계대전 뒤 다시 이어 갔어요 <span class="pill pill--fact">기록으로 확인</span></h4>
-          <p>개체 수가 다시 크게 줄었습니다. 전쟁이 끝난 뒤 번식가들은 러시안 블루, 버미즈, 샤르트뢰, 페르시안과 교배해 품종의 특징을 되살렸습니다.</p>
-        </div>
-      </li>
-      <li class="timeline__item" data-reveal="up">
-        <span class="timeline__node" aria-hidden="true"></span>
-        <div class="timeline__card">
-          <span class="timeline__time">1967~1980년</span>
-          <h4 class="block-title">미국 대회에서도 인정받았어요 <span class="pill pill--fact">기록으로 확인</span></h4>
-          <p>ACA가 1967년 "브리티시 블루"에 챔피언십 지위를 먼저 부여했고 미국 고양이 애호가 협회는 1980년에 뒤따랐습니다. 첫 미국 고양이 애호가 협회 그랜드 챔피언은 GC Tikikat's Snowmaiden of Denimar입니다.</p>
-        </div>
-      </li>
-      <li class="timeline__item" data-reveal="up">
-        <span class="timeline__node" aria-hidden="true"></span>
-        <div class="timeline__card">
-          <span class="timeline__time">1979년 6월</span>
-          <h4 class="block-title">국제 대회에서도 인정받았어요 <span class="pill pill--fact">기록으로 확인</span></h4>
-          <p>국제고양이협회는 브리티시 숏헤어를 1979년 6월에, 브리티시 롱헤어를 2009년 5월에 챔피언십 품종으로 인정했습니다.</p>
+          <h4 class="block-title">2차 세계대전 뒤에도 수가 줄었어요 <span class="pill pill--fact">기록으로 확인</span></h4>
+          <p>고양이 수가 다시 크게 줄었습니다. 오늘날 브리티시 숏헤어의 모습에는 러시안 블루, 버미즈, 샤르트뢰와 페르시안이 섞인 당시의 역사가 남아 있습니다.</p>
         </div>
       </li>
     </ol>
 
     <div style="max-width:var(--w-text);margin-inline:auto;margin-top:var(--sp-8)">
       <div class="section-body">
-        <blockquote class="callout" data-reveal="up">오늘날의 브리티시 숏헤어가 19세기 고양이보다 더 짧고 둥근 몸을 갖게 된 데에는 페르시안과의 교배가 영향을 주었다는 설명이 널리 쓰입니다. 다만 그 영향을 정확한 수치로 보여 주는 자료는 없습니다.</blockquote>
-
-
-        <div data-reveal="up">
-          <p class="table-caption">단체별 공인 연도</p>
-          <div class="table-wrap" role="region" tabindex="0" aria-label="단체별 브리티시 숏헤어와 브리티시 롱헤어 공인 연도 표. 가로로 스크롤할 수 있습니다.">
-            <table>
-              <thead>
-                <tr><th scope="col">단체</th><th scope="col">브리티시 숏헤어</th><th scope="col">브리티시 롱헤어</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">영국 고양이 등록 단체</th><td>19세기부터 등록 체계 안에 있음</td><td>2017년 인정, 2021년 챔피언십</td></tr>
-                <tr><th scope="row">미국 고양이 애호가 협회</th><td>1980년 챔피언십</td><td>표준에 항목 없음</td></tr>
-                <tr><th scope="row">국제고양이협회</th><td>1979년 6월 챔피언십</td><td>2009년 5월 챔피언십</td></tr>
-                <tr><th scope="row">국제고양이연맹</th><td>이 표에서는 공인 연도를 다루지 않음</td><td>2017년 인정</td></tr>
-                <tr><th scope="row">ACA</th><td>1967년 "브리티시 블루" 챔피언십</td><td>해당 없음</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">오해 바로잡기</p>
-          <dl>
-            <div><dt>흔한 오해</dt><dd class="is-myth">1871년 첫 캣쇼의 우승묘는 품종과 소유자가 분명하지 않습니다.</dd></div>
-            <div><dt>실제</dt><dd class="is-truth">미국 고양이 애호가 협회와 영국 고양이 등록 단체는 모두 베스트 인 쇼를 해리슨 위어가 키우던 14세 암컷 블루 태비 숏헤어로 기록합니다. 당시의 잉글리시 숏헤어는 오늘날 브리티시 숏헤어의 전신입니다.</dd></div>
-          </dl>
-        </div>
+        <blockquote class="callout" data-reveal="up">오늘날의 브리티시 숏헤어가 19세기 고양이보다 더 짧고 둥글게 보이는 데에는 과거 페르시안 계통이 섞인 역사가 영향을 주었다고 설명됩니다. 그 영향을 정확한 숫자로 보여 주는 자료는 없습니다.</blockquote>
 
         <details class="src">
           <summary>이 섹션의 출처</summary>
           <ol>
-            <li>영국 고양이 등록 단체 품종 소개 페이지 (로마 유입설, 1871년 캣쇼, 브리티시 롱헤어의 기원)</li>
-            <li>국제고양이협회 품종 소개 페이지 (서기 43년 기원, 공인 연도)</li>
-            <li>미국 고양이 애호가 협회, 1995 (1900년 무렵의 클래스 확립, 1901년 미국 진출, 양차 대전 이후 복원, ACA·미국 고양이 애호가 협회 공인)</li>
-            <li>영국 고양이 등록 단체 / 국제고양이연맹 (브리티시 롱헤어 인정 연도)</li>
+            <li>영국 고양이 등록 단체 British Shorthair 품종 역사</li>
+            <li>국제고양이협회 British Shorthair 품종 역사</li>
+            <li>미국 고양이 애호가 협회 British Shorthair 역사 자료</li>
           </ol>
         </details>
       </div>
@@ -2799,7 +2416,6 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
              alt="달빛 아래 나뭇가지에 누운 둥근 체셔 고양이의 꼬리가 안개처럼 사라지는 그림.">
         <h4 class="card__title">체셔 고양이 <span class="pill pill--common">닮은 이야기</span></h4>
         <p class="card__body">소설 '이상한 나라의 엘리스'에서 체셔 고양이는 브리티시 숏헤어가 모델이었다고 알려졌지만 확인된 기록은 없습니다.</p>
-        <p class="card__cap">설명 이미지: 원작의 특정 삽화를 복제하지 않고 새로 제작</p>
       </article>
       <article class="card media-card">
         <img class="media-card__image"
@@ -2808,7 +2424,6 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
              alt="장화와 깃털 모자, 망토를 착용한 골든 브리티시 숏헤어 모습의 동화 속 검객.">
         <h4 class="card__title">『장화 신은 고양이』의 푸스 <span class="pill pill--common">닮은 모습</span></h4>
         <p class="card__body">골든 브리티시 숏헤어를 떠올리게 하지만 공식적으로 고양이의 품종을 밝힌 적은 없습니다.</p>
-        <p class="card__cap">설명 이미지: 고전 동화의 검객을 골든 브리티시 숏헤어 모습으로 새로 제작</p>
       </article>
       <article class="card media-card">
         <img class="media-card__image"
@@ -2817,7 +2432,6 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
              alt="둥근 블루 그레이 고양이가 치즈를 든 작은 갈색 쥐를 장난스럽게 쫓는 그림.">
         <h4 class="card__title">『톰과 제리』의 톰 <span class="pill pill--common">닮은 모습</span></h4>
         <p class="card__body">블루 브리티시 숏헤어를 떠올리게 하지만 공식 소개는 톰의 품종을 밝히지 않습니다.</p>
-        <p class="card__cap">설명 이미지: 톰을 떠올리게 하는 블루 고양이의 추격 장면을 새로 제작</p>
       </article>
       <article class="card media-card">
         <img class="media-card__image"
@@ -2851,180 +2465,32 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
     <header class="section-head">
       <p class="eyebrow" data-reveal="fade">털 관리와 생활 환경</p>
       <h2 class="section-title" id="grooming-title" data-reveal="up">폭신한 털은 어떻게 돌볼까요?</h2>
-      <p class="lede" data-reveal="up">일주일에 한 번, 폭신한 털 사이로 빗을 천천히 지나가게 해 주세요.</p>
+      <p class="lede" data-reveal="up">짧지만 아주 빽빽한 털이라 천천히 빗어 주고 생활 공간도 깨끗하게 관리해야 합니다.</p>
     </header>
 
     <div class="split" style="margin-bottom:var(--sp-8)">
       <div class="section-body">
-        <p class="body" data-reveal="up">“털이 짧은데도 빗어야 할까요?” 네. 브리티시 숏헤어의 털은 짧지만 아주 빽빽합니다. 평소에는 일주일에 한 번 빗으면 됩니다.</p>
-        <p class="body" data-reveal="up">계절이 바뀌어 털이 많이 빠질 때는 조금 더 자주 빗어 주세요. 삼킨 털을 자주 토한다면 매일 부드럽게 빗는 것이 도움이 됩니다. 밥을 먹지 않거나 계속 토하면 수의사에게 물어보세요.</p>
-        <p class="body" data-reveal="up">쇼에 나가지 않는 고양이는 정해진 날마다 목욕할 필요가 없습니다. 대신 발톱과 귀를 살피고 나이가 들어 혼자 털을 다듬기 어려워지면 빗질을 도와주세요.</p>
-        <p class="body" data-reveal="up">집 안에서도 뛰고 긁고 숨을 곳이 필요합니다. 스크래처는 몸을 길게 뻗을 만큼 크고 흔들리지 않아야 합니다.</p>
+        <p class="body" data-reveal="up">평소에는 일주일에 한 번 정도 넓은 살 빗으로 털이 난 방향을 따라 빗어 주세요. 털갈이 철에는 빠지는 양을 보며 횟수를 조금 늘릴 수 있습니다.</p>
+        <p class="body" data-reveal="up">엉킨 털을 세게 잡아당기거나 고양이가 도망가는데 붙잡고 계속하면 안 됩니다. 짧게 끝내고 간식이나 놀이로 편안한 기억을 만들어 주세요.</p>
+        <p class="body" data-reveal="up">빗질만큼 물, 화장실, 긁는 곳과 숨을 곳도 중요합니다. 여러 고양이가 산다면 밥그릇과 물그릇, 잠자리를 한곳에 몰아두지 않습니다.</p>
       </div>
-      <div class="stack">
-        <figure class="img-slot img-slot--wide" data-reveal="scale">
-          <div class="img-slot__frame">
-            <img src="assets/img/grooming-1.png" width="1662" height="946" loading="lazy" decoding="async"
-                 alt="넓은 살 빗으로 골든 팁드 브리티시 숏헤어의 등을 빗는 장면입니다. 빗살 사이에 금빛 속털이 걸려 있습니다.">
-          </div>
-          <figcaption>등에서 꼬리 쪽으로 천천히 빗어 주세요. 평소에는 일주일에 한 번이면 됩니다.</figcaption>
-        </figure>
-      </div>
+      <figure class="img-slot img-slot--wide" data-reveal="scale">
+        <div class="img-slot__frame"><img src="assets/img/grooming-1.png" width="1662" height="946" loading="lazy" decoding="async" alt="넓은 살 빗으로 브리티시 숏헤어의 등을 부드럽게 빗는 장면"></div>
+        <figcaption>털이 난 방향을 따라 짧고 부드럽게 빗어 주세요.</figcaption>
+      </figure>
     </div>
 
-    <div style="margin-bottom:var(--sp-8)">
-      <div data-reveal="up" style="margin-bottom:var(--sp-4)">
-        <p class="table-caption">언제 얼마나 빗을까요?</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="목적별 브러싱 빈도와 근거를 정리한 표. 가로로 스크롤할 수 있습니다.">
-          <table style="min-width:760px">
-            <thead>
-              <tr><th scope="col">목적</th><th scope="col">빈도</th><th scope="col">주당 대략치</th><th scope="col">근거</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">평시 털 관리</th><td>주 1회</td><td class="t-num"><span aria-hidden="true">●</span><span class="visually-hidden">주 1회</span></td><td>국제고양이협회는 넓은 살 빗으로 주 1회. 미국 고양이 애호가 협회도 주 1회 브러싱 또는 빗질</td></tr>
-              <tr><th scope="row">털갈이 철</th><td>빈도 상향</td><td class="t-num"><span aria-hidden="true">●●●</span><span class="visually-hidden">주 3회 정도</span></td><td>영국 고양이 등록 단체는 털갈이 철 그루밍 필요. 국제고양이협회 표준은 계절에 따른 털 변화를 심사 허용 사항으로 명시</td></tr>
-              <tr><th scope="row">헤어볼 저감</th><td>매일</td><td class="t-num"><span aria-hidden="true">●●●●●●●</span><span class="visually-hidden">주 7회</span></td><td>Cornell Feline Health Center, 품종 무관 일반 권고</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!--
-        위젯 1 · 그루밍 빈도 안내
-        JS 없이 동작하도록 details.accordion 요소로 구현했습니다.
-        표 1의 세 행을 목적별로 펼쳐 빈도, 도구, 근거를 보여줍니다. 추가 스크립트가 필요 없습니다.
-      -->
-      <h3 class="block-title" data-reveal="up" style="margin-bottom:var(--sp-2)">오늘은 얼마나 빗을까요?</h3>
-      <div data-reveal="up" style="margin-bottom:var(--sp-4)">
-        <details class="accordion" open>
-          <summary>평소</summary>
-          <div class="accordion__body">
-            <p><strong>빈도</strong> 주 1회</p>
-            <p><strong>도구</strong> 넓은 살 빗 또는 브러시</p>
-            <p><strong>근거</strong> 국제고양이협회는 살 사이가 넓은 빗으로 일주일에 한 번 빗으라고 권합니다. 미국 고양이 애호가 협회도 일주일에 한 번 빗질하라고 안내합니다. 발톱은 정기적으로 다듬고 귀는 가끔 청소해야 합니다. 일주일에 한 번은 털 상태를 관리하기 위한 최소 횟수입니다.</p>
-          </div>
-        </details>
-        <details class="accordion">
-          <summary>털갈이 철</summary>
-          <div class="accordion__body">
-            <p><strong>빈도</strong> 평소보다 자주</p>
-            <p><strong>도구</strong> 살 사이가 넓은 빗으로 속털까지 빗습니다</p>
-            <p><strong>근거</strong> 영국 고양이 등록 단체는 털갈이 철에 빗질이 필요하다고 적습니다. 국제고양이협회는 계절에 따라 털의 밀도와 길이, 느낌이 달라질 수 있다고 설명합니다. 털갈이 철에 빠지는 털이 늘어나는 것은 자연스러운 변화입니다.</p>
-          </div>
-        </details>
-        <details class="accordion">
-          <summary>삼킨 털을 자주 토할 때</summary>
-          <div class="accordion__body">
-            <p><strong>빈도</strong> 매일</p>
-            <p><strong>도구</strong> 매일 빗질하는 데 익숙해지게 합니다</p>
-            <p><strong>근거</strong> 코넬 고양이 건강 센터는 삼키는 털의 양을 줄이려면 매일 빗질하라고 권합니다. 먼저 사료를 바꾸기보다 빗질 횟수를 늘리는 편이 좋습니다. 털 뭉치가 장을 막으면 위험할 수 있습니다. 자주 토하거나 밥을 잘 먹지 않으면 수의사와 상의하십시오.</p>
-          </div>
-        </details>
-      </div>
-
-      <div data-reveal="up" style="margin-bottom:var(--sp-4)">
-        <p class="table-caption">표 2. 그루밍 항목별 권고</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="브러싱, 목욕, 발톱, 귀, 노령묘, 치아 항목별 권고와 출처 표. 가로로 스크롤할 수 있습니다.">
-          <table style="min-width:760px">
-            <thead>
-              <tr><th scope="col">항목</th><th scope="col">권고</th><th scope="col">출처</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">브러싱</th><td>주 1회 이상, 목적에 따라 상향</td><td>미국 고양이 애호가 협회 · 국제고양이협회</td></tr>
-              <tr><th scope="row">목욕</th><td>쇼에 나가지 않으면 정기 샴푸 불필요</td><td>영국 고양이 등록 단체</td></tr>
-              <tr><th scope="row">발톱</th><td>정기적 손질</td><td>미국 고양이 애호가 협회</td></tr>
-              <tr><th scope="row">귀</th><td>가끔 청소</td><td>미국 고양이 애호가 협회</td></tr>
-              <tr><th scope="row">노령묘</th><td>자가 그루밍이 줄어 엉킴이 생기므로 관리 강화</td><td>영국 고양이 등록 단체</td></tr>
-              <tr><th scope="row">치아</th><td>이 품종의 치주질환 연간 진단율은 15.5%로 전체 고양이 15.2%와 큰 차이가 없습니다. 자세한 내용은 <a href="#health">건강과 유전질환</a> 섹션을 참고하십시오</td><td>O'Neill et al., RVC VetCompass, 고양이 의학·외과 학술지, 2023</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div data-reveal="up">
-        <p class="table-caption">표 3. 환경 구성 항목</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="스크래처, 화장실, 급여 방식, 캣타워, 운동량, 혼자 두는 시간에 관한 권고와 근거 등급 표. 가로로 스크롤할 수 있습니다.">
-          <table style="min-width:820px">
-            <thead>
-              <tr><th scope="col">항목</th><th scope="col">확인된 권고</th><th scope="col">근거 등급</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">스크래처 형태</th><td>몸을 완전히 뻗을 만큼 높고 저항할 만큼 안정적일 것</td><td>미국 고양이 수의사 협회 권고</td></tr>
-              <tr><th scope="row">스크래처 위치</th><td>휴식 장소 근처, 또는 이미 긁던 자리 옆</td><td>미국 고양이 수의사 협회 권고</td></tr>
-              <tr><th scope="row">화장실 수</th><td>고양이 수보다 하나 더</td><td>Cornell Feline Health Center</td></tr>
-              <tr><th scope="row">화장실 위치</th><td>조용하고 안전한 곳, 청결 유지</td><td>Cornell Feline Health Center</td></tr>
-              <tr><th scope="row">급여 방식</th><td>소량 다회 급여, 상시 깨끗한 물</td><td>Cornell Feline Health Center</td></tr>
-              <tr><th scope="row">일상</th><td>변화를 최소화</td><td>Cornell Feline Health Center</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <h3 class="block-title" data-reveal="up" style="margin-bottom:var(--sp-2)">긁는 기둥(스크래처) 고르기</h3>
-    <div class="genelab" style="margin-bottom:var(--sp-8)">
-      <div class="genelab__panel" data-reveal="up">
-        <p class="note" style="margin-bottom:var(--sp-2)">고양이가 주로 긁는 곳을 골라 보세요. 알맞은 스크래처 모양을 알려 드립니다. 고양이는 자기 영역을 표시하고 발톱을 관리하며 몸을 쭉 펴기 위해 물건을 긁습니다. 억지로 막기보다 마음껏 긁을 자리를 마련해 주세요.</p>
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <button class="chip" type="button" id="scratchChipVertical" aria-pressed="false">의자 다리·벽</button>
-          <button class="chip" type="button" id="scratchChipHorizontal" aria-pressed="false">러그·카펫</button>
-          <button class="chip" type="button" id="scratchChipBoth" aria-pressed="false">둘 다</button>
-        </div>
-      </div>
-
-      <div class="genelab__panel" data-reveal="up">
-        <div id="scratchResult" aria-live="polite">
-          <p id="scratchOutVertical"><strong>수직형 권고.</strong> 의자 다리와 벽을 긁는다면 세로로 세운 수직형 스크래처가 맞습니다. 고양이가 몸을 완전히 뻗을 만큼 높고 밀어도 흔들리지 않을 만큼 안정적이어야 합니다.</p>
-          <p id="scratchOutHorizontal"><strong>수평형 권고.</strong> 러그와 카펫을 긁는다면 바닥에 놓는 수평형 스크래처가 맞습니다. 이때도 몸을 완전히 뻗을 만큼 길고 밀어도 밀리지 않을 만큼 안정적이어야 합니다.</p>
-          <p id="scratchOutBoth"><strong>둘 다 배치 권고.</strong> 두 곳을 모두 긁는다면 수직형과 수평형을 함께 둡니다. 형태를 하나로 고정하기보다 두 자세를 모두 쓸 수 있게 하는 편이 안전합니다.</p>
-          <p id="scratchPlacement" class="note"><strong>배치 위치는 세 경우 모두 같습니다.</strong> 휴식 장소 근처, 또는 이미 긁던 자리 옆에 둡니다. 미국 고양이 수의사 협회 권고입니다.</p>
-        </div>
-      </div>
+    <div class="grid grid--2" data-reveal="stagger" style="margin-bottom:var(--sp-8)">
+      <article class="card card--accent"><h3 class="card__title">빗질</h3><p class="card__body">평소에는 주 1회를 출발점으로 삼고 털 빠짐과 고양이의 반응에 맞춥니다. 피부가 붉거나 털이 갑자기 많이 빠지면 보호자에게 알립니다.</p></article>
+      <article class="card card--accent"><h3 class="card__title">발톱과 치아</h3><p class="card__body">발톱 손질과 칫솔질은 보호자가 안전한 방법을 배워 진행합니다. 피가 나거나 입 냄새가 심하면 동물병원에 물어봅니다.</p></article>
+      <article class="card card--accent"><h3 class="card__title">화장실과 물</h3><p class="card__body">화장실은 매일 치우고 조용한 곳에 둡니다. 깨끗한 물은 여러 곳에 준비해 쉽게 마실 수 있게 합니다.</p></article>
+      <article class="card card--accent"><h3 class="card__title">긁기와 놀이</h3><p class="card__body">몸을 쭉 펼칠 수 있는 튼튼한 긁는 기둥과 바닥형 긁는 판을 준비합니다. 매일 짧게라도 낚싯대 장난감으로 놀아 주세요.</p></article>
     </div>
 
     <div style="max-width:var(--w-text);margin-inline:auto">
       <div class="section-body">
-        <article class="card card--accent" data-reveal="up">
-          <h3 class="card__title">혼자 두었을 때 살펴볼 행동 세 가지</h3>
-          <ol class="card__body" style="padding-left:1.3em">
-            <li>화장실이 아닌 곳에 소변을 봅니다. 가장 자주 나타나는 행동입니다.</li>
-            <li>물건을 망가뜨립니다.</li>
-            <li>지나치게 자주 웁니다.</li>
-          </ol>
-          <p class="card__cap">고양이의 분리 관련 문제를 다룬 일반 자료를 참고했습니다. 근거: IAABC Foundation Journal · PLOS ONE</p>
-        </article>
-
-        <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">오해 바로잡기</p>
-          <dl>
-            <div><dt>흔한 오해</dt><dd class="is-myth">브러싱은 주 1회면 충분한데 매일 하라는 자료는 과장입니다.</dd></div>
-            <div><dt>실제</dt><dd class="is-truth">두 권고는 목적이 다릅니다. 주 1회는 미국 고양이 애호가 협회와 국제고양이협회의 털 관리 권고이고 매일은 Cornell Feline Health Center의 헤어볼 저감 권고입니다. 서로 모순되지 않습니다.</dd></div>
-          </dl>
-        </div>
-
-        <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">오해 바로잡기</p>
-          <dl>
-            <div><dt>흔한 오해</dt><dd class="is-myth">브리티시 숏헤어는 이중모라 털이 특히 많이 빠집니다.</dd></div>
-            <div><dt>실제</dt><dd class="is-truth">미국 고양이 애호가 협회 표준은 이 품종의 털을 이중모나 양털 같은 털로 보지 않습니다. 국제고양이연맹은 속털이 충분해야 한다고 적고 국제고양이협회도 속털이 부족하면 점수를 깎습니다. 단체마다 설명이 다르므로 한쪽의 기준만 정답이라고 말할 수는 없습니다.</dd></div>
-          </dl>
-        </div>
-
-        <details class="src">
-          <summary>이 섹션의 출처</summary>
-          <ol>
-            <li>국제고양이협회 British Breed Group Standard (털 규정과 감점 사유, 계절 변화 허용)</li>
-            <li>미국 고양이 애호가 협회 (주 1회 그루밍, 발톱 손질, 귀 청소) · 국제고양이협회 (넓은 살 빗 주 1회)</li>
-            <li>영국 고양이 등록 단체 (정기 샴푸 불필요, 털갈이 철 그루밍, 노령묘 관리, 실내 전용 사육 조건)</li>
-            <li>Cornell Feline Health Center (매일 브러싱 권고 그루밍 시간 최대 50%, 헤어볼 크기와 대응, 화장실 수와 배치, 소량 다회 급여, 고양이 하부요로기질환 위험 인자)</li>
-            <li>미국 고양이 수의사 협회 (스크래처 형태와 배치)</li>
-            <li>O'Neill et al., RVC VetCompass, 고양이 의학·외과 학술지, 2023 (치주질환 연간 진단율 15.5% 대 전체 15.2%. 영국 1차 진료 고양이 18,249마리, 2019년 표본)</li>
-            <li>IAABC Foundation Journal · PLOS ONE, 2차 자료 (분리 관련 문제의 발현 시점과 증상 순서)</li>
-          </ol>
-        </details>
+        <blockquote class="callout callout--accent" data-reveal="up">가족이 나간 뒤 계속 울거나 물건을 심하게 망가뜨리고 화장실 밖에 소변을 본다면 혼자 있는 일이 힘들다는 신호일 수 있습니다. 혼내지 말고 보호자와 수의사에게 알려 주세요.</blockquote>
+        <details class="src"><summary>이 섹션의 출처</summary><ol><li>국제고양이협회와 미국 고양이 애호가 협회의 British Shorthair 관리 안내</li><li>Cornell Feline Health Center (빗질, 헤어볼과 환경 자원)</li><li>미국 고양이병원협회·국제고양이의학회 환경 요구 지침</li></ol></details>
       </div>
     </div>
   </div>
@@ -3033,274 +2499,48 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
 <section class="section" id="diet" aria-labelledby="diet-title">
   <div class="container">
     <header class="section-head">
-      <p class="eyebrow" data-reveal="fade">먹이와 몸무게</p>
+      <p class="eyebrow" data-reveal="fade">먹이와 몸 상태</p>
       <h2 class="section-title" id="diet-title" data-reveal="up">통통한 몸과 비만은 어떻게 다를까요?</h2>
-      <p class="lede" data-reveal="up">동그란 몸은 매력이지만 갈비뼈가 전혀 만져지지 않으면 살이 찐 것일 수 있습니다.</p>
+      <p class="lede" data-reveal="up">둥근 얼굴이나 묵직한 품종이라는 이유로 살이 찐 것을 놓치면 안 됩니다.</p>
     </header>
 
-    <div class="split" style="margin-bottom:var(--sp-8)">
-      <div class="section-body">
-        <p class="body" data-reveal="up">“동그랗고 묵직하면 모두 건강한 걸까요?” 꼭 그렇지는 않습니다. 호주 병원 기록에서는 조사한 어른 고양이의 47.7%가 과체중이거나 비만이었습니다.</p>
-        <p class="body" data-reveal="up">몸무게 숫자 하나로는 알 수 없습니다. 옆구리를 살짝 만졌을 때 갈비뼈가 느껴지는지, 위에서 보았을 때 허리선이 보이는지 함께 살펴보세요.</p>
-        <p class="body" data-reveal="up">밥은 하루치 양을 정해 여러 번 나누어 주세요. 살을 빼야 한다면 갑자기 굶기지 말고 반드시 수의사와 계획을 세워야 합니다.</p>
-        <p class="body" data-reveal="up">깨끗한 물을 늘 준비하고 화장실은 고양이 수보다 하나 더 두면 좋습니다. 사료를 바꿀 때도 며칠에 걸쳐 천천히 바꿔 주세요.</p>
-      </div>
+    <div class="section-body" style="max-width:var(--w-text);margin-inline:auto;margin-bottom:var(--sp-8)">
+      <p class="body" data-reveal="up">브리티시 숏헤어는 가슴이 넓고 몸이 단단해 원래 묵직해 보입니다. 하지만 위에서 봤을 때 허리가 전혀 보이지 않고 갈비뼈를 가볍게 만지기 어렵다면 살이 많이 쪘을 수 있습니다.</p>
+      <p class="body" data-reveal="up">어린이가 사료 양이나 다이어트 방법을 혼자 정하면 안 됩니다. 나이, 활동량과 건강 상태를 아는 보호자와 수의사가 하루 양을 정해야 합니다.</p>
+      <p class="body" data-reveal="up">매일 깨끗한 물을 준비하고 짧게라도 여러 번 놀아 주세요. 살을 빼려고 갑자기 굶기면 위험할 수 있으니 반드시 동물병원의 도움을 받습니다.</p>
     </div>
 
-    <div class="grid grid--3" data-reveal="stagger" style="margin-bottom:var(--sp-6)">
-      <article class="stat">
-        <span class="stat__label">과체중과 비만 합계</span>
-        <span class="stat__num"><span data-count-to="47.7" data-count-decimals="1">47.7</span><small>%</small></span>
-        <span class="stat__cap">호주 1차 진료 기록 2,540마리, Frontiers in Veterinary Science 2023</span>
+    <div class="grid grid--3" data-reveal="stagger" style="margin-bottom:var(--sp-8)">
+      <article class="card card--accent">
+        <h3 class="card__title"><span class="card__index">1</span>위에서 보기</h3>
+        <p class="card__body">갈비뼈 뒤쪽에 허리가 조금 보이는지 살펴봅니다. 털 때문에 잘 보이지 않으면 손으로도 확인합니다.</p>
       </article>
-      <article class="stat">
-        <span class="stat__label">어른 고양이 평균 몸 상태 점수, 1~9점</span>
-        <span class="stat__num"><span data-count-to="5.8" data-count-decimals="1">5.8</span></span>
-        <span class="stat__cap">중성화한 수컷은 6.1점으로 과체중 범위, 중성화하지 않은 수컷은 5.3점으로 알맞은 범위였습니다.</span>
+      <article class="card card--accent">
+        <h3 class="card__title"><span class="card__index">2</span>가볍게 만져 보기</h3>
+        <p class="card__body">세게 누르지 않아도 갈비뼈가 살짝 느껴지는지 봅니다. 아파하거나 싫어하면 바로 멈춥니다.</p>
       </article>
-      <article class="stat">
-        <span class="stat__label">어른 고양이 평균 체중 (실측)</span>
-        <span class="stat__num"><span data-count-to="5.4" data-count-decimals="1">5.4</span><small>kg</small></span>
-        <span class="stat__cap">95% 신뢰구간 5.3~5.4. 과체중 개체가 다수 포함된 병원 내원 집단의 값이며 적정 체중이 아닙니다</span>
+      <article class="card card--accent">
+        <h3 class="card__title"><span class="card__index">3</span>변화를 기록하기</h3>
+        <p class="card__body">갑자기 살이 찌거나 빠지고 먹는 양이 달라지면 보호자에게 알립니다. 정기 검진 때 기록을 보여 주세요.</p>
       </article>
-    </div>
-
-    <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-8)">
-      <summary>몸무게 연구를 자세히 볼까요?</summary>
-      <div class="accordion__body">
-      <div data-reveal="up" style="margin-bottom:var(--sp-4)">
-        <p class="table-caption">표 1. 체중과 체형 실측 (호주 1차 진료 기록, 2008~2017년)</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="표본 크기, 성별과 중성화 여부별 평균 체중, 체형 점수, 과체중 비율을 정리한 표. 가로로 스크롤할 수 있습니다.">
-          <table>
-            <thead>
-              <tr><th scope="col">항목</th><th scope="col">값</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">표본</th><td class="t-num">2,540마리, 체중 기록 9,339건</td></tr>
-              <tr><th scope="row">어른 고양이 평균 체중</th><td class="t-num">5.4kg (95% 신뢰구간 5.3~5.4)</td></tr>
-              <tr><th scope="row">중성화한 수컷 / 중성화하지 않은 수컷</th><td class="t-num">5.8kg / 5.2kg</td></tr>
-              <tr><th scope="row">중성화한 암컷 / 중성화하지 않은 암컷</th><td class="t-num">4.8kg / 4.6kg</td></tr>
-              <tr><th scope="row">12개월 미만</th><td class="t-num">2.6kg</td></tr>
-              <tr><th scope="row">평균 몸 상태 점수, 1~9점</th><td class="t-num">5.8</td></tr>
-              <tr><th scope="row">적정 체중</th><td class="t-num">51%</td></tr>
-              <tr><th scope="row">과체중과 비만 합계</th><td class="t-num">47.7%</td></tr>
-              <tr><th scope="row">중성화한 수컷 평균 체형 점수</th><td class="t-num">6.1 (유일하게 과체중 범주)</td></tr>
-              <tr><th scope="row">중성화하지 않은 수컷의 평균 몸 상태 점수</th><td class="t-num">5.3 (알맞은 범위)</td></tr>
-              <tr><th scope="row">집단 체중 정점</th><td class="t-num">9세, 평균 5.8kg</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="note" style="margin-top:var(--sp-1)">이 평균값은 과체중 개체가 다수 포함된 병원 내원 집단의 실측값이므로 적정 체중으로 제시해서는 안 됩니다.</p>
-      </div>
-
-      <div data-reveal="up">
-        <p class="table-caption">표 2. 조기 체중과 생존 지표</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="생후 12개월 이내 최대 체중에 따라 집단의 20퍼센트가 사망하거나 안락사된 시점을 비교한 표. 가로로 스크롤할 수 있습니다.">
-          <table style="min-width:720px">
-            <thead>
-              <tr><th scope="col">생후 12개월 이내 최대 체중</th><th scope="col">집단의 20%가 사망하거나 안락사된 시점</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">3.3kg 이상</th><td class="t-num">6.6세 (95% 신뢰구간 5.2~6.6)</td></tr>
-              <tr><th scope="row">3.3kg 미만</th><td class="t-num">12.3세 (95% 신뢰구간 11.7~13.1)</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <blockquote class="callout" data-reveal="up" style="margin-top:var(--sp-2)">이 값은 중앙 생존 기간이 아닙니다. 집단의 20%가 사망하거나 안락사된 시점의 나이입니다. 관찰 연구에서 찾은 연관성이므로 원인과 결과를 증명하지 않습니다. 어릴 때 무거우면 반드시 일찍 죽는다는 뜻도 아닙니다.</blockquote>
-      </div>
-      </div>
-    </details>
-
-    <h3 class="block-title" data-reveal="up" style="margin-bottom:var(--sp-2)">우리 고양이는 하루에 얼마나 먹을까요?</h3>
-    <div class="genelab" style="margin-bottom:var(--sp-4)">
-      <div class="genelab__panel" data-reveal="up">
-        <p class="note" style="margin-bottom:var(--sp-2)">먼저 가만히 쉬는 데 필요한 하루 열량을 구합니다. 계산식은 70 × (체중kg)<sup>0.75</sup>입니다. 여기에 나이와 중성화 여부, 몸 상태에 맞는 숫자를 곱하면 실제 하루 필요 열량이 나옵니다.</p>
-
-        <div class="field">
-          <label for="dietWeight">현재 체중 (kg)</label>
-          <input type="number" id="dietWeight" name="dietWeight" min="0.5" max="15" step="0.1" inputmode="decimal" placeholder="예: 5.4">
-        </div>
-
-        <div class="field">
-          <label for="dietStage">생애 단계·상태</label>
-          <select id="dietStage" name="dietStage">
-            <option value="kitten" data-factor="2.5">새끼 고양이 (계수 2.5)</option>
-            <option value="intact" data-factor="1.4">중성화하지 않은 어른 고양이 (계수 1.4)</option>
-            <option value="neutered" data-factor="1.2" selected>중성화한 어른 고양이 (계수 1.2)</option>
-            <option value="senior" data-factor="1.1">나이 든 고양이 (계수 1.1)</option>
-            <option value="pregnant" data-factor="1.6">임신한 고양이 (계수 1.6)</option>
-            <option value="lactating" data-factor="2" data-factor-max="4">젖을 먹이는 고양이 (계수 2~4)</option>
-          </select>
-        </div>
-
-        <div class="field">
-          <label for="dietTarget">목표 체중 (kg, 선택 입력)</label>
-          <input type="number" id="dietTarget" name="dietTarget" min="0.5" max="15" step="0.1" inputmode="decimal" placeholder="감량 계획이 있을 때만 입력">
-        </div>
-
-        <p class="note" id="dietAxisCaption">이 평균값은 과체중 개체가 다수 포함된 병원 내원 집단의 실측값이며 적정 체중이 아닙니다.</p>
-      </div>
-
-      <div class="genelab__panel" data-reveal="up">
-        <div id="dietResult" aria-live="polite">
-          <p class="note">쉬는 데 필요한 하루 열량</p>
-          <p class="result__name"><span id="dietRER">체중을 입력하십시오</span></p>
-          <p class="note" style="margin-top:var(--sp-2)">나이와 몸 상태를 반영한 하루 필요 열량</p>
-          <p class="result__name"><span id="dietMER">체중을 입력하십시오</span></p>
-          <p id="dietTargetRow" hidden>
-            <span class="note">목표 체중으로 계산한 하루 필요 열량</span><br>
-            <span class="result__name" id="dietTargetMER"></span>
-          </p>
-          <p class="note" id="dietAxisNote" style="margin-top:var(--sp-2)">기준점. 어른 고양이 평균 5.4kg, 중성화한 수컷 5.8kg, 중성화한 암컷 4.8kg.</p>
-        </div>
-
-        <div class="myth-box" id="dietWarnings" style="margin-top:var(--sp-3)">
-          <p class="myth-box__tag">결과를 읽기 전에</p>
-          <dl>
-            <div><dt>1. 추정치입니다</dt><dd class="is-truth">이 계산값은 일반적으로 쓰이는 공식에 따른 추정치이며 개체별로 10~15%의 편차가 있습니다.</dd></div>
-            <div><dt>2. 살을 뺄 때는 목표 몸무게로 계산합니다</dt><dd class="is-truth">현재 몸무게가 아니라 목표 몸무게를 기준으로 계산합니다. 감량 계획은 수의사와 함께 세워야 합니다.</dd></div>
-            <div><dt>3. 사료를 갑자기 줄이면 위험합니다</dt><dd class="is-truth">너무 빨리 굶기면 지방간이 생길 수 있습니다. 한 주에 몸무게의 1~2%를 줄이는 것을 목표로 삼습니다.</dd></div>
-          </dl>
-        </div>
-
-        <p class="note" style="margin-top:var(--sp-2)">공식과 계수는 2차 출처입니다 (Association for Pet Obesity Prevention · Today's Veterinary Nurse). 이 사이트는 계산 결과의 산술만 검산했습니다.</p>
-      </div>
-    </div>
-
-    <div data-reveal="up" style="max-width:var(--w-text);margin-inline:auto;margin-bottom:var(--sp-8)">
-      <p class="table-caption">검산 참고 표 (중성화한 어른 고양이 계수 1.2 기준)</p>
-      <div class="table-wrap" role="region" tabindex="0"
-           aria-label="중성화한 어른 고양이 계수 1.2를 적용한 체중별 휴식 에너지 요구량과 하루 에너지 요구량 검산 참고 표. 가로로 스크롤할 수 있습니다.">
-        <table>
-          <thead>
-            <tr><th scope="col">체중</th><th scope="col">쉬는 데 필요한 열량</th><th scope="col">하루 필요 열량</th></tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">4.8kg</th><td class="t-num">227 kcal</td><td class="t-num">272 kcal</td></tr>
-            <tr><th scope="row">5.0kg</th><td class="t-num">234 kcal</td><td class="t-num">281 kcal</td></tr>
-            <tr><th scope="row">5.8kg</th><td class="t-num">262 kcal</td><td class="t-num">314 kcal</td></tr>
-            <tr><th scope="row">6.0kg</th><td class="t-num">268 kcal</td><td class="t-num">322 kcal</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <blockquote class="callout callout--accent" data-reveal="up" style="margin-top:var(--sp-2)">계산값은 참고용입니다. 고양이마다 실제 필요 열량이 10~15% 다를 수 있습니다. 살을 뺄 때는 목표 몸무게로 계산하고 수의사와 함께 안전한 계획을 세워야 합니다.</blockquote>
-    </div>
-
-    <div style="margin-bottom:var(--sp-8)">
-      <div data-reveal="up" style="margin-bottom:var(--sp-4)">
-        <p class="table-caption">표 3. 급여 관리 권고</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="급여 방식, 급여 횟수, 물, 감량 속도, 새끼 고양이 사료에 관한 권고 표. 가로로 스크롤할 수 있습니다.">
-          <table style="min-width:720px">
-            <thead>
-              <tr><th scope="col">항목</th><th scope="col">권고</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">급여 방식</th><td>자율 급여 대신 정량 분할 급여</td></tr>
-              <tr><th scope="row">급여 횟수</th><td>소량 다회</td></tr>
-              <tr><th scope="row">물</th><td>상시 깨끗한 물</td></tr>
-              <tr><th scope="row">감량 속도</th><td>주당 체중의 1~2%, 수의사 감독</td></tr>
-              <tr><th scope="row">새끼 고양이 사료</th><td>최소 만 1년까지 먹입니다. (영국 고양이 등록 단체)</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="note" style="margin-top:var(--sp-1)">근거: Cornell Feline Health Center. 새끼 고양이 사료 항목은 영국 고양이 등록 단체 자료를 따랐습니다.</p>
-      </div>
-
-      <div data-reveal="up">
-        <p class="table-caption">표 4. 고양이 하부요로기질환 위험 요인과 대응</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="하부요로기계질환의 위험 인자와 각각에 대한 대응을 정리한 표. 가로로 스크롤할 수 있습니다.">
-          <table style="min-width:760px">
-            <thead>
-              <tr><th scope="col">위험 인자</th><th scope="col">대응</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">중년, 과체중, 낮은 운동량</th><td>체중 관리와 활동량 확보</td></tr>
-              <tr><th scope="row">실내 화장실 사용</th><td>고양이 수보다 하나 더, 조용하고 안전한 위치, 청결 유지</td></tr>
-              <tr><th scope="row">수컷</th><td>정기 관찰</td></tr>
-              <tr><th scope="row">다묘 가정, 일상 변화</th><td>자원 분리 배치, 일상 변화 최소화</td></tr>
-              <tr><th scope="row">사료 급변</th><td>사료를 갑자기 바꾸지 않기 (일부 개체에서 특발성 방광염 재발 가능)</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="note" style="margin-top:var(--sp-1)">주의. 시판 요로 건강 사료가 고양이 하부요로기질환 발생률 자체를 줄인다는 증거는 없습니다. 근거: Cornell Feline Health Center.</p>
-      </div>
-    </div>
-
-    <h3 class="block-title" data-reveal="up" style="margin-bottom:var(--sp-2)">손과 눈으로 몸 상태를 살펴볼까요?</h3>
-    <div class="genelab" style="margin-bottom:var(--sp-8)">
-      <div class="genelab__panel" data-reveal="up">
-        <p class="note" style="margin-bottom:var(--sp-2)">갈비뼈, 허리선, 배 모양을 차례로 살펴보세요. 이 점검은 진단이 아니라 수의사와 상담할 시점을 찾는 도구입니다.</p>
-        <div class="field">
-          <label for="bcsRib">1단계. 갈비뼈 촉진. 손바닥으로 옆구리를 쓸었을 때 갈비뼈가 만져집니까</label>
-          <select id="bcsRib" name="bcsRib">
-            <option value="" data-score="-1">선택하십시오</option>
-            <option value="easy" data-score="0">쉽게 만져집니다</option>
-            <option value="hard" data-score="1">눌러야 만져집니다</option>
-            <option value="none" data-score="2">잘 만져지지 않습니다</option>
-            <option value="unknown" data-score="-1">모르겠습니다</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="bcsSide">2단계. 측면 관찰. 옆에서 보았을 때 배가 위로 접혀 올라갑니까</label>
-          <select id="bcsSide" name="bcsSide">
-            <option value="" data-score="-1">선택하십시오</option>
-            <option value="tuck" data-score="0">접혀 올라갑니다</option>
-            <option value="flat" data-score="1">거의 수평입니다</option>
-            <option value="sag" data-score="2">아래로 처집니다</option>
-            <option value="unknown" data-score="-1">모르겠습니다</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="bcsTop">3단계. 위에서 내려다보기. 허리선이 보입니까</label>
-          <select id="bcsTop" name="bcsTop">
-            <option value="" data-score="-1">선택하십시오</option>
-            <option value="waist" data-score="0">허리선이 보입니다</option>
-            <option value="slight" data-score="1">희미하게 보입니다</option>
-            <option value="none" data-score="2">보이지 않습니다</option>
-            <option value="unknown" data-score="-1">모르겠습니다</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="genelab__panel" data-reveal="up">
-        <div id="bcsResult" aria-live="polite">
-          <p class="note">점검 결과가 가리키는 방향</p>
-          <p class="result__name" id="bcsVerdict">세 단계에 모두 답하십시오</p>
-          <p class="note" style="margin-top:var(--sp-2)">방향은 셋 중 하나입니다. 현행 유지, 급여량 점검, 수의사 상담.</p>
-        </div>
-        <blockquote class="callout callout--accent" id="bcsDisclaimer" style="margin-top:var(--sp-3)">이것은 진단이 아닙니다. 체형 판정과 감량 계획은 반드시 담당 수의사와 상담해 결정하십시오.</blockquote>
-      </div>
     </div>
 
     <div style="max-width:var(--w-text);margin-inline:auto">
       <div class="section-body">
         <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">오해 바로잡기</p>
+          <p class="myth-box__tag">동그란 고양이는 모두 통통할까요?</p>
           <dl>
-            <div><dt>흔한 오해</dt><dd class="is-myth">생후 1년에 3.3kg을 넘으면 수명이 절반으로 줄어듭니다.</dd></div>
-            <div><dt>실제</dt><dd class="is-truth">원문이 비교한 값은 집단의 20%가 사망하거나 안락사된 시점의 나이입니다. 중앙 생존 기간이 아닙니다. 관찰 연구에서 찾은 연관성이므로 원인과 결과의 관계로 설명해서도 안 됩니다.</dd></div>
+            <div><dt>흔한 오해</dt><dd class="is-myth">브리티시 숏헤어는 원래 뚱뚱해야 귀엽습니다.</dd></div>
+            <div><dt>확인할 점</dt><dd class="is-truth">둥근 머리와 넓은 가슴은 품종에서 자주 보이는 모습이지만 비만은 건강 문제입니다. 몸무게보다 허리와 갈비뼈, 최근 변화를 함께 봅니다.</dd></div>
           </dl>
         </div>
-
-        <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">오해 바로잡기</p>
-          <dl>
-            <div><dt>흔한 오해</dt><dd class="is-myth">살을 빼려면 밥을 확 줄이면 됩니다.</dd></div>
-            <div><dt>실제</dt><dd class="is-truth">급격한 절식은 지방간 위험을 만듭니다. 감량 목표는 주당 체중의 1~2%이며 수의사 감독 아래 진행해야 합니다. (Cornell Feline Health Center)</dd></div>
-          </dl>
-        </div>
-
+        <blockquote class="callout callout--accent" data-reveal="up">사료 포장지의 숫자나 인터넷 계산기는 출발점일 뿐입니다. 실제 급여량과 체중 조절은 보호자와 수의사가 결정합니다.</blockquote>
         <details class="src">
           <summary>이 섹션의 출처</summary>
           <ol>
-            <li>Nicholson et al., Frontiers in Veterinary Science, 2023 (체중, 몸 상태 점수, 과체중 비율, 조기 체중과 생존 지표. 호주 1차 진료 기록 2,540마리, 체중 기록 9,339건, 2008~2017년)</li>
-            <li>영국 고양이 등록 단체 · 영국 고양이 등록 단체 품종자문위원회 Breeding Policy (느린 대사와 체중 관리, 큰 체격과 비만의 차이, 새끼 고양이용 사료 최소 1년)</li>
-            <li>Cornell Feline Health Center (비만 유병, 자율 급여, 감량 속도, 지방간 위험, 고양이 하부요로기질환 위험군과 권고)</li>
-            <li>Association for Pet Obesity Prevention · Today's Veterinary Nurse, 2차 자료 (휴식 열량·하루 필요 열량 공식과 계수. 표의 산술은 이 사이트가 검산했습니다)</li>
+            <li>Nicholson et al., Frontiers in Veterinary Science, 2023 (브리티시 숏헤어의 체중과 몸 상태 기록)</li>
+            <li>세계소동물수의사회 Global Nutrition Guidelines (몸 상태 점수와 영양 평가)</li>
+            <li>Cornell Feline Health Center (고양이 비만과 안전한 체중 관리)</li>
           </ol>
         </details>
       </div>
@@ -3312,162 +2552,50 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
   <div class="container">
     <header class="section-head">
       <p class="eyebrow" data-reveal="fade">수명과 성장</p>
-      <h2 class="section-title" id="lifespan-title" data-reveal="up">몇 살까지 살고 언제 어른이 될까요?</h2>
-      <p class="lede" data-reveal="up">몸은 서두르지 않고 3~5년에 걸쳐 천천히 자랍니다.</p>
+      <h2 class="section-title" id="lifespan-title" data-reveal="up">몇 살까지 살고 언제 다 자랄까요?</h2>
+      <p class="lede" data-reveal="up">수명은 한 숫자로 정해지지 않습니다. 생활 환경과 건강 관리, 각 고양이의 몸 상태에 따라 달라집니다.</p>
     </header>
 
-    <div class="section-body" style="max-width:var(--w-text);margin-bottom:var(--sp-8)">
-      <p class="body" data-reveal="up">“9.58년이면 열 살도 못 산다는 뜻일까요?” 그렇지 않습니다. 이 숫자는 고양이 한 마리의 수명을 정해 놓은 답이 아니라, 많은 고양이의 병원 기록을 모아 계산한 평균입니다.</p>
-      <p class="body" data-reveal="up">연구진은 영국의 고양이 1,254,484마리 가운데 사망 기록 7,936건을 살폈습니다. 그중 브리티시 블루와 브리티시 롱헤어를 한데 묶은 그룹의 사망 기록은 194건이었습니다. 사고나 어린 시절의 병으로 일찍 죽은 고양이도 모두 계산에 들어갔습니다.</p>
-      <p class="body" data-reveal="up">몸무게도 평생 같지 않습니다. 호주 병원 기록에서 생후 12개월 미만은 평균 2.6kg이었고 9세에는 평균 5.8kg으로 가장 무거웠습니다. 나이 든 고양이의 몸무게가 계속 줄면 병의 신호일 수 있으니 수의사에게 물어보세요.</p>
+    <div class="section-body" style="max-width:var(--w-text);margin-inline:auto;margin-bottom:var(--sp-8)">
+      <p class="body" data-reveal="up">영국 병원 기록을 이용한 한 연구에서는 브리티시 블루와 브리티시 롱헤어를 묶은 그룹의 출생 시점 평균 기대수명을 9.58년으로 계산했습니다.</p>
+      <p class="body" data-reveal="up">이 숫자는 한 고양이가 꼭 그 나이에 죽는다는 뜻이 아닙니다. 어린 나이에 사고나 병으로 죽은 사례까지 모두 포함한 집단 평균이며, 더 오래 사는 고양이도 많습니다.</p>
+      <p class="body" data-reveal="up">나이가 들수록 몸무게, 먹는 양과 움직임이 달라질 수 있습니다. 갑자기 살이 빠지거나 행동이 달라지면 “나이가 들어서 그래”라고 넘기지 말고 수의사에게 물어보세요.</p>
     </div>
 
-    <div data-reveal="up" style="max-width:var(--w-text);margin-bottom:var(--sp-6)">
-      <article class="stat">
-        <span class="stat__label">영국 병원 기록으로 계산한 평균</span>
-        <span class="stat__num"><span data-count-to="9.58" data-count-decimals="2">9.58</span><small>년</small></span>
-        <span class="stat__cap">브리티시 블루와 브리티시 롱헤어를 묶은 그룹의 평균입니다. 한 고양이가 꼭 이 나이에 죽는다는 뜻은 아닙니다.</span>
-      </article>
-    </div>
-
-    <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-8)">
-      <summary>연구 숫자를 더 살펴볼까요?</summary>
-      <div class="accordion__body">
-        <p class="table-caption">같은 연구에서 계산한 품종별 평균</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="같은 생명표 연구에서 확인된 품종별 기대수명 비교 표. 가로로 스크롤할 수 있습니다.">
-          <table>
-            <thead>
-              <tr><th scope="col">품종</th><th scope="col">기대수명</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">버미즈</th><td class="t-num">14.42년</td></tr>
-              <tr><th scope="row">버만</th><td class="t-num">14.39년</td></tr>
-              <tr><th scope="row">샴</th><td class="t-num">11.69년</td></tr>
-              <tr><th scope="row">페르시안</th><td class="t-num">10.93년</td></tr>
-              <tr><th scope="row">랙돌</th><td class="t-num">10.31년</td></tr>
-              <tr><th scope="row">노르웨이숲</th><td class="t-num">9.95년</td></tr>
-              <tr><th scope="row">메인쿤</th><td class="t-num">9.71년</td></tr>
-              <tr><th scope="row">러시안</th><td class="t-num">9.65년</td></tr>
-              <tr><th scope="row">British (블루·롱헤어 합산)</th><td class="t-num">9.58년</td></tr>
-              <tr><th scope="row">벵갈</th><td class="t-num">8.51년</td></tr>
-              <tr><th scope="row">스핑크스</th><td class="t-num">6.68년</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="note" style="margin-top:var(--sp-1)">참고 수치. 영국 고양이 전체 11.74년, 믹스묘 11.89년, 순종 10.41년, 암컷 12.51년, 수컷 11.18년.</p>
-      </div>
-    </details>
-
-    <h3 class="block-title" data-reveal="up" style="margin-bottom:var(--sp-2)">아기 고양이는 어떻게 어른이 될까요?</h3>
-    <p class="note" data-reveal="fade" style="max-width:var(--w-text);margin-bottom:var(--sp-3)">사진을 따라가며 몸이 달라지는 모습을 살펴보세요.</p>
-
-    <div class="grid grid--2" id="lifespanStages" data-reveal="stagger" style="margin-bottom:var(--sp-8)">
-      <article class="card card--accent" id="lifespan-stage-1">
-        <figure class="img-slot">
-          <div class="img-slot__frame">
-            <img src="assets/img/lifespan-1.png" width="1200" height="800" loading="lazy" decoding="async"
-                 alt="따뜻한 금빛 털과 초록색 눈을 가진 골든 팁드 브리티시 숏헤어 새끼 고양이가 정면을 보고 앉아 있는 사진">
-          </div>
-          <figcaption>아기 고양이. 털에 흐릿한 줄무늬가 남아 있을 수 있습니다.</figcaption>
-        </figure>
+    <h3 class="block-title" data-reveal="up" style="margin-bottom:var(--sp-3)">나이에 따라 무엇이 달라질까요?</h3>
+    <div class="grid grid--2" data-reveal="stagger" style="margin-bottom:var(--sp-8)">
+      <article class="card card--accent">
+        <figure class="img-slot"><div class="img-slot__frame"><img src="assets/img/lifespan-1.png" width="1200" height="800" loading="lazy" decoding="async" alt="골든 팁드 브리티시 숏헤어 새끼 고양이"></div><figcaption>아기 고양이는 빠르게 배우고 자랍니다.</figcaption></figure>
         <h4 class="card__title" style="margin-top:var(--sp-2)">아기 · 태어나서 1살까지</h4>
-        <p class="card__body">생후 12개월 미만의 평균 몸무게는 2.6kg입니다. 몸이 자라는 동안에는 최소 만 1년까지 아기 고양이용 사료를 먹이는 것이 좋습니다.</p>
-        <p class="card__cap">근거: 호주 1차 진료 기록 2008~2017 · 영국 고양이 등록 단체</p>
+        <p class="card__body">안전하게 세상을 배우는 시기입니다. 예방접종과 성장 확인, 나이에 맞는 먹이가 중요합니다.</p>
       </article>
-      <article class="card card--accent" id="lifespan-stage-2">
-        <figure class="img-slot">
-          <div class="img-slot__frame">
-            <img src="assets/img/lifespan-2.png" width="1200" height="800" loading="lazy" decoding="async"
-                 alt="금빛 털 끝에 짙은 색이 얹힌 젊은 골든 팁드 브리티시 숏헤어가 측면으로 서 있는 사진">
-          </div>
-          <figcaption>젊은 고양이. 몸이 잠시 길쭉해 보여도 잘못 자란 것은 아닙니다.</figcaption>
-        </figure>
+      <article class="card card--accent">
+        <figure class="img-slot"><div class="img-slot__frame"><img src="assets/img/lifespan-2.png" width="1200" height="800" loading="lazy" decoding="async" alt="젊은 골든 팁드 브리티시 숏헤어"></div><figcaption>젊은 고양이는 놀이로 몸과 마음을 씁니다.</figcaption></figure>
         <h4 class="card__title" style="margin-top:var(--sp-2)">젊은 고양이 · 1살부터 6살까지</h4>
-        <p class="card__body">생후 9개월에서 2년 사이에는 몸이 길쭉해 보일 수 있습니다. 잘못 자란 것이 아닙니다. 완전히 다 자라려면 3~5년이 걸립니다.</p>
-        <p class="card__cap">근거: 영국 고양이 등록 단체 SOP · 미국 고양이 애호가 협회 Show Standard 2026 개정 · 영국 고양이 등록 단체 품종자문위원회</p>
+        <p class="card__body">브리티시 숏헤어는 이 시기에도 천천히 체형이 완성됩니다. 매일 놀이와 정기 검진을 이어 갑니다.</p>
       </article>
-      <article class="card card--accent" id="lifespan-stage-3">
-        <figure class="img-slot">
-          <div class="img-slot__frame">
-            <img src="assets/img/lifespan-3.png" width="1200" height="800" loading="lazy" decoding="async"
-                 alt="둥근 볼과 묵직한 몸이 완성된 골든 팁드 브리티시 숏헤어 어른 고양이의 측면 전신 사진">
-          </div>
-          <figcaption>어른 고양이. 이 무렵 몸무게가 가장 많이 나갈 수 있습니다.</figcaption>
-        </figure>
-        <h4 class="card__title" style="margin-top:var(--sp-2)">어른 고양이 · 7살부터 10살까지</h4>
-        <p class="card__body">병원 기록에서는 9세에 평균 몸무게가 5.8kg으로 가장 높았습니다.</p>
-        <p class="card__cap">근거: 호주 1차 진료 기록 2008~2017</p>
+      <article class="card card--accent">
+        <figure class="img-slot"><div class="img-slot__frame"><img src="assets/img/lifespan-3.png" width="1200" height="800" loading="lazy" decoding="async" alt="둥근 볼과 묵직한 몸이 완성된 다 자란 브리티시 숏헤어"></div><figcaption>다 자란 고양이는 몸 상태 변화를 꾸준히 살핍니다.</figcaption></figure>
+        <h4 class="card__title" style="margin-top:var(--sp-2)">다 자란 고양이 · 7살부터 10살까지</h4>
+        <p class="card__body">몸무게와 치아, 심장과 신장 상태를 정기 검진에서 살펴봅니다.</p>
       </article>
-      <article class="card card--accent" id="lifespan-stage-4">
-        <figure class="img-slot">
-          <div class="img-slot__frame">
-            <img src="assets/img/lifespan-4.png" width="1200" height="800" loading="lazy" decoding="async"
-                 alt="부드러운 금빛 털과 차분한 초록색 눈을 가진 나이 든 골든 팁드 브리티시 숏헤어가 담요 위에 엎드린 사진">
-          </div>
-          <figcaption>나이 든 고양이. 몸무게가 계속 줄면 건강 상태를 확인해야 합니다.</figcaption>
-        </figure>
-        <h4 class="card__title" style="margin-top:var(--sp-2)">나이 든 고양이 · 10살이 넘으면</h4>
-        <p class="card__body">9세 뒤부터 평균 몸무게가 조금씩 줄었습니다. 갑자기 살이 빠지면 수의사에게 물어보세요.</p>
-        <p class="card__cap">근거: 호주 1차 진료 기록 2008~2017</p>
+      <article class="card card--accent">
+        <figure class="img-slot"><div class="img-slot__frame"><img src="assets/img/lifespan-4.png" width="1200" height="800" loading="lazy" decoding="async" alt="담요 위에서 쉬는 나이 든 브리티시 숏헤어"></div><figcaption>나이 든 고양이에게는 편안한 이동과 휴식 공간이 필요합니다.</figcaption></figure>
+        <h4 class="card__title" style="margin-top:var(--sp-2)">나이 든 고양이 · 11살부터</h4>
+        <p class="card__body">높은 곳에 오르기 쉬운 발판과 따뜻한 잠자리를 준비하고, 작은 변화도 보호자에게 알립니다.</p>
       </article>
-    </div>
-
-    <div style="margin-bottom:var(--sp-8)">
-      <div data-reveal="up" style="margin-bottom:var(--sp-4)">
-        <p class="table-caption">표 3. 최대 체중 도달 연령 (실측, 호주 1차 진료 기록)</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="성별과 중성화 여부에 따른 최대 체중 도달 연령 표. 가로로 스크롤할 수 있습니다.">
-          <table>
-            <thead>
-              <tr><th scope="col">구분</th><th scope="col">도달 연령</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">중성화하지 않은 암컷</th><td class="t-num">4세</td></tr>
-              <tr><th scope="row">중성화한 수컷</th><td class="t-num">5세</td></tr>
-              <tr><th scope="row">중성화하지 않은 수컷</th><td class="t-num">6세</td></tr>
-              <tr><th scope="row">중성화한 암컷</th><td class="t-num">9세</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div data-reveal="up">
-        <p class="table-caption">표 4. 번식 관련 수치</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="임신 기간, 조사한 출산 기록 수, 한 번에 태어난 새끼 수, 번식 시작 나이, 출산 간격, 근친 계수를 정리한 표. 가로로 스크롤할 수 있습니다.">
-          <table style="min-width:820px">
-            <thead>
-              <tr><th scope="col">항목</th><th scope="col">값</th><th scope="col">출처 등급</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">임신 기간</th><td>교배한 날부터 약 64~69일, 일반적으로 65일 안팎</td><td><span class="pill pill--common">2차 출처</span> Texas Veterinary Medical Foundation</td></tr>
-              <tr><th scope="row">조사한 출산 기록</th><td class="t-num">브리티시 숏헤어 453건</td><td>Wójcik &amp; Piechowska, Life 2025;15(7):1128 원문</td></tr>
-              <tr><th scope="row">한 번에 태어난 새끼 수</th><td class="t-num">평균 4.15 ± 1.77마리</td><td>Wójcik &amp; Piechowska의 원문 표 2에 나온 평균과 표준편차</td></tr>
-              <tr><th scope="row">여왕의 번식 개시</th><td>생후 9개월 이상</td><td>영국 고양이 등록 단체 지침</td></tr>
-              <tr><th scope="row">출산 간격</th><td>출산 사이 최소 26주, 24개월 동안 3번 이내를 권장합니다.</td><td>영국 고양이 등록 단체 지침</td></tr>
-              <tr><th scope="row">근친 계수</th><td class="t-num">25를 넘지 않을 것</td><td>영국 고양이 등록 단체 브리더 스킴</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
     </div>
 
     <div style="max-width:var(--w-text);margin-inline:auto">
       <div class="section-body">
-        <blockquote class="callout callout--accent" data-reveal="up">이 페이지의 건강 정보는 공개된 수의학 문헌과 등록 단체 자료를 정리한 일반적 참고 자료이며 진단이나 처방을 대신하지 않습니다. 증상 판단, 검사 시행 여부, 식이 변경, 체중 감량 계획은 반드시 담당 수의사와 상담해 결정하십시오.</blockquote>
-
-        <blockquote class="callout" data-reveal="up">기대수명 9.58년은 어린 나이의 사망까지 포함한 집단 통계이며 개별 고양이가 도달할 수 있는 나이의 상한이 아닙니다. 이 값은 브리티시 블루와 브리티시 롱헤어를 하나로 묶은 그룹의 수치입니다.</blockquote>
-
+        <blockquote class="callout callout--accent" data-reveal="up">평균 수명은 약속된 날짜가 아닙니다. 오늘 잘 먹고 잘 쉬고 평소처럼 행동하는지 살피는 일이 더 중요합니다.</blockquote>
         <details class="src">
           <summary>이 섹션의 출처</summary>
           <ol>
-            <li>Teng, Brodbelt, Church &amp; O'Neill, Journal of Feline Medicine and Surgery, 2024 (기대수명 9.58년, 품종별 기대수명, 전체·순종·믹스묘 비교. 영국 1차 진료 고양이 1,254,484마리 중 확인된 사망 7,936건)</li>
-            <li>Nicholson et al., Frontiers in Veterinary Science, 2023 (체중 정점 9세, 20세 연령군 3.5kg, 12개월 미만 2.6kg, 최대 체중 도달 연령. 호주 1차 진료 기록 2,540마리, 체중 기록 9,339건, 2008~2017년)</li>
-            <li>미국 고양이 애호가 협회 Show Standard, 2026 개정은 완전 성숙을 3~5년으로, 영국 고양이 등록 단체 품종자문위원회 문서는 3~4세로 적습니다</li>
-            <li>영국 고양이 등록 단체 Standard of Points (생후 9개월~2년의 길쭉한 체형 허용)</li>
-            <li>Texas Veterinary Medical Foundation, 2차 자료 (임신 기간)</li>
-            <li>Wójcik &amp; Piechowska, Life 2025;15(7):1128 (브리티시 숏헤어 출산 기록 453건, 한 번에 태어난 새끼 평균 4.15 ± 1.77마리)</li>
+            <li>Teng, Brodbelt, Church &amp; O'Neill, Journal of Feline Medicine and Surgery, 2024 (영국 고양이 생명표와 기대수명)</li>
+            <li>Nicholson et al., Frontiers in Veterinary Science, 2023 (브리티시 숏헤어의 나이별 체중 기록)</li>
+            <li>미국 고양이 애호가 협회 British Shorthair 품종 자료 (느린 성장)</li>
+            <li>미국 고양이병원협회·미국고양이수의사협회 고양이 생애주기 지침</li>
           </ol>
         </details>
       </div>
@@ -3478,195 +2606,81 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
 <section class="section section--dark" id="health" aria-labelledby="health-title" data-bg-dark>
   <div class="container">
     <header class="section-head">
-      <p class="eyebrow" data-reveal="fade">건강과 유전병</p>
-      <h2 class="section-title" id="health-title" data-reveal="up">건강을 지키려면 무엇을 검사할까요?</h2>
-      <p class="lede" data-reveal="up">유전자 검사로 찾는 병도 있고 심장 초음파로 살펴야 하는 병도 있습니다.</p>
+      <p class="eyebrow" data-reveal="fade">건강 신호</p>
+      <h2 class="section-title" id="health-title" data-reveal="up">아프면 어떻게 알까요?</h2>
+      <p class="lede" data-reveal="up">평소와 다른 행동을 알아차리고 보호자에게 바로 말하는 것이 첫 번째 돌봄입니다.</p>
     </header>
 
     <div style="max-width:var(--w-text);margin-bottom:var(--sp-6)">
-      <blockquote class="callout callout--accent" data-reveal="up">고양이가 아프거나 평소와 다르게 행동하면 보호자가 병을 판단하지 마세요. 반드시 수의사와 상담해야 합니다.</blockquote>
+      <blockquote class="callout callout--accent" data-reveal="up">어린이가 병명을 맞힐 필요는 없습니다. 먹는 양, 숨쉬는 모습, 화장실 습관이 달라지면 보호자에게 알리고 수의사의 도움을 받아야 합니다.</blockquote>
     </div>
 
     <div class="split" style="margin-bottom:var(--sp-8)">
       <div class="section-body">
-      <p class="body" data-reveal="up">모든 병을 같은 방법으로 찾을 수는 없습니다. 다낭성 신장병과 자가면역 림프증식 증후군은 유전자 검사로 살펴볼 수 있습니다.</p>
-      <p class="body" data-reveal="up">심장 근육이 두꺼워지는 비대성 심근증은 다릅니다. 브리티시 숏헤어에게 맞는 유전자 검사가 없어서 심장 초음파로 확인해야 합니다.</p>
-      <p class="body" data-reveal="up">덴마크에서 329마리를 검사했을 때 28마리인 8.5%가 양성이었습니다. 수컷은 20.4%, 암컷은 2.1%였습니다. 중성화 수술처럼 마취가 필요하다면 심장을 먼저 살펴야 하는지 수의사에게 물어보세요.</p>
+        <p class="body" data-reveal="up">고양이는 아픈 것을 숨기는 경우가 많습니다. 갑자기 숨어 지내거나 잘 먹지 않고, 평소보다 움직임이 줄었다면 “조금 더 지켜보자” 하고 넘기지 마세요.</p>
+        <p class="body" data-reveal="up">입을 벌리고 숨을 쉬거나 쓰러졌을 때, 소변을 보려고 자꾸 화장실에 가는데 나오지 않을 때는 기다리지 말고 바로 동물병원에 연락해야 합니다.</p>
+        <p class="body" data-reveal="up">브리티시 숏헤어는 겉으로 튼튼해 보여도 심장과 신장 상태를 살펴야 할 수 있습니다. 어떤 검사가 필요한지는 고양이의 나이와 몸 상태를 아는 수의사가 결정합니다.</p>
       </div>
       <figure class="img-slot img-slot--wide" data-reveal="scale">
         <div class="img-slot__frame">
           <img src="assets/img/health-1.png" width="1400" height="800" loading="lazy" decoding="async"
-               alt="심초음파 검사 장면 일러스트. 진료대 위에 옆으로 누운 고양이의 가슴에 초음파 프로브가 닿아 있고 옆 화면에 심장 단면 영상이 표시되어 있습니다. 고양이는 편안한 자세이고 전체 색조가 차분합니다.">
+               alt="진료대 위 고양이의 심장을 초음파 화면으로 살펴보는 동물병원 검사 장면">
         </div>
-        <figcaption>심장 초음파는 움직이는 심장의 모양과 두께를 화면으로 살펴보는 검사입니다.</figcaption>
+        <figcaption>정기 검진은 겉으로 보이지 않는 몸속 변화까지 살피는 시간입니다.</figcaption>
       </figure>
     </div>
 
-    <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-8)">
-      <summary>질환별 검사 방법을 자세히 볼까요?</summary>
-      <div class="accordion__body">
-    <div class="grid grid--2" data-reveal="stagger">
+    <div class="grid grid--3" data-reveal="stagger" style="margin-bottom:var(--sp-8)">
       <article class="card card--accent">
-        <h4 class="card__title"><span class="card__index">1</span>비대성 심근증</h4>
-        <p class="card__body"><strong>주요 수치</strong> 양성은 8.5%였습니다. 수컷은 20.4%, 암컷은 2.1%였습니다.</p>
-        <p class="card__body"><strong>연구 내용</strong> 덴마크에서 브리티시 숏헤어 329마리에게 심장 초음파 검사를 했습니다. 암컷은 214마리, 수컷은 115마리였습니다. 나이를 순서대로 세웠을 때 가운데 값은 2.3세였고 전체 나이는 0.8~14.1세였습니다. 양성은 28마리(8.5%), 경계는 14마리(4.3%), 음성은 282마리(85.7%)였습니다. 다른 심장질환은 5마리(2.1%)에서 발견됐습니다. 나이와 몸무게의 차이를 반영한 오즈비는 7.89였고 95% 신뢰구간은 2.54~28.08이었습니다.</p>
-        <p class="card__body"><strong>검사 방법</strong> 브리티시 숏헤어용 유전자 검사는 없습니다. 확인된 검사는 메인쿤의 MYBPC3 A31P와 랙돌의 MYBPC3 R820W 두 가지뿐입니다. 각각 해당 품종에만 씁니다. 브리티시 숏헤어는 심장 초음파로 진단합니다.</p>
-        <p class="card__cap">출처: Granström et al., JVIM 25(4):866, 2011 · 미국 수의내과학회 Consensus Statement, JVIM 34(3):1062, 2020 · 영국 고양이 등록 단체</p>
+        <h3 class="card__title"><span class="card__index">1</span>매일 살펴보기</h3>
+        <p class="card__body">먹은 양, 물 마시는 양, 화장실 횟수와 평소 행동을 기억해 두세요. 갑작스러운 변화가 중요한 신호입니다.</p>
       </article>
       <article class="card card--accent">
-        <h4 class="card__title"><span class="card__index">2</span>다낭성 신장병</h4>
-        <p class="card__body"><strong>연구 내용</strong> 원인은 PKD1 유전자의 변이입니다. 부모 한쪽에게서만 변이를 받아도 병이 생길 수 있습니다. 페르시안과 페르시안에서 갈라진 품종에서 흔합니다. 신장의 물혹은 생후 12개월 전에도 생길 수 있지만 신부전은 대개 훨씬 뒤에 나타납니다. 브리티시 숏헤어 4마리를 다룬 사례 보고에서는 2마리가 페르시안과 같은 변이를 가졌습니다. 연구진은 과거 페르시안과의 교배로 이 변이가 들어왔다고 해석했습니다.</p>
-        <p class="card__body"><strong>검사 방법</strong> UC Davis VGL은 브리티시 숏헤어를 PKD1 검사 대상 품종에 넣었습니다. 영국 고양이 등록 단체는 2025년 3월 1일부터 번식 가능한 고양이로 등록할 때 수의사가 확인한 구강 면봉 검사를 의무화했습니다.</p>
-        <p class="card__cap">출처: Nivy et al., Journal of Small Animal Practice, 2015 · UC Davis VGL · 영국 고양이 등록 단체, 2025</p>
+        <h3 class="card__title"><span class="card__index">2</span>보호자에게 바로 말하기</h3>
+        <p class="card__body">숨이 가쁘거나 걷기 힘들어 보일 때, 계속 토하거나 소변을 못 볼 때는 곧바로 보호자에게 알려 주세요.</p>
       </article>
       <article class="card card--accent">
-        <h4 class="card__title"><span class="card__index">3</span>자가면역 림프증식 증후군</h4>
-        <p class="card__body"><strong>주요 수치</strong> 변이를 가진 고양이끼리 교배하면 새끼 고양이가 병에 걸릴 확률은 25%입니다.</p>
-        <p class="card__body"><strong>연구 내용</strong> 지금까지 브리티시 숏헤어에서만 확인된 질환입니다. 암이 아닌데도 림프구라는 면역세포가 지나치게 늘어납니다. 생후 6~8주에 시작해 2~3주 만에 빠르게 나빠집니다. 배가 붓고 빈혈과 무기력, 체중 감소가 나타납니다. 확인된 치료법은 없습니다. 증상이 시작된 뒤 4주 안에 죽거나 안락사됩니다. 원인은 FAS 리간드 유전자의 한 부분에 아데닌이라는 물질이 하나 끼어든 변이입니다. 정확한 이름은 c.413_414insA입니다. 양쪽 부모에게서 변이를 하나씩 받은 고양이는 병에 걸립니다. 한쪽 부모에게서만 받은 고양이는 증상이 없습니다.</p>
-        <p class="card__body"><strong>검사 방법</strong> 영국의 Langford Vets와 뉴질랜드의 Massey University가 검사를 제공합니다. 연구진은 변이가 호주 또는 뉴질랜드 계통에서 시작했다고 추정합니다. 두 나라에서 들여온 고양이와 그 자손은 변이를 가졌을 가능성이 있습니다. 영국 고양이 등록 단체는 2025년 3월 1일부터 수입한 고양이에게 검사를 의무화했습니다.</p>
-        <p class="card__cap">출처: Aberdein et al., Mammalian Genome, 2017 · Langford Vets · 영국 고양이 등록 단체, 2025</p>
-      </article>
-      <article class="card card--accent">
-        <h4 class="card__title"><span class="card__index">4</span>혈우병 B</h4>
-        <p class="card__body"><strong>연구 내용</strong> 피를 굳게 하는 응고 제9인자가 부족해서 생깁니다. X 염색체를 따라 열성으로 유전되므로 수컷에게 더 많이 나타납니다. 근거는 1993년에 보고된 한 가계의 사례입니다.</p>
-        <p class="card__body"><strong>이 사이트의 설명</strong> 이 품종에서 사례가 보고됐다는 사실만 적습니다. 흔한 질환이라고 설명하지 않습니다.</p>
-        <p class="card__cap">출처: Maggio-Price &amp; Dodds, JAVMA 203(12):1702, 1993</p>
-      </article>
-      <article class="card card--accent">
-        <h4 class="card__title"><span class="card__index">5</span>치주질환</h4>
-        <p class="card__body"><strong>주요 수치</strong> 한 해 동안 치주질환을 진단받은 비율은 15.5%였습니다.</p>
-        <p class="card__body"><strong>연구 내용</strong> 2019년 영국 병원 기록에서 고양이 18,249마리를 살폈습니다. 전체 고양이의 진단율은 15.2%였습니다. 품종별로는 샴 18.7%, 메인쿤 16.7%, 브리티시 숏헤어 15.5%, 믹스묘 15.4% 순이었습니다.</p>
-        <p class="card__body"><strong>이 사이트의 설명</strong> 브리티시 숏헤어의 수치는 높은 편입니다. 하지만 전체 평균과는 0.3%포인트밖에 차이 나지 않습니다. 유독 치주질환에 약한 품종이라고 설명하지 않습니다.</p>
-        <p class="card__cap">출처: O'Neill et al., RVC VetCompass, 고양이 의학·외과 학술지, 2023</p>
+        <h3 class="card__title"><span class="card__index">3</span>정기적으로 병원 가기</h3>
+        <p class="card__body">예방접종, 치아와 몸무게 확인, 필요한 검사는 보호자와 수의사가 계획합니다. 인터넷 정보만으로 진단하지 않습니다.</p>
       </article>
     </div>
-      </div>
-    </details>
 
-    <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-4)">
-      <summary>혈액형이 왜 중요할까요?</summary>
+    <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-8)">
+      <summary>더 자세히 보기: 검사 방법</summary>
       <div class="accordion__body">
-    <div class="split split--even">
-      <div data-reveal="up">
-        <p class="table-caption">표 1. 혈액형 유전자형 (429마리)</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="브리티시 숏헤어 429마리의 혈액형 유전자 분포 표. 가로로 스크롤할 수 있습니다.">
+        <div class="table-wrap" role="region" tabindex="0" aria-label="브리티시 숏헤어에게 확인할 수 있는 질환과 검사 방법 표. 가로로 스크롤할 수 있습니다.">
           <table>
-            <thead>
-              <tr><th scope="col">유전자형</th><th scope="col">마리</th><th scope="col">비율</th><th scope="col">의미</th></tr>
-            </thead>
+            <thead><tr><th scope="col">살펴보는 질환</th><th scope="col">주로 사용하는 방법</th><th scope="col">기억할 점</th></tr></thead>
             <tbody>
-              <tr><th scope="row">A/A</th><td class="t-num">128</td><td class="t-num">29.8%</td><td>A형</td></tr>
-              <tr><th scope="row">A/b</th><td class="t-num">189</td><td class="t-num">44.1%</td><td>겉으로 나타난 혈액형은 A형이지만 b 유전자를 지닙니다.</td></tr>
-              <tr><th scope="row">b/b</th><td class="t-num">109</td><td class="t-num">25.4%</td><td>B형</td></tr>
-              <tr><th scope="row">A/a<sup>c</sup></th><td class="t-num">2</td><td class="t-num">0.5%</td><td>AB형 관련 변이 이형접합</td></tr>
-              <tr><th scope="row">a<sup>c</sup>/b</th><td class="t-num">1</td><td class="t-num">0.2%</td><td>AB형 관련 변이 이형접합</td></tr>
+              <tr><th scope="row">비대성 심근증</th><td>수의사의 진찰과 심장 초음파</td><td>이 품종에 맞는 확정 유전자 검사는 없습니다.</td></tr>
+              <tr><th scope="row">다낭성 신장병</th><td>유전자 검사와 수의사의 판단</td><td>신장에 물혹이 생기는 병입니다.</td></tr>
+              <tr><th scope="row">자가면역 림프증식 증후군</th><td>전문 유전자 검사</td><td>매우 드문 유전질환입니다.</td></tr>
+              <tr><th scope="row">치주질환</th><td>입안과 치아 검사</td><td>칫솔질과 정기 검진이 중요합니다.</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="note" style="margin-top:var(--sp-2)">b 유전자의 빈도는 약 0.48이었습니다. 혈액 검사와 유전자 검사를 모두 한 37마리는 두 결과가 완전히 일치했습니다. 혈액형에 관여하는 시티딘 일인산 엔-아세틸뉴라민산 수산화효소(Cytidine monophosphate-N-acetylneuraminic acid hydroxylase, CMAH) 유전자의 c.364C&gt;T 변이는 랙돌뿐 아니라 벵갈, 브리티시 숏헤어, 메인쿤, 스코티시 폴드에서도 발견됐습니다. 브리티시 숏헤어 2마리는 이 변이를 하나씩 지니고 있었습니다.</p>
-      </div>
-
-      <div class="stack">
-        <div data-reveal="up">
-          <h3 class="block-title" style="margin-bottom:var(--sp-2)">신생아 용혈증</h3>
-          <p class="body" style="margin-bottom:var(--sp-2)">B형 고양이의 몸에는 A형 적혈구를 공격하는 항체가 자연스럽게 생깁니다. B형 어미 고양이의 약 95%는 이 항체가 강합니다. B형 어미가 A형 새끼를 낳고 새끼가 생후 첫 24시간 안에 초유를 먹으면 항체가 새끼의 적혈구를 파괴할 수 있습니다.</p>
-          <p class="table-caption">표 2. 신생아 용혈증의 경과</p>
-          <div class="table-wrap" role="region" tabindex="0"
-               aria-label="신생아 용혈증의 시점별 관찰되는 변화 표. 가로로 스크롤할 수 있습니다.">
-            <table>
-              <thead>
-                <tr><th scope="col">시점</th><th scope="col">관찰되는 변화</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">출생 직후</th><td>겉으로는 건강해 보임</td></tr>
-                <tr><th scope="row">수 시간~며칠</th><td>젖을 잘 빨지 않음, 기력 저하, 점막 창백 또는 황달, 갈색 소변</td></tr>
-                <tr><th scope="row">대부분 48시간 이내</th><td>폐사</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="note" style="margin-top:var(--sp-2)">미국 고양이 애호가 협회 품종 소개 페이지는 이 품종에 우려할 만한 품종 특이 건강 문제가 없다고 적으면서도, 많은 혈통이 B형 혈액형을 보유해 번식 시 특별한 고려가 필요하다고 함께 적습니다.</p>
-        </div>
-
-      </div>
-    </div>
-      </div>
-    </details>
-
-    <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-8)">
-      <summary>검사 네 가지를 한눈에 볼까요?</summary>
-      <div class="accordion__body">
-    <div>
-
-      <div data-reveal="up">
-        <p class="table-caption">표 3. 검사 요약</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="다낭성 신장병, 자가면역 림프증식 증후군, 비대성 심근증, 혈액형의 검사 방법과 현재 상태를 정리한 표. 가로로 스크롤할 수 있습니다.">
-          <table style="min-width:720px">
-            <thead>
-              <tr><th scope="col">항목</th><th scope="col">검사 방법</th><th scope="col">현재 상태</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">다낭성 신장병</th><td>유전자 검사, 구강 면봉 사용</td><td>영국 고양이 등록 단체 액티브 등록 의무, 2025년 3월 1일 시행</td></tr>
-              <tr><th scope="row">자가면역 림프증식 증후군</th><td>유전자 검사, Langford Vets와 Massey University 제공</td><td>영국 고양이 등록 단체 수입 개체 의무, 2025년 3월 1일 시행</td></tr>
-              <tr><th scope="row">비대성 심근증</th><td>심초음파</td><td><span class="pill pill--split">검증된 유전자 검사 없음</span></td></tr>
-              <tr><th scope="row">혈액형</th><td>혈액형 유전자 검사 또는 혈액을 이용한 검사</td><td>번식 전 기본 항목으로 권고</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
+        <p class="note" style="margin-top:var(--sp-2)">검사 결과 한 줄만으로 건강을 단정할 수 없습니다. 증상과 진찰 결과를 함께 본 수의사가 뜻을 설명해야 합니다.</p>
       </div>
     </details>
 
     <div style="max-width:var(--w-text);margin-inline:auto">
       <div class="section-body">
-        <details class="accordion" data-reveal="up">
-          <summary>건강에 관해 헷갈리기 쉬운 말</summary>
-          <div class="accordion__body">
         <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">오해 바로잡기</p>
+          <p class="myth-box__tag">유전자 검사 하나면 모든 병을 알 수 있을까요?</p>
           <dl>
-            <div><dt>흔한 오해</dt><dd class="is-myth">비대성 심근증은 유전자 검사로 미리 걸러낼 수 있습니다.</dd></div>
-            <div><dt>실제</dt><dd class="is-truth">브리티시 숏헤어용으로 검증된 비대성 심근증 유전자 검사는 존재하지 않습니다. MYBPC3 A31P 변이는 메인쿤, R820W 변이는 랙돌 전용이며 미국 수의내과학회의 2020년 합의문도 두 품종에만 권고합니다. 영국 고양이 등록 단체도 유전자 검사가 없다고 명시합니다. 이 오해는 보호자가 필요한 심초음파 검사를 건너뛰게 만들 수 있어 특히 위험합니다.</dd></div>
+            <div><dt>흔한 오해</dt><dd class="is-myth">검사 한 번이면 앞으로 생길 병을 모두 알 수 있습니다.</dd></div>
+            <div><dt>확인한 사실</dt><dd class="is-truth">병마다 확인 방법이 다릅니다. 특히 비대성 심근증은 브리티시 숏헤어용 확정 유전자 검사가 없어 수의사의 진찰과 심장 초음파가 필요할 수 있습니다.</dd></div>
           </dl>
         </div>
-
-        <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">오해 바로잡기</p>
-          <dl>
-            <div><dt>흔한 오해</dt><dd class="is-myth">유전병이 없는 튼튼한 품종입니다.</dd></div>
-            <div><dt>실제</dt><dd class="is-truth">미국 고양이 애호가 협회 품종 소개 페이지가 이런 취지로 적지만 같은 페이지가 B형 혈액형 문제를 함께 지적합니다. 영국 고양이 등록 단체는 다낭성 신장병과 비대성 심근증을 명시적으로 다룹니다. 자가면역 림프증식 증후군은 지금까지 이 품종에서만 확인된 치명적 유전질환입니다.</dd></div>
-          </dl>
-        </div>
-
-        <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">오해 바로잡기</p>
-          <dl>
-            <div><dt>흔한 오해</dt><dd class="is-myth">저알레르기 품종이라 알레르기가 있어도 키울 수 있습니다.</dd></div>
-            <div><dt>실제</dt><dd class="is-truth">과학적으로 확인된 저알레르기 고양이 품종은 없습니다. 모든 고양이가 Fel d 1을 생산하며 털 없는 품종도 예외가 아닙니다. 털 길이와 색과 체중은 생산량과 관련이 없고 개체 간 편차가 최대 80배로 품종 간 차이보다 큽니다.</dd></div>
-          </dl>
-        </div>
-
-          </div>
-        </details>
-
-        <blockquote class="callout callout--accent" data-reveal="up">검사 결과는 수의사가 고양이의 나이와 몸 상태를 함께 살펴 판단합니다.</blockquote>
 
         <details class="src">
           <summary>이 섹션의 출처</summary>
           <ol>
-            <li>Granström et al., Journal of Veterinary Internal Medicine 25(4):866, 2011 (비대성 심근증 유병률과 성별 차이)</li>
-            <li>Luis Fuentes et al., 미국 수의내과학회 Consensus Statement, JVIM 34(3):1062, 2020 (유전자 검사의 범위, 심초음파 기준)</li>
-            <li>영국 고양이 등록 단체 (비대성 심근증 DNA 검사 부재, 다낭성 신장병 검사 의무화 2025년 3월 1일, 자가면역 림프증식 증후군 수입 개체 의무)</li>
+            <li>Granström et al., Journal of Veterinary Internal Medicine 25(4):866, 2011 (브리티시 숏헤어의 비대성 심근증 연구)</li>
+            <li>Luis Fuentes et al., 미국 수의내과학회 Consensus Statement, JVIM 34(3):1062, 2020 (심장 초음파와 유전자 검사의 범위)</li>
             <li>Nivy et al., Journal of Small Animal Practice, 2015 · UC Davis VGL (다낭성 신장병)</li>
             <li>Aberdein et al., Mammalian Genome, 2017 · Langford Vets (자가면역 림프증식 증후군)</li>
-            <li>Maggio-Price &amp; Dodds, JAVMA 203(12):1702, 1993 (혈우병 B)</li>
             <li>O'Neill et al., RVC VetCompass, 고양이 의학·외과 학술지, 2023 (치주질환)</li>
-            <li>Kehl, Mueller &amp; Giger, Animal Genetics, 2019 (혈액형 유전자형)</li>
-            <li>EveryCat Health Foundation · Veterinary Partner, 2차 자료 (신생아 용혈증)</li>
-            <li>JAVMA 260(13), 2022 · 미국 수의내과학회 Consensus Statement, 2020 (잠복 비대성 심근증과 마취)</li>
-            <li>미국 고양이 애호가 협회 품종 소개 페이지 (품종 특이 건강 문제와 B형 혈액형 서술)</li>
           </ol>
         </details>
       </div>
@@ -3677,221 +2691,98 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
 <section class="section section--alt" id="adoption" aria-labelledby="adoption-title">
   <div class="container">
     <header class="section-head">
-      <p class="eyebrow" data-reveal="fade">입양 전 확인</p>
-      <h2 class="section-title" id="adoption-title" data-reveal="up">새 가족을 만나기 전에 무엇을 볼까요?</h2>
-      <p class="lede" data-reveal="up">귀여운 사진보다 먼저, 건강하게 자랐다는 기록을 확인해야 합니다.</p>
+      <p class="eyebrow" data-reveal="fade">새 가족 맞이</p>
+      <h2 class="section-title" id="adoption-title" data-reveal="up">가족이 될 준비가 됐을까요?</h2>
+      <p class="lede" data-reveal="up">고양이는 고르는 물건이 아니라 오랫동안 함께 돌볼 가족입니다.</p>
     </header>
-
-    <div class="split" style="margin-bottom:var(--sp-8)">
-      <div class="section-body">
-        <p class="body" data-reveal="up">“이 아기 고양이를 바로 데려와도 될까요?” 먼저 나이를 보세요. 영국 고양이 등록 단체의 기준에서는 보통 생후 13주가 지나고 2차 예방접종 뒤 7일이 지나야 새 집으로 갈 수 있습니다.</p>
-        <p class="body" data-reveal="up">어른과 함께 등록 카드, 부모와 조부모가 적힌 혈통서, 예방접종 카드를 살펴보세요. 건강검사 결과도 종이 원본으로 확인하는 것이 좋습니다.</p>
-        <p class="body" data-reveal="up">다낭성 신장병과 자가면역 림프증식 증후군은 유전자 검사로, 비대성 심근증은 심장 초음파로 살핍니다. 아래 펼침 상자에는 어른이 확인할 항목을 모았습니다.</p>
-      </div>
-    </div>
 
     <div class="split split--reverse" style="margin-bottom:var(--sp-8)">
       <div class="section-body">
-        <p class="body" data-reveal="up">사진 속 얼굴도 찬찬히 보세요. 코가 지나치게 납작하거나 콧구멍이 아주 좁다면 건강한 품종 특징으로 보기 어렵습니다.</p>
-        <p class="body" data-reveal="up">파란 눈이나 특별한 털 색에 비싼 값을 붙이는 말보다, 고양이가 자란 환경과 검사 기록을 먼저 확인하세요.</p>
+        <p class="body" data-reveal="up">귀여운 사진을 보기 전에 먼저 가족 모두의 생각을 물어보세요. 고양이는 매일 밥과 물, 깨끗한 화장실, 놀이와 병원 진료가 필요합니다.</p>
+        <p class="body" data-reveal="up">품종보다 더 중요한 것은 한 고양이의 성격과 건강, 그리고 우리 집의 생활이 서로 맞는지입니다. 안기는 것을 싫어하거나 낯선 곳에서 숨는다고 나쁜 고양이가 되는 것은 아닙니다.</p>
+        <p class="body" data-reveal="up">보호소와 구조단체, 임시보호 가정에서도 새 가족을 기다리는 고양이를 만날 수 있습니다. 반드시 보호자와 함께 방문하고, 사진만 보고 서둘러 결정하지 마세요.</p>
       </div>
-      <div class="stack">
-        <figure class="img-slot img-slot--portrait" data-reveal="scale">
-          <div class="img-slot__frame">
-            <img src="assets/img/adoption-2.png" width="1050" height="1400" loading="lazy" decoding="async"
-                 alt="새 가족을 만날 수 있는 최소 나이인 생후 13주 브리티시 숏헤어 새끼 고양이의 전신 사진">
-          </div>
-          <figcaption>생후 13주. 충분히 자라고 예방접종을 마친 뒤 새 가족을 만날 준비를 합니다.</figcaption>
-        </figure>
-      </div>
+      <figure class="img-slot img-slot--portrait" data-reveal="scale">
+        <div class="img-slot__frame">
+          <img src="assets/img/adoption-2.png" width="1050" height="1400" loading="lazy" decoding="async"
+               alt="새 가족과 만나기 전 편안한 자세로 앉아 있는 어린 브리티시 숏헤어">
+        </div>
+        <figcaption>처음 만나는 날에는 외모보다 고양이의 표정과 행동, 건강 기록을 천천히 살펴보세요.</figcaption>
+      </figure>
     </div>
 
-    <div class="stack-lg" style="margin-bottom:var(--sp-8)">
-      <details class="accordion" open>
-        <summary>어른과 함께 나이와 서류를 확인해 볼까요?</summary>
-        <div class="accordion__body">
-          <div class="table-wrap" role="region" tabindex="0" aria-label="분양 최소 일령과 필수 서류 표. 가로로 스크롤할 수 있습니다.">
-            <table>
-              <caption class="visually-hidden">서류와 일령 확인 항목별 영국 고양이 등록 단체 기준</caption>
-              <thead>
-                <tr><th scope="col">확인 항목</th><th scope="col">기준</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">분양 최소 일령</th><td>2차 접종 후 7일 경과, 최소 생후 13주. 예외 시에도 최소 12주 이상이며 수의사 건강검진 1회 이상</td></tr>
-                <tr><th scope="row">서류 1</th><td>새끼 고양이의 영국 고양이 등록 단체 등록 카드</td></tr>
-                <tr><th scope="row">서류 2</th><td>최소 3대 혈통서, 모든 품종명과 등록번호 기재, 브리더 서명</td></tr>
-                <tr><th scope="row">서류 3</th><td>접종 카드</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="note">위반은 징계와 벌금과 자격 정지 대상입니다. 국내 분양은 영국 고양이 등록 단체 규정의 적용 대상이 아닙니다.</p>
-        </div>
-      </details>
-
-      <details class="accordion">
-        <summary>어떤 건강검사 결과를 받아야 할까요?</summary>
-        <div class="accordion__body">
-          <div class="table-wrap" role="region" tabindex="0" aria-label="유전 검사 항목별 검사 방법과 현재 상태 표. 가로로 스크롤할 수 있습니다.">
-            <table>
-              <caption class="visually-hidden">브리더에게 공개를 요청할 유전 검사 네 항목</caption>
-              <thead>
-                <tr><th scope="col">항목</th><th scope="col">검사 방법</th><th scope="col">현재 상태</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">다낭성 신장병</th><td>유전자 검사, 수의사가 확인한 구강 면봉 사용</td><td>영국 고양이 등록 단체 액티브 등록 의무, 2025년 3월 1일 시행</td></tr>
-                <tr><th scope="row">자가면역 림프증식 증후군</th><td>유전자 검사, Langford Vets와 Massey University 제공</td><td>영국 고양이 등록 단체 수입 개체 의무, 2025년 3월 1일 시행</td></tr>
-                <tr><th scope="row">비대성 심근증</th><td>심초음파</td><td>검증된 유전자 검사 없음. 유럽 브리더는 연간 검사가 일상화, 영국은 아직 관행 아님</td></tr>
-                <tr><th scope="row">혈액형</th><td>혈액형 유전자 검사 또는 혈액을 이용한 검사</td><td>입안을 문지르는 면봉으로 검사할 수 있습니다. 결과는 N/N, N/b, b/b로 표시합니다</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </details>
-
-      <details class="accordion">
-        <summary>번식할 때 혈액형이 왜 중요할까요?</summary>
-        <div class="accordion__body">
-          <p class="table-caption">브리티시 숏헤어 429마리의 혈액형 유전자 분포</p>
-          <div class="table-wrap" role="region" tabindex="0" aria-label="브리티시 숏헤어 429마리의 혈액형 유전자 분포 표. 가로로 스크롤할 수 있습니다.">
-            <table>
-              <caption class="visually-hidden">혈액형 유전자형별 마리 수와 비율과 의미</caption>
-              <thead>
-                <tr><th scope="col">유전자형</th><th scope="col">마리</th><th scope="col">비율</th><th scope="col">의미</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">A/A</th><td class="t-num">128</td><td class="t-num">29.8%</td><td>A형</td></tr>
-                <tr><th scope="row">A/b</th><td class="t-num">189</td><td class="t-num">44.1%</td><td>겉으로 나타난 혈액형은 A형이지만 b 유전자를 지닙니다.</td></tr>
-                <tr><th scope="row">b/b</th><td class="t-num">109</td><td class="t-num">25.4%</td><td>B형</td></tr>
-                <tr><th scope="row">A/a<sup>c</sup></th><td class="t-num">2</td><td class="t-num">0.5%</td><td>AB형 관련 이형접합</td></tr>
-                <tr><th scope="row">a<sup>c</sup>/b</th><td class="t-num">1</td><td class="t-num">0.2%</td><td>AB형 관련 이형접합</td></tr>
-                <tr><th scope="row">합계</th><td class="t-num">429</td><td class="t-num">100%</td><td>b 대립유전자 빈도 약 0.48</td></tr>
-              </tbody>
-            </table>
-          </div>
-          <p>B형 어미가 A형 새끼를 낳으면 신생아 용혈증이 생길 수 있습니다. B형 고양이에게는 자연 발생 항A 항체가 있고 B형 어미의 약 95%는 강한 동종항체를 가집니다. 새끼가 생후 첫 24시간 안에 초유를 먹으면 이 항체가 적혈구를 파괴할 수 있습니다. 새끼는 처음에는 건강해 보이지만 곧 젖을 먹지 못하고 기운이 떨어집니다. 점막이 창백하거나 노래지고 소변이 갈색으로 변할 수 있습니다. 대부분 생후 48시간 안에 죽습니다.</p>
-          <p>영국 고양이 등록 단체의 품종자문위원회는 번식에 참여하는 고양이의 혈액형을 먼저 확인하라고 권합니다. 경험이 적은 번식자가 B형 어미 고양이를 돌본다면 B형 수컷과 교배하라고 안내합니다.</p>
-        </div>
-      </details>
-
-      <details class="accordion">
-        <summary>어떤 광고 문구를 조심해야 할까요?</summary>
-        <div class="accordion__body">
-          <div class="table-wrap" role="region" tabindex="0" aria-label="경계할 광고 표현과 확인된 반박 근거 표. 가로로 스크롤할 수 있습니다.">
-            <table>
-              <caption class="visually-hidden">광고 표현별 확인된 반박 근거</caption>
-              <thead>
-                <tr><th scope="col">광고 표현</th><th scope="col">확인된 반박 근거</th></tr>
-              </thead>
-              <tbody>
-                <tr><th scope="row">"극단적으로 납작한 얼굴"</th><td>영국 고양이 등록 단체와 미국 고양이 애호가 협회 모두 좁아진 콧구멍을 초래하는 단축된 두개 구조를 보류 또는 실격 사유로 둡니다. 영국 고양이 등록 단체 품종자문위원회는 이 품종의 자연스러움에 대한 평판을 지키겠다며 극단화를 경계합니다</td></tr>
-                <tr><th scope="row">"블루아이 프리미엄"</th><td>미국 고양이 애호가 협회는 우성 파란 눈 유전자의 흔적을 실격 사유로 둡니다. 다만 흰 고양이의 파란 눈은 영국 고양이 등록 단체와 미국 고양이 애호가 협회가 모두 인정합니다</td></tr>
-                <tr><th scope="row">"이중모라 털이 풍성함"</th><td>미국 고양이 애호가 협회 표준은 "이중모가 아니고 양모질도 아니다"라고 명시합니다 <span class="pill pill--split">단체별 상이</span></td></tr>
-                <tr><th scope="row">"저알레르기 품종"</th><td>과학적으로 확인된 저알레르기 고양이 품종은 없습니다. <a href="#faq">자주 묻는 질문</a> Q2 참조</td></tr>
-                <tr><th scope="row">"유전병 없는 튼튼한 품종"</th><td>자가면역 림프증식 증후군은 지금까지 이 품종에서만 확인된 질환입니다. 영국 고양이 등록 단체의 품종자문위원회는 다낭성 신장병과 비대성 심근증을 명시적으로 다룹니다</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </details>
+    <div class="grid grid--2" data-reveal="stagger" style="margin-bottom:var(--sp-8)">
+      <article class="card card--accent">
+        <h3 class="card__title"><span class="card__index">1</span>가족 모두 괜찮을까요?</h3>
+        <p class="card__body">알레르기가 있거나 돌봄을 맡기 어려운 사람이 없는지 이야기합니다. 알레르기가 걱정되면 만나기 전에 의사와 상담합니다.</p>
+      </article>
+      <article class="card card--accent">
+        <h3 class="card__title"><span class="card__index">2</span>매일 돌볼 시간이 있나요?</h3>
+        <p class="card__body">밥과 물을 챙기고 화장실을 청소하며 놀아 줄 사람이 필요합니다. 여행이나 이사 때의 돌봄도 미리 정합니다.</p>
+      </article>
+      <article class="card card--accent">
+        <h3 class="card__title"><span class="card__index">3</span>안전한 공간이 있나요?</h3>
+        <p class="card__body">숨을 곳, 긁는 기둥, 물그릇과 화장실을 준비합니다. 열린 창문과 현관문으로 나가지 않도록 안전장치도 확인합니다.</p>
+      </article>
+      <article class="card card--accent">
+        <h3 class="card__title"><span class="card__index">4</span>아플 때 도울 수 있나요?</h3>
+        <p class="card__body">예방접종 기록과 지금까지의 진료 내용을 보호자가 확인합니다. 앞으로 다닐 동물병원과 진료비도 가족이 함께 계획합니다.</p>
+      </article>
     </div>
 
     <div class="split" style="margin-bottom:var(--sp-8)">
       <div class="section-body">
-        <h3 class="block-title" data-reveal="up">어른과 함께 물어볼 열네 가지</h3>
-        <p class="body" data-reveal="up">하나씩 확인하고 체크해 보세요. 체크하지 않은 질문만 복사할 수도 있습니다.</p>
-        <div id="adoption-checklist" data-storage-key="bsh-adoption-checklist" data-reveal="up">
+        <h3 class="block-title" data-reveal="up">가족이 함께 확인할 열 가지</h3>
+        <p class="body" data-reveal="up">정답을 빨리 채우는 표가 아닙니다. 체크하기 어려운 항목이 있다면 먼저 가족과 해결 방법을 이야기하세요.</p>
+        <div id="adoption-checklist" data-storage-key="bsh-family-readiness-v2" data-reveal="up">
           <ol class="stack">
-            <li><input type="checkbox" id="adopt-q1"> <label for="adopt-q1">1. 이 새끼 고양이는 태어난 지 몇 주가 됐나요? 2차 예방접종은 언제 했나요?</label></li>
-            <li><input type="checkbox" id="adopt-q2"> <label for="adopt-q2">2. 새끼 고양이를 데려갈 수 있는 날은 언제인가요? 그날 생후 몇 주가 되나요?</label></li>
-            <li><input type="checkbox" id="adopt-q3"> <label for="adopt-q3">3. 등록 카드를 분양 시 함께 주십니까?</label></li>
-            <li><input type="checkbox" id="adopt-q4"> <label for="adopt-q4">4. 최소 3대 혈통서를 주십니까? 품종명과 등록번호가 전부 적혀 있고 서명이 되어 있습니까?</label></li>
-            <li><input type="checkbox" id="adopt-q5"> <label for="adopt-q5">5. 접종 카드를 주십니까? 접종 일자와 백신 종류를 확인할 수 있습니까?</label></li>
-            <li><input type="checkbox" id="adopt-q6"> <label for="adopt-q6">6. 엄마 고양이와 아빠 고양이의 다낭성 신장병 유전자 검사 결과를 볼 수 있나요?</label></li>
-            <li><input type="checkbox" id="adopt-q7"> <label for="adopt-q7">7. 부모 고양이가 외국에서 왔거나 호주·뉴질랜드 혈통이라면, 자가면역 림프증식 증후군 유전자 검사 결과를 볼 수 있나요?</label></li>
-            <li><input type="checkbox" id="adopt-q8"> <label for="adopt-q8">8. 부모 고양이가 비대성 심근증을 확인하는 심장 초음파 검사를 받았나요? 언제 어느 병원에서 검사했나요?</label></li>
-            <li><input type="checkbox" id="adopt-q9"> <label for="adopt-q9">9. 비대성 심근증 검사는 얼마나 자주 하십니까?</label></li>
-            <li><input type="checkbox" id="adopt-q10"> <label for="adopt-q10">10. 엄마 고양이와 아빠 고양이의 혈액형을 알고 있나요? 검사 결과(N/N, N/b, b/b)를 볼 수 있나요?</label></li>
-            <li><input type="checkbox" id="adopt-q11"> <label for="adopt-q11">11. 엄마 고양이가 B형이라면 새끼의 신생아 용혈증을 어떻게 막았나요?</label></li>
-            <li><input type="checkbox" id="adopt-q12"> <label for="adopt-q12">12. 이 교배의 근친 계수는 얼마입니까?</label></li>
-            <li><input type="checkbox" id="adopt-q13"> <label for="adopt-q13">13. 엄마 고양이와 새끼가 자란 곳을 직접 볼 수 있나요?</label></li>
-            <li><input type="checkbox" id="adopt-q14"> <label for="adopt-q14">14. 분양 후 건강 문제가 생기면 어떤 절차로 연락하고 어디까지 책임지십니까?</label></li>
+            <li><input type="checkbox" id="adopt-q1"> <label for="adopt-q1">1. 가족 모두가 고양이와 함께 사는 데 동의했나요?</label></li>
+            <li><input type="checkbox" id="adopt-q2"> <label for="adopt-q2">2. 알레르기와 건강 문제를 가족과 확인했나요?</label></li>
+            <li><input type="checkbox" id="adopt-q3"> <label for="adopt-q3">3. 매일 밥과 물을 챙길 사람을 정했나요?</label></li>
+            <li><input type="checkbox" id="adopt-q4"> <label for="adopt-q4">4. 화장실을 날마다 청소할 사람을 정했나요?</label></li>
+            <li><input type="checkbox" id="adopt-q5"> <label for="adopt-q5">5. 숨을 곳과 긁는 기둥, 놀이 공간을 준비할 수 있나요?</label></li>
+            <li><input type="checkbox" id="adopt-q6"> <label for="adopt-q6">6. 창문과 현관문에서 고양이가 나가지 않도록 할 수 있나요?</label></li>
+            <li><input type="checkbox" id="adopt-q7"> <label for="adopt-q7">7. 예방접종과 정기 검진을 맡을 보호자가 있나요?</label></li>
+            <li><input type="checkbox" id="adopt-q8"> <label for="adopt-q8">8. 사료와 모래, 병원 진료에 드는 비용을 가족이 계획했나요?</label></li>
+            <li><input type="checkbox" id="adopt-q9"> <label for="adopt-q9">9. 여행이나 이사 때에도 계속 돌볼 방법이 있나요?</label></li>
+            <li><input type="checkbox" id="adopt-q10"> <label for="adopt-q10">10. 외모나 품종보다 한 고양이의 성격과 건강을 먼저 볼 수 있나요?</label></li>
           </ol>
-          <p class="note" id="adoption-check-count" aria-live="polite" style="margin-top:var(--sp-2)">14개 중 0개 확인</p>
+          <p class="note" id="adoption-check-count" aria-live="polite" style="margin-top:var(--sp-2)">10개 중 0개 확인</p>
           <button class="chip" type="button" id="adoption-check-copy">체크하지 않은 항목만 복사</button>
         </div>
       </div>
 
       <div class="stack">
-        <blockquote class="callout callout--accent" data-reveal="up">브리티시 숏헤어의 분양가를 믿을 만한 방법으로 조사한 통계는 국내외 어디에도 없습니다. 상업 사이트와 소셜 미디어에 나온 가격은 언제, 누구를, 어떤 방법으로 조사했는지 알 수 없습니다. 이 페이지는 금액 대신 꼭 확인해야 할 서류와 검사 항목을 안내합니다.</blockquote>
-        <article class="stat">
-          <span class="stat__label">고양이 인도·반환율</span>
-          <span class="stat__num"><span data-count-to="1.3" data-count-decimals="1">1.3</span><small>%</small></span>
-          <span class="stat__cap">동물보호센터에 들어온 고양이 100마리 중 주인에게 돌아간 수, 2024년 농림축산검역본부. 같은 해 개는 15.1%(11,684마리)</span>
+        <blockquote class="callout callout--accent" data-reveal="up">품종명, 털 색, 가격은 좋은 가족을 고르는 기준이 아닙니다. 구조 여부와 관계없이 고양이의 건강 기록과 성격, 우리 가족의 돌봄 준비를 먼저 확인하세요.</blockquote>
+        <article class="card" data-reveal="up">
+          <h3 class="card__title">가족을 기다리는 고양이 찾기</h3>
+          <p class="card__body">국가동물보호정보시스템에서는 보호 중인 동물과 가까운 보호센터 정보를 확인할 수 있습니다. 방문과 결정은 반드시 보호자와 함께하세요.</p>
+          <p class="card__cap"><a href="https://www.animal.go.kr" target="_blank" rel="noopener noreferrer">국가동물보호정보시스템 열기<span class="visually-hidden"> (새 창에서 열림)</span></a></p>
         </article>
       </div>
     </div>
 
-    <div data-reveal="up" style="margin-bottom:var(--sp-8)">
-      <p class="table-caption">국내 유실·유기동물 현황 (농림축산검역본부 『2024년 반려동물 보호·복지 실태조사』)</p>
-      <div class="table-wrap" role="region" tabindex="0" aria-label="2024년 국내 유실·유기동물 현황 표. 가로로 스크롤할 수 있습니다.">
-        <table>
-          <caption class="visually-hidden">2024년 전국 지자체 동물보호센터 입소 현황과 처리 결과</caption>
-          <thead>
-            <tr><th scope="col">항목</th><th scope="col">값</th></tr>
-          </thead>
-          <tbody>
-            <tr><th scope="row">입소 유실·유기동물 총계</th><td class="t-num">106,824마리 (전년 대비 5.5% 감소, 5년 연속 감소)</td></tr>
-            <tr><th scope="row">개</th><td class="t-num">77,304마리 (72.4%)</td></tr>
-            <tr><th scope="row">고양이</th><td class="t-num">27,826마리 (26.0%)</td></tr>
-            <tr><th scope="row">기타</th><td class="t-num">1,694마리 (1.6%)</td></tr>
-            <tr><th scope="row">반환·인도</th><td class="t-num">12,188마리 (11.4%)</td></tr>
-            <tr><th scope="row">입양</th><td class="t-num">25,136마리 (23.5%)</td></tr>
-            <tr><th scope="row">자연사</th><td class="t-num">29,386마리 (27.5%)</td></tr>
-            <tr><th scope="row">안락사</th><td class="t-num">19,785마리 (18.5%)</td></tr>
-            <tr><th scope="row">개 인도·반환율</th><td class="t-num">15.1% (11,684마리)</td></tr>
-            <tr><th scope="row">고양이 인도·반환율</th><td class="t-num">1.3% (368마리)</td></tr>
-            <tr><th scope="row">반려견·반려묘 누적 등록</th><td class="t-num">349만 마리</td></tr>
-            <tr><th scope="row">반려묘 신규 등록</th><td class="t-num">약 1만 5천 마리</td></tr>
-          </tbody>
-        </table>
+    <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-8)">
+      <summary>처음 만난 고양이에게 어떻게 다가갈까요?</summary>
+      <div class="accordion__body">
+        <div class="grid grid--3">
+          <article class="card"><h3 class="card__title">기다리기</h3><p class="card__body">고양이가 먼저 냄새를 맡고 다가올 시간을 주세요. 숨어 있는 고양이를 억지로 꺼내지 않습니다.</p></article>
+          <article class="card"><h3 class="card__title">몸짓 보기</h3><p class="card__body">귀가 뒤로 눕거나 꼬리를 세게 흔들면 불편하다는 뜻일 수 있습니다. 만지기를 멈추고 거리를 둡니다.</p></article>
+          <article class="card"><h3 class="card__title">더 자세히 물어보기</h3><p class="card__body">평소 성격, 먹는 사료, 화장실 습관과 진료 기록을 현재 돌보는 사람에게 물어봅니다.</p></article>
+        </div>
       </div>
-      <p class="note" style="margin-top:var(--sp-2)">개는 동물등록이 의무이지만 고양이는 그렇지 않고 길고양이가 다수 입소되는 것이 주된 배경입니다. 품종별 유기묘 통계는 공개 자료에 없으므로 브리티시 숏헤어가 몇 마리인지는 알 수 없습니다. 국내 입양 경로는 국가동물보호정보시스템(www.animal.go.kr)입니다.</p>
-    </div>
+    </details>
 
     <div style="max-width:var(--w-text);margin-inline:auto">
-      <div class="section-body">
-        <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">오해 바로잡기</p>
-          <dl>
-            <div><dt>흔한 오해</dt><dd class="is-myth">블루아이 개체는 희소해서 값이 비쌉니다.</dd></div>
-            <div><dt>실제</dt><dd class="is-truth">미국 고양이 애호가 협회는 우성 파란 눈 유전자의 흔적을 실격 사유로 둡니다. 희소성을 프리미엄으로 내세우는 광고는 주요 등록 단체의 방향과 어긋납니다. 화이트 개체의 파란 눈은 별개이며 정상 공인 눈 색입니다.</dd></div>
-          </dl>
-        </div>
-
-        <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">오해 바로잡기</p>
-          <dl>
-            <div><dt>흔한 오해</dt><dd class="is-myth">비대성 심근증은 유전자 검사로 미리 걸러낼 수 있습니다.</dd></div>
-            <div><dt>실제</dt><dd class="is-truth">브리티시 숏헤어용으로 검증된 비대성 심근증 유전자 검사는 존재하지 않습니다. MYBPC3 A31P 변이는 메인쿤, R820W 변이는 랙돌 전용이며 미국 수의내과학회의 2020년 합의문도 두 품종에만 권고합니다. 확인 수단은 심초음파입니다.</dd></div>
-          </dl>
-        </div>
-
-        <blockquote class="callout callout--accent" data-reveal="up">유전자 검사 항목과 의무 여부는 등록 단체와 국가에 따라 다릅니다. 이 페이지는 영국 고양이 등록 단체 기준을 정리한 것입니다. 국내 분양 시에는 브리더가 실제로 제출하는 검사 결과지와 혈통서 원본을 직접 확인하십시오.</blockquote>
-
-        <details class="src">
-          <summary>이 섹션의 출처</summary>
-          <ol>
-            <li>분양 최소 일령, 필수 서류 3종: 영국 고양이 등록 단체 Kitten Buying Advice</li>
-            <li>다낭성 신장병 검사 의무화, 자가면역 림프증식 증후군 수입 개체 의무화, 시행일 2025년 3월 1일: 영국 고양이 등록 단체, 2025</li>
-            <li>비대성 심근증 유전자 검사 부재와 심초음파 기준: Luis Fuentes et al., 미국 수의내과학회 Consensus Statement, JVIM 34(3):1062, 2020 · 영국 고양이 등록 단체</li>
-            <li>혈액형 유전자형 분포: Kehl, Mueller &amp; Giger, Animal Genetics, 2019 (브리티시 숏헤어 429마리)</li>
-            <li>신생아 용혈증 기전과 경과: 2차 자료 (EveryCat Health Foundation · Veterinary Partner)</li>
-            <li>번식에 참여하는 고양이 혈액형 파악 권고 근친 계수 25 상한, 극단화 경계: 영국 고양이 등록 단체 품종자문위원회 Breeding Policy · 영국 고양이 등록 단체 브리더 스킴</li>
-            <li>우성 파란 눈 실격: 미국 고양이 애호가 협회 Show Standard, 2026 개정</li>
-            <li>유실·유기동물 통계: 농림축산검역본부 『2024년 반려동물 보호·복지 실태조사』</li>
-          </ol>
-        </details>
-      </div>
+      <details class="src">
+        <summary>이 섹션의 출처</summary>
+        <ol>
+          <li>농림축산검역본부 『2024년 반려동물 보호·복지 실태조사』</li>
+          <li>국가동물보호정보시스템 (국내 보호 동물과 보호센터 정보)</li>
+          <li>Cornell Feline Health Center (고양이의 환경, 스트레스와 생활 자원)</li>
+          <li>미국 고양이병원협회·국제고양이의학회 고양이 친화적 돌봄 지침</li>
+        </ol>
+      </details>
     </div>
   </div>
 </section>
@@ -3899,191 +2790,70 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
 <section class="section section--dark" id="color-genetics" aria-labelledby="color-genetics-title" data-bg-dark>
   <div class="container">
     <header class="section-head">
-      <p class="eyebrow" data-reveal="fade">털 색의 유전</p>
-      <h2 class="section-title" id="color-genetics-title" data-reveal="up">회색 털은 어떻게 만들어질까요?</h2>
-      <p class="lede" data-reveal="up">검은 색소가 털 속에서 뭉치면 털이 부드러운 회색빛을 띱니다.</p>
+      <p class="eyebrow" data-reveal="fade">털 색의 과학</p>
+      <h2 class="section-title" id="color-genetics-title" data-reveal="up">검은 털이 왜 회색으로 보일까요?</h2>
+      <p class="lede" data-reveal="up">브리티시 블루의 털에는 회색 물감이 아니라 검은 색소가 들어 있습니다.</p>
     </header>
 
     <div class="section-body" style="max-width:var(--w-text);margin-bottom:var(--sp-8)">
-      <p class="body" data-reveal="up">블루 고양이의 털에는 회색 색소가 따로 있지 않습니다. 원래 검은 색소가 털 속에서 작은 덩어리로 뭉쳐 있습니다. 덩어리 사이로 빛이 지나가면서 털이 더 옅게 보입니다.</p>
-      <p class="body" data-reveal="up">같은 원리로 초콜릿은 라일락이 되고 시나몬은 폰이 됩니다. 붉은 털은 크림빛을 띱니다. 색소가 사라진 것이 아니라 놓인 모양이 달라진 것입니다.</p>
-      <p class="body" data-reveal="up">얼굴과 귀, 발, 꼬리만 진한 컬러포인트도 있습니다. 이 무늬를 만드는 효소는 온도에 민감합니다. 몸통보다 차가운 곳에서 색소를 더 잘 만들어 끝부분만 진해집니다.</p>
+      <p class="body" data-reveal="up">털 속 검은 색소가 고르게 퍼지면 검게 보입니다. 색소 알갱이가 작은 덩어리로 뭉치고 그 사이로 빛이 지나가면 더 옅은 청회색으로 보입니다. 이 색을 ‘블루’라고 부릅니다.</p>
+      <p class="body" data-reveal="up">색소가 없어진 것이 아니라 놓인 모양이 달라진 것입니다. 같은 원리로 초콜릿색은 라일락, 붉은색은 크림처럼 더 옅게 보일 수 있습니다.</p>
     </div>
 
-    <!-- 인터랙티브 위젯 -->
     <div class="genelab" style="margin-bottom:var(--sp-8)">
       <div class="genelab__panel" data-reveal="up">
-          <h3 class="block-title" style="margin-bottom:var(--sp-1)">검정은 어떻게 블루로 보일까요?</h3>
-        <p class="note" style="margin-bottom:var(--sp-2)">버튼을 눌러 색소 알갱이를 뭉쳐 보세요. 알갱이의 수와 색은 그대로입니다.</p>
-        <div class="dots" id="diluteDots" role="img" aria-label="색소 과립 분포 도해. 현재 상태는 균일 분포이며 전체가 검게 보입니다.">
-          <span class="dots__label" id="diluteLabel">D/D 또는 D/d · 블랙</span>
+        <h3 class="block-title" style="margin-bottom:var(--sp-1)">색소 알갱이를 뭉쳐 보세요</h3>
+        <p class="note" style="margin-bottom:var(--sp-2)">버튼을 누르면 알갱이 수는 그대로인데 보이는 색만 달라집니다.</p>
+        <div class="dots" id="diluteDots" role="img" aria-label="검은 색소 알갱이가 고르게 퍼져 있어 검게 보이는 그림">
+          <span class="dots__label" id="diluteLabel">고르게 퍼진 색소 · 블랙</span>
         </div>
         <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:var(--sp-2)">
-          <button class="chip" type="button" id="diluteToggle" aria-pressed="false">색소를 뭉쳐 보기</button>
+          <button class="chip" type="button" id="diluteToggle" aria-pressed="false">색소 알갱이 뭉쳐 보기</button>
         </div>
       </div>
 
       <div class="genelab__panel" data-reveal="up">
-        <h3 class="block-title" style="margin-bottom:var(--sp-1)">털 색을 직접 바꿔 보세요</h3>
-        <p class="note" style="margin-bottom:var(--sp-2)">바탕색과 진하기를 고르면 어떤 털 색이 나오는지 보여 줍니다.</p>
-        <div class="field">
-          <label for="locusB">바탕색 고르기</label>
-          <select id="locusB">
-            <option value="BB">B/B · 흑색 동형</option>
-            <option value="Bb">B/b · 흑색 (초콜릿 보인자)</option>
-            <option value="bb">b/b · 초콜릿</option>
-            <option value="b1b1">b&sup1;/b&sup1; · 시나몬</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="locusD">진하기 고르기</label>
-          <select id="locusD">
-            <option value="DD">D/D · 비희석</option>
-            <option value="Dd">D/d · 비희석 (희석 보인자)</option>
-            <option value="dd">d/d · 희석</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="locusC">몸 끝만 진하게 할까요?</label>
-          <select id="locusC">
-            <option value="C">비포인트</option>
-            <option value="cscs">cs/cs · 컬러포인트</option>
-          </select>
-        </div>
-        <div class="result" aria-live="polite">
-          <span class="result__swatch" id="resultSwatch" aria-hidden="true"></span>
-          <div>
-            <p class="result__name" id="resultName">블랙</p>
-            <p class="result__src" id="resultSrc">근거: Lyons et al., Journal of Heredity 96(4):289 · OMIA:001249-9685</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="genelab" style="margin-bottom:var(--sp-8)">
-      <div class="genelab__panel" data-reveal="up">
-        <h3 class="block-title" style="margin-bottom:var(--sp-2)">어떤 색으로 바뀔까요?</h3>
+        <h3 class="block-title" style="margin-bottom:var(--sp-2)">옅어지면 어떤 색으로 보일까요?</h3>
         <div class="dilute-map">
           <div class="dilute-map__row"><span class="dilute-map__cell"><span class="dilute-map__chip" style="--sw:#1E1E1E"></span>블랙</span><span class="dilute-map__arrow" aria-hidden="true">→</span><span class="dilute-map__cell"><span class="dilute-map__chip" style="--sw:#8095A3"></span>블루</span></div>
           <div class="dilute-map__row"><span class="dilute-map__cell"><span class="dilute-map__chip" style="--sw:#4A342A"></span>초콜릿</span><span class="dilute-map__arrow" aria-hidden="true">→</span><span class="dilute-map__cell"><span class="dilute-map__chip" style="--sw:#B0A0A2"></span>라일락</span></div>
-          <div class="dilute-map__row"><span class="dilute-map__cell"><span class="dilute-map__chip" style="--sw:#8B5A3C"></span>시나몬</span><span class="dilute-map__arrow" aria-hidden="true">→</span><span class="dilute-map__cell"><span class="dilute-map__chip" style="--sw:#C9AE93"></span>폰</span></div>
           <div class="dilute-map__row"><span class="dilute-map__cell"><span class="dilute-map__chip" style="--sw:#C05A22"></span>레드</span><span class="dilute-map__arrow" aria-hidden="true">→</span><span class="dilute-map__cell"><span class="dilute-map__chip" style="--sw:#E8C79B"></span>크림</span></div>
         </div>
-        <p class="note" style="margin-top:var(--sp-2)">네 쌍 모두 유전형은 d/d입니다.</p>
-      </div>
-
-      <div class="genelab__panel" data-reveal="up">
-        <h3 class="block-title" style="margin-bottom:var(--sp-1)">왜 몸 끝만 진할까요?</h3>
-        <p class="note" style="margin-bottom:var(--sp-2)">체온이 낮은 부위에서 색소가 더 잘 만들어집니다.</p>
-        <dl class="anatomy-grid">
-          <div class="anatomy-card"><dt>색이 옅은 곳</dt><dd>체온이 높은 몸통</dd></div>
-          <div class="anatomy-card"><dt>색이 진한 곳</dt><dd>귀, 얼굴 중앙, 발, 꼬리</dd></div>
-        </dl>
       </div>
     </div>
 
-    <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-8)">
-      <summary>어른과 함께 유전자 이름도 알아볼까요?</summary>
-      <div class="accordion__body">
-    <div class="grid grid--3" data-reveal="stagger">
+    <div class="grid grid--3" data-reveal="stagger" style="margin-bottom:var(--sp-8)">
       <article class="card card--accent">
-        <h4 class="card__title"><span class="card__index">1</span>왜 검은 털이 회색처럼 보일까요?</h4>
-        <p class="card__body"><strong>유전자 이름</strong> 멜라노필린(Melanophilin, MLPH)<br><strong>하는 일</strong> 털 색을 진하게 보이게 할지 옅게 보이게 할지 정합니다. 양쪽 부모에게서 변이를 하나씩 받으면 색소 알갱이가 고르게 퍼지지 않고 뭉칩니다. 색소가 없어지는 것은 아니지만 털은 더 옅게 보입니다.</p>
-        <p class="card__cap">근거: UC Davis Veterinary Genetics Laboratory</p>
+        <h3 class="card__title">왜 몸 끝만 진할까요?</h3>
+        <p class="card__body">컬러포인트 고양이는 몸통보다 차가운 얼굴, 귀, 발과 꼬리에서 색소가 더 잘 만들어져 끝부분이 진하게 보입니다.</p>
       </article>
       <article class="card card--accent">
-        <h4 class="card__title"><span class="card__index">2</span>검정, 초콜릿, 시나몬은 어떻게 나뉠까요?</h4>
-        <p class="card__body"><strong>유전자 이름</strong> 티로시나아제 관련 단백질 1(Tyrosinase-related protein 1, TYRP1)<br><strong>하는 일</strong> 털의 기본 바탕색을 정합니다. B는 검은색을, b는 초콜릿색을, b&sup1;은 시나몬색을 만드는 데 관여합니다. 어떤 유전자를 부모에게서 받았는지에 따라 바탕색이 달라집니다.</p>
-        <p class="card__cap">근거: Lyons et al., Journal of Heredity 96(4):289 · OMIA:001249-9685</p>
+        <h3 class="card__title">왜 토티는 얼룩덜룩할까요?</h3>
+        <p class="card__body">몸의 세포들이 서로 다른 색 정보를 사용하면서 주황빛 구역과 검은빛 구역이 나뉘어 나타날 수 있습니다.</p>
       </article>
       <article class="card card--accent">
-        <h4 class="card__title"><span class="card__index">3</span>주황빛 털은 어떻게 생길까요?</h4>
-        <p class="card__body"><strong>유전자 이름</strong> Rho GTPase 활성화 단백질 36(Rho GTPase-activating protein 36, ARHGAP36)<br><strong>하는 일</strong> 주황빛이 도는 털을 만드는 데 관여합니다. X 염색체의 이 유전자 주변에서 약 5kb가 빠진 변이가 발견됐고 이 변이가 색소 세포의 작동 방식을 바꿉니다.</p>
-        <p class="card__cap">근거: Current Biology, 2025년 5월 15일 동시 게재 두 편 (규슈대 연구진, 스탠퍼드대 연구진)</p>
-      </article>
-      <article class="card card--accent">
-        <h4 class="card__title"><span class="card__index">4</span>왜 귀와 발만 더 진할까요?</h4>
-        <p class="card__body"><strong>유전자 이름</strong> 티로시나아제(Tyrosinase, TYR)<br><strong>하는 일</strong> 귀와 발처럼 체온이 낮은 곳에 색이 더 진하게 나타나는 컬러포인트 무늬에 관여합니다. 양쪽 부모에게서 cs를 하나씩 받으면 온도에 민감한 효소가 만들어집니다. 그래서 몸의 끝부분에서 색소가 더 잘 만들어집니다.</p>
-        <p class="card__cap">근거: UC Davis Veterinary Genetics Laboratory · 영국 고양이 등록 단체 SOP</p>
-      </article>
-      <article class="card card--accent">
-        <h4 class="card__title"><span class="card__index">5</span>골든 털의 밝은 띠는 어떻게 생길까요?</h4>
-        <p class="card__body"><strong>유전자 이름</strong> 코린(Corin, CORIN)<br><strong>하는 일</strong> 털 한 가닥에 밝고 어두운 띠가 얼마나 넓게 생길지 정하는 데 관여합니다. 브리티시 계열의 코퍼색은 CORIN 유전자의 특정 변이와 관련 있습니다. 이 유전자는 아구티 신호 단백질(Agouti signaling protein, ASIP)과 함께 털의 밝은 띠를 넓힙니다.</p>
-        <p class="card__cap">근거: Abitbol et al., Animal Genetics, 2022</p>
-      </article>
-      <article class="card card--accent">
-        <h4 class="card__title"><span class="card__index">6</span>흰색 반점</h4>
-        <p class="card__body"><strong>하는 일</strong> 흰 부분이 몸에서 얼마나 넓게 퍼질지 정합니다.<br><strong>품종 기준</strong> 영국 고양이 등록 단체는 바이컬러의 흰 부분이 몸 전체의 3분의 1 이상, 2분의 1 이하가 되도록 정합니다.</p>
-        <p class="card__cap">근거: 영국 고양이 등록 단체 SOP</p>
+        <h3 class="card__title">털 색이 성격도 정할까요?</h3>
+        <p class="card__body">털 색만으로 성격을 정할 수 없습니다. 성격은 한 고양이의 경험, 환경과 개성에 따라 달라집니다.</p>
       </article>
     </div>
-      </div>
-    </details>
 
     <div style="max-width:var(--w-text);margin-inline:auto">
-      <div class="section-body">
-        <details class="accordion" data-reveal="up">
-          <summary>유전 연구와 자세한 설명 더 보기</summary>
-          <div class="accordion__body">
-        <div data-reveal="up">
-          <p class="table-caption">CORIN 골든 근거 수치</p>
-          <div class="table-wrap" role="region" tabindex="0" aria-label="CORIN 골든 연구의 근거 수치 표. 가로로 스크롤할 수 있습니다.">
-            <table>
-              <thead><tr><th scope="col">항목</th><th scope="col">수치</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">코퍼색 고양이</th><td class="t-num">30마리 모두 변이를 양쪽 부모에게서 받음</td></tr>
-                <tr><th scope="row">브리티시 대조군</th><td class="t-num">20마리가 이형접합</td></tr>
-                <tr><th scope="row">99 Lives 데이터셋</th><td class="t-num">340마리에서 발견되지 않음</td></tr>
-              </tbody>
-            </table>
-          </div>
+      <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-6)">
+        <summary>‘유전’은 무슨 뜻일까요?</summary>
+        <div class="accordion__body">
+          <p>유전 정보는 몸을 만드는 설명서와 비슷합니다. 털의 바탕색, 색소의 진하기와 무늬에 여러 정보가 함께 영향을 줍니다.</p>
+          <p>설명서가 같아도 햇빛과 나이, 털이 자라는 시기 때문에 실제로 보이는 색은 조금씩 다를 수 있습니다.</p>
         </div>
+      </details>
 
-        <h3 class="block-title" data-reveal="up">유전을 쉽게 이해하는 세 가지 비유</h3>
-
-        <article class="card" data-reveal="up">
-          <h4 class="card__title"><span class="card__index">1</span>색소가 옅어지는 것이 아니라 뭉칩니다</h4>
-          <p class="card__body">검은 모래를 종이 위에 고르게 뿌리면 종이 전체가 검게 보입니다. 같은 양의 모래를 몇 군데에 뭉치면 그 사이로 종이가 드러나 회색처럼 보입니다. 모래의 양과 색은 그대로지만 놓인 모양이 달라진 것입니다. MLPH 유전자가 d/d일 때 털 안에서 일어나는 변화도 이와 비슷합니다.</p>
-          <p class="card__cap"><strong>비유와 실제의 차이</strong> 실제 색소는 평평한 종이 위가 아니라 털 한 가닥 안에 있습니다. 멜라닌이라는 색소가 큰 덩어리로 뭉치고 빛이 그 구조에 닿으면서 털이 옅게 보입니다. MLPH는 세포 안에서 색소를 옮기는 일과 관련된 유전자입니다. 이 비유만으로 색소가 뭉치는 모든 과정을 설명할 수는 없습니다.</p>
-        </article>
-
-        <article class="card" data-reveal="up">
-          <h4 class="card__title"><span class="card__index">2</span>삼색 무늬는 세포마다 다른 설계도를 사용합니다</h4>
-          <p class="card__body">오렌지색을 정하는 유전 정보는 X 염색체에 있습니다. X 염색체가 두 개인 암컷은 오렌지색 정보와 검은색 정보를 함께 가질 수 있습니다. 새끼가 만들어지는 아주 이른 시기에 각 세포는 두 X 염색체 중 하나만 사용합니다. 같은 세포에서 갈라져 나온 세포들도 그 선택을 이어받습니다. 그래서 몸에 오렌지색 구역과 검은색 구역이 생기며 토티나 삼색 무늬가 됩니다.</p>
-          <p class="card__cap"><strong>비유와 실제의 차이</strong> 세포가 설계도를 골라 읽는 것처럼 표현했지만 실제로는 한쪽 X 염색체가 단단히 뭉쳐 대부분의 유전자가 작동하지 않는 상태가 됩니다. 무늬의 크기와 경계는 선택이 일어난 시점과 세포가 퍼진 범위에 따라 달라집니다. 흰 부분은 다른 유전자가 만듭니다. 오렌지색, 검은색, 흰색이 모두 같은 원리로 생기는 것은 아닙니다.</p>
-          <p class="card__cap"><strong>수컷 삼색은 왜 드물까요?</strong> 성염색체 수가 보통과 다르거나 몸의 일부 세포만 서로 다른 유전자를 지닌 모자이시즘이 있을 때 나타납니다. 매우 드물며 대부분 번식 능력이 없습니다.</p>
-        </article>
-
-        <article class="card" data-reveal="up">
-          <h4 class="card__title"><span class="card__index">3</span>컬러포인트는 온도에 민감한 효소가 만듭니다</h4>
-          <p class="card__body">컬러포인트를 만드는 효소는 유전자 변이 때문에 온도에 민감합니다. 몸통처럼 따뜻한 곳에서는 제대로 작동하지 못합니다. 귀, 얼굴 중앙, 발, 꼬리처럼 체온이 낮은 곳에서는 색소를 만듭니다. 그래서 몸의 끝부분에만 진한 색이 남습니다.</p>
-          <p class="card__cap"><strong>비유와 실제의 차이</strong> 효소가 스스로 온도를 재는 것은 아닙니다. 높은 온도에서는 효소의 모양이 흐트러져 제대로 작동하지 못합니다. 이 무늬는 자라면서 점점 진해집니다. 새끼 고양이 사진만 보고 어른 고양이의 색을 단정하기는 어렵습니다. 영국 고양이 등록 단체는 옅은 색일수록 몸 끝의 색이 늦게 나타난다고 적습니다.</p>
-        </article>
-
-          </div>
-        </details>
-
-        <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">블루는 정말 회색일까요?</p>
-          <dl>
-            <div><dt>눈에 보이는 색</dt><dd class="is-myth">부드러운 회색이나 청회색 빛을 띱니다.</dd></div>
-            <div><dt>털 속의 색소</dt><dd class="is-truth">검은색을 만드는 색소가 들어 있습니다. 색소 알갱이가 뭉쳐 있어서 우리 눈에 옅게 보입니다.</dd></div>
-          </dl>
-        </div>
-
-        <blockquote class="callout callout--accent" data-reveal="up">색을 만드는 원리는 하나인데, 그 색을 인정하는 기준은 단체마다 다릅니다. 영국 고양이 등록 단체, 국제고양이협회, 국제고양이연맹은 컬러포인트를 정식 색으로 인정합니다. 미국 고양이 애호가 협회는 히말라얀 패턴을 낳은 교잡의 증거로 보고 실격 처리합니다. 골든 팁드는 미국 고양이 애호가 협회도 공인하지만 발가락이나 가슴과 목의 흰색으로 드러나는 CORIN 유전자의 증거는 실격입니다. 같은 고양이라도 참가 단체에 따라 판정이 달라집니다.</blockquote>
-
-        <details class="src">
-          <summary>이 섹션의 출처</summary>
-          <ol>
-            <li>UC Davis Veterinary Genetics Laboratory (MLPH 희석, TYR 컬러포인트)</li>
-            <li>Lyons et al., Journal of Heredity 96(4):289 · OMIA:001249-9685 (TYRP1)</li>
-            <li>Current Biology, 2025년 5월 15일 동시 게재 두 편, 규슈대 연구진과 스탠퍼드대 연구진 (ARHGAP36)</li>
-            <li>Abitbol et al., Animal Genetics, 2022 (CORIN)</li>
-            <li>영국 고양이 등록 단체 Standard of Points (포인트 발색 시점, 백색 반점 표기)</li>
-          </ol>
-        </details>
-      </div>
+      <details class="src">
+        <summary>이 섹션의 출처</summary>
+        <ol>
+          <li>Ishida et al., Journal of Heredity 96(4):289, 2005 · UC Davis VGL (MLPH 유전자와 털 색 희석)</li>
+          <li>Lyons et al., Journal of Heredity · UC Davis VGL (TYR 유전자와 컬러포인트)</li>
+          <li>고양이 털 색의 X 염색체 비활성화에 관한 수의유전학 문헌</li>
+        </ol>
+      </details>
     </div>
   </div>
 </section>
@@ -4091,144 +2861,56 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
 <section class="section" id="standards" aria-labelledby="standards-title">
   <div class="container">
     <header class="section-head">
-      <p class="eyebrow" data-reveal="fade">단체별 기준</p>
-      <h2 class="section-title" id="standards-title" data-reveal="up">고양이 대회에서는 무엇을 볼까요?</h2>
-      <p class="lede" data-reveal="up">같은 고양이도 대회를 여는 단체에 따라 다른 점수를 받을 수 있습니다.</p>
+      <p class="eyebrow" data-reveal="fade">개성과 존중</p>
+      <h2 class="section-title" id="standards-title" data-reveal="up">모습이 달라도 괜찮을까요?</h2>
+      <p class="lede" data-reveal="up">품종의 전형적인 생김새와 한 고양이의 소중함은 서로 다른 이야기입니다.</p>
     </header>
 
-    <div style="max-width:var(--w-text);margin-inline:auto;margin-bottom:var(--sp-8)">
-      <div class="section-body">
-        <p class="body" data-reveal="up">고양이 대회에는 “이 품종은 이렇게 생겨야 한다”는 규칙이 있습니다. 심사위원은 머리와 몸, 털과 색을 살펴 100점 만점으로 점수를 줍니다.</p>
-        <p class="body" data-reveal="up">그런데 규칙은 하나가 아닙니다. 어떤 단체는 컬러포인트를 정식 색으로 인정하지만 미국 고양이 애호가 협회는 인정하지 않습니다. 코와 머리 모양을 보는 방법도 조금씩 다릅니다.</p>
-        <p class="body" data-reveal="up">그래서 “대회 규칙에 맞다”라고만 말하면 부족합니다. 어느 단체의 대회인지 함께 알아야 정확한 뜻을 알 수 있습니다.</p>
-      </div>
+    <div class="section-body" style="max-width:var(--w-text);margin-bottom:var(--sp-8)">
+      <p class="body" data-reveal="up">고양이 단체는 품종에서 자주 보이는 머리, 몸, 털의 특징을 글로 정리합니다. 이런 문서는 품종의 모습을 비교하고 기록할 때 참고할 수 있습니다.</p>
+      <p class="body" data-reveal="up">하지만 기준과 조금 다르게 생겼다고 건강하지 않거나 덜 소중한 고양이가 되는 것은 아닙니다. 반대로 기준에 가까운 외모라고 언제나 건강하다는 뜻도 아닙니다.</p>
+      <p class="body" data-reveal="up">얼굴을 더 둥글게, 코를 더 짧게 만들기 위해 건강을 해치는 모습을 좇아서는 안 됩니다. 편하게 숨 쉬고 걷고 먹고 놀 수 있는지가 외모보다 먼저입니다.</p>
     </div>
 
-    <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-4)">
-      <summary>100점은 어떻게 나눌까요?</summary>
-      <div class="accordion__body">
-    <div>
-      <div data-reveal="up" style="margin-bottom:var(--sp-4)">
-        <p class="table-caption">표 1. 미국 고양이 애호가 협회 배점 (100점 기준)</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="미국 고양이 애호가 협회 쇼 표준의 100점 배점 구성 표. 가로로 스크롤할 수 있습니다.">
-          <table>
-            <thead>
-              <tr><th scope="col">대항목</th><th scope="col">배점</th><th scope="col">세부</th></tr>
-            </thead>
-            <tbody>
-              <tr><th scope="row">머리</th><td class="t-num">25</td><td>머즐과 턱 5, 두개골 5, 귀 5, 목 5, 눈 모양 5</td></tr>
-              <tr><th scope="row">몸통</th><td class="t-num">35</td><td>몸통 20, 다리와 발 10, 꼬리 5</td></tr>
-              <tr><th scope="row">코트</th><td class="t-num">20</td><td>길이, 밀도, 질감, 탄력</td></tr>
-              <tr><th scope="row">색</th><td class="t-num">20</td><td>눈 색 5, 코트 색 15</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <div data-reveal="up">
-        <p class="table-caption">표 2. 공인 여부의 단체별 차이</p>
-        <div class="table-wrap" role="region" tabindex="0"
-             aria-label="컬러포인트, 틱드 태비, 골든 계열, 우성 청안, 허용 아웃크로스, 브리티시 롱헤어 취급에 관한 영국 고양이 등록 단체, 미국 고양이 애호가 협회, 국제고양이협회, 국제고양이연맹 네 단체의 규정 비교 표. 가로로 스크롤할 수 있습니다.">
-          <table style="min-width:860px">
-            <thead>
-              <tr><th scope="col">항목</th><th scope="col">영국 고양이 등록 단체</th><th scope="col">미국 고양이 애호가 협회</th><th scope="col">국제고양이협회</th><th scope="col">국제고양이연맹</th></tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">컬러포인트(히말라얀) 패턴</th>
-                <td>공인</td>
-                <td><span class="pill pill--split">실격 사유</span></td>
-                <td>공인</td>
-                <td>공인</td>
-              </tr>
-              <tr>
-                <th scope="row">틱드 태비</th>
-                <td>공인</td>
-                <td>표준에 없음</td>
-                <td>공인</td>
-                <td>공인</td>
-              </tr>
-              <tr>
-                <th scope="row">우성 파란 눈</th>
-                <td>언급 없음</td>
-                <td><span class="pill pill--split">실격 사유</span></td>
-                <td>언급 없음</td>
-                <td>언급 없음</td>
-              </tr>
-              <tr>
-                <th scope="row">허용 아웃크로스</th>
-                <td>2025년 3월 1일부터 브리티시 롱헤어를 승인된 아웃크로스로 인정</td>
-                <td>표준에 명시 없음</td>
-                <td>허용하지 않음</td>
-                <td>표준에 명시 없음</td>
-              </tr>
-              <tr>
-                <th scope="row">브리티시 롱헤어 취급</th>
-                <td>2017년 인정, 2021년 챔피언십</td>
-                <td>표준에 항목 없음</td>
-                <td>하나의 표준 문서로 관리</td>
-                <td>2017년 인정, 하나의 표준 문서로 관리</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-      </div>
-    </details>
-
-    <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-8)">
-      <summary>어떤 모습이면 상을 받을 수 없을까요?</summary>
-      <div class="accordion__body">
-    <div class="grid grid--3" data-reveal="stagger">
+    <div class="grid grid--3" data-reveal="stagger" style="margin-bottom:var(--sp-8)">
       <article class="card card--accent">
-        <h4 class="card__title"><span class="card__index">1</span>영국 고양이 등록 단체 증서 보류 사유</h4>
-        <p class="card__body">영국 고양이 등록 단체는 품종의 특징이 부족하거나 위아래 이가 고르게 맞물리지 않으면 증서를 주지 않습니다. 눈 색이 기준과 다르거나 어른 고양이의 눈 가장자리가 녹색이거나 사시가 있어도 받을 수 없습니다. 어른 고양이의 털이 지나치게 길고 폭신한 경우도 마찬가지입니다. 코가 뚜렷하게 꺾였거나 들렸을 때, 콧구멍이 좁을 때, 코의 균형이 맞지 않을 때도 증서를 받을 수 없습니다. 털 색과 무늬도 정해진 기준에 맞아야 합니다.</p>
-        <p class="card__cap">근거: 영국 고양이 등록 단체 Standard of Points</p>
+        <h3 class="card__title"><span class="card__index">1</span>사진만으로 단정하지 않기</h3>
+        <p class="card__body">회색 털과 둥근 얼굴만 보고 품종을 확정할 수 없습니다. 여러 품종과 믹스묘가 비슷하게 보일 수 있습니다.</p>
       </article>
       <article class="card card--accent">
-        <h4 class="card__title"><span class="card__index">2</span>미국 고양이 애호가 협회 실격 사유</h4>
-        <p class="card__body">미국 고양이 애호가 협회는 코가 뚜렷하게 꺾이거나 눈의 모양과 색이 기준에 맞지 않으면 실격 처리합니다. 꼬리 결함, 처진 수염 자리, 잘못된 발가락 수, 허용되지 않은 작은 흰 털 무늬도 실격 사유입니다. 코와 발바닥의 색이 기준과 달라도 안 됩니다. 질병의 흔적, 뒤틀린 턱, 고르지 않은 치아, 콧구멍이 좁아질 만큼 짧은 머리뼈도 허용하지 않습니다. 히말라얀 무늬를 만든 교배의 흔적도 실격 사유입니다. 발가락이나 가슴과 목에 흰색 또는 미색을 만드는 CORIN 유전자의 흔적과 우성 파란 눈 유전자의 흔적도 허용하지 않습니다.</p>
-        <p class="card__cap">근거: 미국 고양이 애호가 협회 Show Standard, 2026 개정</p>
+        <h3 class="card__title"><span class="card__index">2</span>건강을 먼저 보기</h3>
+        <p class="card__body">숨쉬기, 걷기, 먹기와 놀이가 편안한지 살펴봅니다. 지나치게 납작한 코처럼 생활을 힘들게 하는 모습은 자랑거리가 아닙니다.</p>
       </article>
       <article class="card card--accent">
-        <h4 class="card__title"><span class="card__index">3</span>미국 고양이 애호가 협회 감점 사유</h4>
-        <p class="card__body">털이 지나치게 길거나 폭신하면 점수를 깎습니다. 털이 너무 부드럽고 탄력이 없어도 감점합니다. 몸통이 길쭉하거나 다리가 지나치게 짧은 경우, 턱이 약한 경우, 옆에서 본 머리가 지나치게 튀어나온 경우도 감점합니다.</p>
-        <p class="card__cap">근거: 미국 고양이 애호가 협회 Show Standard, 2026 개정</p>
+        <h3 class="card__title"><span class="card__index">3</span>개성을 존중하기</h3>
+        <p class="card__body">눈 색이나 털 무늬, 몸집이 예상과 달라도 한 고양이의 성격과 감정, 필요한 돌봄은 그대로 존중해야 합니다.</p>
       </article>
     </div>
-      </div>
-    </details>
 
     <div style="max-width:var(--w-text);margin-inline:auto">
       <div class="section-body">
-        <article class="card" data-reveal="up">
-          <h3 class="card__title">다른 품종과 짝을 지어도 될까요?</h3>
-          <p class="card__body">단체마다 답이 다릅니다. 국제고양이협회는 브리티시 숏헤어가 다른 품종과 교배하는 것을 허용하지 않습니다. 미국 고양이 애호가 협회는 스코티시 폴드가 브리티시 숏헤어와 교배하는 것을 허용합니다.</p>
-          <p class="card__cap">근거: 국제고양이협회 British Breed Group Standard · 미국 고양이 애호가 협회 스코티시 폴드 표준</p>
-        </article>
-
-        <blockquote class="callout callout--accent" data-reveal="up">같은 고양이라도 참가하는 단체에 따라 판정이 달라질 수 있습니다. 그래서 품종 기준을 설명할 때는 단체 이름을 함께 밝혀야 합니다.</blockquote>
-
         <div class="myth-box" data-reveal="up">
-          <p class="myth-box__tag">컬러포인트는 대회에 나갈 수 있을까요?</p>
+          <p class="myth-box__tag">더 동그랗고 더 납작하면 더 좋은 품종일까요?</p>
           <dl>
-            <div><dt>세 단체</dt><dd class="is-truth">영국 고양이 등록 단체, 국제고양이협회, 국제고양이연맹은 정식 색으로 인정합니다.</dd></div>
-            <div><dt>한 단체</dt><dd class="is-myth">미국 고양이 애호가 협회는 다른 품종과 교배한 흔적으로 보고 실격합니다.</dd></div>
+            <div><dt>흔한 오해</dt><dd class="is-myth">품종 특징이 강하게 보일수록 더 좋은 고양이입니다.</dd></div>
+            <div><dt>기억할 원칙</dt><dd class="is-truth">어떤 외모도 건강과 편안한 생활보다 앞설 수 없습니다. 고양이의 가치는 대회 점수나 생김새로 정해지지 않습니다.</dd></div>
           </dl>
         </div>
 
-        <p class="note" data-reveal="fade">브리티시 숏헤어의 표준은 등록 단체마다 다릅니다. 쇼 출전을 준비한다면 출전하려는 단체의 최신 표준을 직접 확인하십시오.</p>
+        <details class="accordion" data-reveal="up" style="margin-bottom:var(--sp-6)">
+          <summary>그렇다면 품종 기준은 왜 있을까요?</summary>
+          <div class="accordion__body">
+            <p>품종 기준은 여러 고양이 단체가 전형적인 특징을 기록한 문서입니다. 단체마다 설명이 서로 다를 수 있으며, 자연과학의 절대 법칙도 아닙니다.</p>
+            <p>이 사이트에서는 품종을 구별하는 단서와 역사적 기록을 확인할 때만 참고합니다. 한 고양이의 건강, 성격이나 가족이 될 자격을 판단하는 점수표로 사용하지 않습니다.</p>
+          </div>
+        </details>
 
         <details class="src">
           <summary>이 섹션의 출처</summary>
           <ol>
-            <li>영국 고양이 등록 단체 Standard of Points (증서 보류 사유, 수평 교합, 브리티시 롱헤어 아웃크로스 인정 2025년 3월 1일)</li>
-            <li>미국 고양이 애호가 협회 Show Standard, 2026 개정 (배점, 실격과 감점 사유)</li>
-            <li>국제고양이협회 British Breed Group Standard (세미 코비, 코 규정, 허용 아웃크로스 None)</li>
-            <li>국제고양이연맹 표준 (컬러포인트와 틱드 태비 공인, 브리티시 롱헤어 2017년 인정)</li>
-            <li>미국 고양이 애호가 협회 스코티시 폴드 표준 (아웃크로스 명시)</li>
+            <li>미국 고양이 애호가 협회 British Shorthair Breed Standard (균형과 비례, 과장된 특징 경계)</li>
+            <li>영국 고양이 등록 단체 British Shorthair Standard of Points (품종 특징과 건강 관련 주의)</li>
+            <li>국제고양이협회 British Breed Group Standard (단체별 품종 서술의 차이)</li>
           </ol>
         </details>
       </div>
@@ -4255,7 +2937,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
         <summary>Q1. 털이 많이 빠지나요?</summary>
         <div class="accordion__body">
           <p>네, 짧지만 아주 빽빽한 털이 빠집니다. 평소에는 일주일에 한 번 빗어 주세요. 털갈이 철이나 삼킨 털을 자주 토할 때는 더 자주 빗는 것이 좋습니다.</p>
-          <p class="note">더 자세히: <a href="#grooming">털 관리와 생활 환경</a></p>
+          <p class="note">더 자세히 보기: <a href="#grooming">털 관리와 생활 환경</a></p>
         </div>
       </details>
 
@@ -4263,7 +2945,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
         <summary>Q2. 알레르기가 있는 사람도 키울 수 있나요?</summary>
         <div class="accordion__body">
           <p>품종만 보고 알레르기가 괜찮을지 알 수는 없습니다. 모든 고양이는 알레르기를 일으킬 수 있는 ‘펠 디 원’이라는 물질을 만듭니다. 같은 품종 안에서도 고양이마다 양이 크게 다릅니다. 가족에게 알레르기가 있다면 입양 전에 의사와 상담하고 실제 고양이와 시간을 보내 보세요.</p>
-          <p class="note">더 자세히: <a href="#culture">문화 속 이야기</a></p>
+          <p class="note">더 자세히 보기: <a href="#culture">문화 속 이야기</a></p>
         </div>
       </details>
 
@@ -4271,47 +2953,47 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
         <summary>Q3. 혼자 둬도 되나요?</summary>
         <div class="accordion__body">
           <p>몇 시간까지 괜찮다고 정한 답은 없습니다. 시간보다 행동을 보세요. 가족이 나간 뒤 화장실 밖에 소변을 보거나 물건을 망가뜨리거나 지나치게 운다면 혼자 있는 일이 힘들다는 신호일 수 있습니다.</p>
-          <p class="note">더 자세히: <a href="#temperament">성격과 행동</a></p>
+          <p class="note">더 자세히 보기: <a href="#temperament">성격과 행동</a></p>
         </div>
       </details>
 
       <details class="accordion" id="faq-4">
         <summary>Q4. 다른 고양이나 개와 잘 지내나요?</summary>
         <div class="accordion__body">
-          <p>등록 단체의 설명만 보면 잘 지내는 편입니다. 영국 고양이 등록 단체는 사람과 깊은 관계를 맺고 참을성이 있다고 적습니다. 국제고양이협회는 공격적인 태도를 보이면 실격 사유가 될 수 있다고 정합니다. 하지만 여러 고양이가 함께 사는 환경은 스트레스를 줄 수도 있습니다. Cornell Feline Health Center는 이런 스트레스가 고양이 하부요로기질환의 위험을 높인다고 설명합니다. 화장실은 고양이 수보다 하나 더 두십시오. 사료와 물, 잠자리는 서로 떨어뜨려 놓는 것이 좋습니다.</p>
-          <p class="note">더 자세히: <a href="#grooming">그루밍과 환경</a></p>
+          <p>품종보다 각 고양이의 성격과 이전 경험이 더 중요합니다. 처음에는 서로 다른 공간에서 지내게 하고 냄새부터 천천히 익숙해지게 하세요. 화장실은 고양이 수보다 하나 더 준비하고 밥그릇, 물그릇과 잠자리를 여러 곳에 나누면 경쟁과 스트레스를 줄이는 데 도움이 됩니다.</p>
+          <p class="note">더 자세히 보기: <a href="#grooming">그루밍과 환경</a></p>
         </div>
       </details>
 
       <details class="accordion" id="faq-5">
         <summary>Q5. 얼마나 크나요?</summary>
         <div class="accordion__body">
-          <p>문서마다 숫자가 다릅니다. 영국 고양이 등록 단체는 수컷 약 4.1~7.7kg, 암컷 약 3.2~5.4kg으로 적습니다. 국제고양이협회는 수컷 약 4.5~7.3kg, 암컷 약 3.6~5.0kg으로 적습니다. 미국 고양이 애호가 협회의 소개 페이지는 수컷이 약 7.7kg까지 자랄 수 있다고 설명합니다. 하지만 미국 고양이 애호가 협회의 품종 표준에는 체중 기준이 없습니다. 호주 병원 기록에서 어른 고양이의 평균 체중은 5.4kg이었습니다. 조사한 고양이 중 47.7%가 과체중이었으므로, 5.4kg을 건강한 체중으로 생각하면 안 됩니다.</p>
-          <p class="note">더 자세히: <a href="#profile">프로필</a></p>
+          <p>중형에서 대형으로 자라는 편이고 수컷이 더 묵직한 경우가 많습니다. 국제고양이협회 소개 페이지는 다 자란 수컷을 약 4.5~7.3kg, 암컷을 약 3.6~5.0kg으로 안내합니다. 하지만 숫자 하나만으로 건강한 몸무게를 정할 수는 없습니다. 갈비뼈와 허리 모양을 함께 보고 수의사에게 알맞은 체중을 물어보세요.</p>
+          <p class="note">더 자세히 보기: <a href="#profile">프로필</a></p>
         </div>
       </details>
 
       <details class="accordion" id="faq-6">
         <summary>Q6. 언제 다 크나요?</summary>
         <div class="accordion__body">
-          <p>천천히 자랍니다. 미국 고양이 애호가 협회의 2026년 표준은 몸이 완전히 자라는 데 3~5년이 걸린다고 적습니다. 영국 고양이 등록 단체의 문서는 3~4세로 적습니다. 생후 9개월에서 2년 사이에는 몸이 길고 말라 보일 수 있지만 결점은 아닙니다. 뼈가 자라는 최소 만 1년까지는 새끼 고양이용 사료를 먹이라고 권합니다.</p>
-          <p class="note">더 자세히: <a href="#lifespan">수명과 생애주기</a></p>
+          <p>천천히 자랍니다. 자료에 따라 몸이 완전히 자라는 데 약 3~5년이 걸린다고 설명합니다. 생후 9개월에서 2년 사이에는 몸이 잠시 길고 말라 보일 수 있지만 자연스러운 성장 과정입니다. 먹이는 나이와 몸 상태에 맞춰 보호자와 수의사가 고릅니다.</p>
+          <p class="note">더 자세히 보기: <a href="#lifespan">수명과 생애주기</a></p>
         </div>
       </details>
 
       <details class="accordion" id="faq-7">
         <summary>Q7. 안기는 걸 싫어하나요?</summary>
         <div class="accordion__body">
-          <p>안기는 것을 싫어한다기보다 오래 안겨 있는 것을 좋아하지 않습니다. 미국 고양이 애호가 협회는 무릎으로 뛰어들기보다 초대를 기다렸다가 옆자리에 앉는다고 설명합니다. 국제고양이협회는 네 발을 바닥에 두는 것을 좋아한다고 적습니다. 안아 올릴 때는 몸 전체를 받쳐야 합니다. 영국 고양이 등록 단체는 어른 고양이의 활동량이 줄어드는 경향이 있다고 설명합니다.</p>
-          <p class="note">더 자세히: <a href="#temperament">성격과 행동</a></p>
+          <p>안기는 것을 싫어한다기보다 오래 안겨 있는 것을 좋아하지 않습니다. 미국 고양이 애호가 협회는 무릎으로 뛰어들기보다 초대를 기다렸다가 옆자리에 앉는다고 설명합니다. 국제고양이협회는 네 발을 바닥에 두는 것을 좋아한다고 적습니다. 안아 올릴 때는 몸 전체를 받쳐야 합니다. 영국 고양이 등록 단체는 다 자란 고양이의 활동량이 줄어드는 경향이 있다고 설명합니다.</p>
+          <p class="note">더 자세히 보기: <a href="#temperament">성격과 행동</a></p>
         </div>
       </details>
 
       <details class="accordion" id="faq-8">
         <summary>Q8. 살이 잘 찌나요?</summary>
         <div class="accordion__body">
-          <p>그렇습니다. 호주 병원 기록에서 고양이 2,540마리를 조사했더니 어른 고양이의 47.7%가 과체중이거나 비만이었습니다. 평균 몸 상태 점수는 5.8점이었습니다. 중성화한 수컷은 평균 6.1점으로 과체중 범위에 들었습니다. 영국 고양이 등록 단체도 몸의 에너지 사용이 느리고 살이 찌기 쉽다고 설명합니다. 사료를 계속 꺼내 두지 말고 하루 양을 나누어 주십시오. 몸 상태도 정기적으로 확인해야 합니다. 살을 뺄 때는 일주일에 몸무게의 1~2%를 줄이는 것을 목표로 하고 반드시 수의사의 도움을 받으십시오.</p>
-          <p class="note">더 자세히: <a href="#diet">식단과 체중</a></p>
+          <p>묵직한 체형이라 살이 쪄도 알아차리기 어려울 수 있습니다. 사료는 보호자가 정한 하루 양만 주고 매일 짧게라도 놀아 주세요. 위에서 봤을 때 허리가 전혀 보이지 않거나 갈비뼈를 가볍게 만지기 어렵다면 수의사에게 몸 상태를 확인해 달라고 하세요. 임의로 굶기면 안 됩니다.</p>
+          <p class="note">더 자세히 보기: <a href="#diet">식단과 체중</a></p>
         </div>
       </details>
 
@@ -4319,15 +3001,15 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
         <summary>Q9. 조용한가요?</summary>
         <div class="accordion__body">
           <p>조용한 편입니다. 영국 고양이 등록 단체는 말이 많은 품종이 아니라고 적습니다. 미국 고양이 애호가 협회도 차분하고 조용하다고 설명합니다. 다만 이는 단체가 관찰한 내용입니다. 품종마다 얼마나 자주 우는지 직접 잰 연구는 찾지 못했습니다. 조용하다고 해서 전혀 울지 않는 것은 아닙니다. 평소보다 갑자기 자주 운다면 몸이나 환경에 변화가 없는지 살펴보십시오.</p>
-          <p class="note">더 자세히: <a href="#temperament">성격과 행동</a></p>
+          <p class="note">더 자세히 보기: <a href="#temperament">성격과 행동</a></p>
         </div>
       </details>
 
       <details class="accordion" id="faq-10">
         <summary>Q10. 유전병은 없나요?</summary>
         <div class="accordion__body">
-          <p>유전병이 없다는 설명은 틀립니다. 덴마크에서 브리티시 숏헤어 329마리를 조사했더니 8.5%가 비대성 심근증 양성이었습니다. 수컷은 20.4%, 암컷은 2.1%였습니다. 이 품종에 맞는 유전자 검사는 없으므로 심장 초음파 검사가 필요합니다. 다낭성 신장병은 유전자 검사로 확인할 수 있습니다. 영국 고양이 등록 단체는 2025년 3월 1일부터 번식 가능한 고양이로 등록할 때 이 검사를 의무화했습니다. 자가면역 림프증식 증후군은 지금까지 이 품종에서만 확인됐으며 치료법이 없습니다. B형 혈액형도 25.4%이므로 번식 전에 확인해야 합니다.</p>
-          <p class="note">더 자세히: <a href="#health">건강과 유전질환</a></p>
+          <p>어떤 품종도 모든 병에서 자유롭지는 않습니다. 브리티시 숏헤어는 심장 근육이 두꺼워지는 비대성 심근증과 신장에 물혹이 생기는 다낭성 신장병 등을 살펴야 할 수 있습니다. 필요한 검사는 나이와 몸 상태에 따라 다르므로 보호자가 수의사와 정합니다. 어린이가 병명을 맞히거나 검사 결과를 혼자 판단할 필요는 없습니다.</p>
+          <p class="note">더 자세히 보기: <a href="#health">건강과 유전질환</a></p>
         </div>
       </details>
     </div>
@@ -4344,7 +3026,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
             <li>Q3 분리 관련 문제: 2차 자료 (IAABC Foundation Journal · PLOS ONE)</li>
             <li>Q4 기질과 고양이 하부요로기질환 환경 인자: 영국 고양이 등록 단체 · 국제고양이협회 British Breed Group Standard · Cornell Feline Health Center</li>
             <li>Q5 체중: 영국 고양이 등록 단체 품종 소개 · 국제고양이협회 · 미국 고양이 애호가 협회 품종 소개 · Nicholson et al., Frontiers in Veterinary Science, 2023</li>
-            <li>Q6 성숙 연령: 미국 고양이 애호가 협회 Show Standard(2026 개정) · 영국 고양이 등록 단체 품종자문위원회 · 영국 고양이 등록 단체 SOP</li>
+            <li>Q6 성숙 연령: 미국 고양이 애호가 협회 · 영국 고양이 등록 단체 품종 소개</li>
             <li>Q7 안기는 것에 대한 선호: 미국 고양이 애호가 협회 품종 소개 · 국제고양이협회 British Breed Group Standard · 영국 고양이 등록 단체</li>
             <li>Q8 과체중: Nicholson et al., Frontiers in Veterinary Science, 2023 · 영국 고양이 등록 단체 · Cornell Feline Health Center</li>
             <li>Q9 발성: 영국 고양이 등록 단체 · 미국 고양이 애호가 협회. 품종별 발성 빈도 계측 연구는 확인되지 않았습니다</li>
@@ -4365,8 +3047,8 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
     </header>
 
     <div class="section-body" style="max-width:var(--w-text);margin-inline:auto;margin-bottom:var(--sp-8)">
-      <p class="body" data-reveal="up">고양이 대회 규칙은 각 단체가 직접 공개한 문서에서 찾았습니다. 건강과 유전 이야기는 수의학 논문을 읽고 확인했습니다. 숫자는 조사 기관이 발표한 자료를 사용했습니다.</p>
-      <p class="body" data-reveal="up">규칙과 통계는 시간이 지나면 달라질 수 있습니다. 이 페이지는 2026년 7월 25일에 자료를 확인했습니다. 아래 상자는 어른과 함께 읽어 보세요.</p>
+      <p class="body" data-reveal="up">품종의 생김새와 성격은 고양이 단체가 공개한 소개 자료에서 찾았습니다. 건강과 유전 이야기는 수의학 논문을 읽고 확인했습니다. 숫자는 조사 기관이 발표한 자료를 사용했습니다.</p>
+      <p class="body" data-reveal="up">규칙과 통계는 시간이 지나면 달라질 수 있습니다. 이 페이지는 2026년 7월 25일에 자료를 확인했습니다. 아래 ‘더 자세히 보기’에서 출처를 확인할 수 있습니다.</p>
     </div>
 
     <div class="stack-lg" style="margin-bottom:var(--sp-8)">
@@ -4382,11 +3064,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
               <tbody>
                 <tr><th scope="row">영국 고양이 등록 단체 Standard of Points</th><td>2025년 2월 23일 갱신본</td></tr>
                 <tr><th scope="row">영국 고양이 등록 단체 품종 소개 페이지</th><td>연도 미표기</td></tr>
-                <tr><th scope="row">영국 고양이 등록 단체 품종자문위원회 Breeding Policy</th><td>2018년 6월</td></tr>
-                <tr><th scope="row">영국 고양이 등록 단체 Kitten Buying Advice</th><td>연도 미표기</td></tr>
-                <tr><th scope="row">영국 고양이 등록 단체 신규 브리티시 숏헤어 정책 (다낭성 신장병·자가면역 림프증식 증후군 검사 의무화, 브리티시 롱헤어 아웃크로스 재인정)</th><td>2025년 3월 1일 시행</td></tr>
                 <tr><th scope="row">영국 고양이 등록 단체 Registered Cats By Breed</th><td>2023-2024</td></tr>
-                <tr><th scope="row">미국 고양이 애호가 협회 Show Standard</th><td>2026 개정</td></tr>
                 <tr><th scope="row">미국 고양이 애호가 협회 품종 소개 페이지</th><td>연도 미표기</td></tr>
                 <tr><th scope="row">미국 고양이 애호가 협회 British Shorthair Article</th><td>1995</td></tr>
                 <tr><th scope="row">미국 고양이 애호가 협회 샤르트뢰·러시안 블루·스코티시 폴드 표준</th><td>미국 고양이 애호가 협회 공식 공개본, 2026년 7월 26일 확인</td></tr>
@@ -4419,7 +3097,6 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
                 <tr><th scope="row">Teng, Brodbelt, Church &amp; O'Neill, 고양이 의학·외과 학술지, 2024</th><td>영국 생명표와 품종별 기대수명</td></tr>
                 <tr><th scope="row">O'Neill et al., RVC VetCompass, 고양이 의학·외과 학술지, 2023</th><td>치주질환 유병률</td></tr>
                 <tr><th scope="row">JAVMA 260(13), 2022</th><td>심장의 부담을 살피는 엔 말단 프로 B형 나트륨이뇨펩타이드 신속검사의 한계</td></tr>
-                <tr><th scope="row">Wójcik &amp; Piechowska, Life 2025;15(7):1128</th><td>브리티시 숏헤어 출산 기록 453건과 한 번에 태어난 새끼 평균 4.15 ± 1.77마리</td></tr>
               </tbody>
             </table>
           </div>
@@ -4438,7 +3115,6 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
               <tbody>
                 <tr><th scope="row">Lyons et al., Journal of Heredity 96(4):289 · OMIA:001249-9685</th><td>TYRP1(B 좌위)와 초콜릿·시나몬 변이</td></tr>
                 <tr><th scope="row">UC Davis Veterinary Genetics Laboratory</th><td>MLPH(D 좌위) 희석, TYR 컬러포인트, PKD1 검사 대상 품종</td></tr>
-                <tr><th scope="row">Abitbol et al., Animal Genetics, 2022</th><td>CORIN c.2425C&gt;T 변이와 골든 털색</td></tr>
                 <tr><th scope="row">Current Biology, 2025년 5월 15일 (규슈대·스탠퍼드대 연구진, 동시 게재 2편)</th><td>ARHGAP36 결실과 오렌지 발색</td></tr>
               </tbody>
             </table>
@@ -4447,7 +3123,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
       </details>
 
       <details class="accordion">
-        <summary>1차 출처 4. 기관 자료와 통계</summary>
+        <summary>기관 자료와 통계</summary>
         <div class="accordion__body">
           <div class="table-wrap" role="region" tabindex="0" aria-label="참조한 기관 자료와 통계 출처 표. 가로로 스크롤할 수 있습니다.">
             <table>
@@ -4461,7 +3137,6 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
                 <tr><th scope="row">Langford Vets</th><td>자가면역 림프증식 증후군의 임상 경과와 검사 제공</td></tr>
                 <tr><th scope="row">농림축산검역본부 『2024년 반려동물 보호·복지 실태조사』</th><td>유실·유기동물 현황과 인도·반환율</td></tr>
                 <tr><th scope="row">국가동물보호정보시스템</th><td>국내 입양 경로. <a href="https://www.animal.go.kr" target="_blank" rel="noopener noreferrer">www.animal.go.kr<span class="visually-hidden"> (새 창에서 열림)</span></a></td></tr>
-                <tr><th scope="row">Association for Pet Obesity Prevention · Today's Veterinary Nurse</th><td>휴식 열량·하루 필요 열량 공식과 계수 <span class="pill pill--common">2차 출처</span></td></tr>
                 <tr><th scope="row">EveryCat Health Foundation · Veterinary Partner</th><td>신생아 용혈증 기전과 경과 <span class="pill pill--common">2차 출처</span></td></tr>
                 <tr><th scope="row">IAABC Foundation Journal · PLOS ONE</th><td>분리 관련 문제의 발현 시점과 증상 <span class="pill pill--common">2차 출처</span></td></tr>
                 <tr><th scope="row">Texas Veterinary Medical Foundation</th><td>임신 기간 <span class="pill pill--common">2차 출처</span></td></tr>
@@ -4495,7 +3170,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
         <blockquote class="callout callout--accent" data-reveal="up">이 사이트의 건강 관련 내용은 공개된 수의학 문헌과 등록 단체 자료를 정리한 일반적 참고 자료이며 진단이나 처방이 아닙니다. 증상 판단, 검사 시행 여부, 식이 변경, 체중 감량 계획은 반드시 담당 수의사와 상담해 결정하십시오.</blockquote>
 
         <h3 class="block-title" data-reveal="up">업데이트 날짜</h3>
-        <blockquote class="callout callout--accent" data-reveal="up">자료는 2026년 7월 25일에 확인했습니다. 품종 표준은 바뀔 수 있어 해마다 다시 확인합니다. 현재 참조한 문서는 영국 고양이 등록 단체의 2025년 2월 23일 표준, 미국 고양이 애호가 협회의 2026년 표준, 국제고양이협회의 2026년 5월 1일 표준, 국제고양이연맹의 2026년 7월 1일 표준입니다. 등록 마릿수와 유실·유기동물 수, 분양 관행도 해마다 달라질 수 있습니다.</blockquote>
+        <blockquote class="callout callout--accent" data-reveal="up">자료는 2026년 7월 25일에 확인했습니다. 품종 설명과 건강 지침, 등록 통계는 시간이 지나면 바뀔 수 있어 해마다 다시 확인합니다.</blockquote>
 
       </div>
     </div>
@@ -4511,8 +3186,8 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
         <p class="foot-title">읽기 전에 알아 두세요</p>
         <p style="margin-top:12px">사이트에 나온 숫자는 영국 고양이 등록 단체, 미국 고양이 애호가 협회, 국제고양이협회, 국제고양이연맹의 표준 원문과 수의학·유전학 문헌에서 가져왔습니다. 출처마다 값이 다르면 그 차이도 그대로 적었습니다.</p>
       </div>
-      <div>
-        <p style="margin-top:16px"><a class="totop" href="#page-top">처음으로 돌아가기</a></p>
+      <div class="foot-actions">
+        <p><a class="totop" href="#page-top">처음으로 돌아가기</a></p>
       </div>
     </div>
     <p class="foot-credit">(C) AI ROASTING 2026 · Planned with Opus 5 · Images created with ChatGPT 5.6 Sol · Video created with Gemini 3.6 Flash</p>
@@ -5716,7 +4391,7 @@ void main(){
   var anatomyBodyFrameCacheMax = MOBILE_LITE ? 12 : 24;
   var anatomyBodyCtx = anatomyBodyFrame && anatomyBodyFrame.getContext ? anatomyBodyFrame.getContext('2d', { alpha: false }) : null;
   var ANATOMY_BODY_DURATION = 10000;
-  var anatomyBodyAuto = { active: false, raf: 0 };
+  var anatomyBodyAuto = { active: false, raf: 0, skip: null, lastWheelAt: 0 };
   var HERO_YAWN_START = 0;
   var HERO_YAWN_END = .61;
   var HERO_YAWN_DURATION = 10000;
@@ -5888,7 +4563,7 @@ void main(){
   }
 
   /* 두 번째 영상은 휠 한 번으로 원본의 24fps·10초 길이를 끝까지 재생합니다.
-     위로 올리면 현재 프레임에서 첫 장면까지 같은 속도로 되감습니다. */
+     재생 중 새 휠 제스처가 들어오면 해당 방향의 끝 프레임으로 건너뜁니다. */
   function playAnatomyBodySequence(direction) {
     if (!anatomyBodyFrame || !anatomyBodyFrameCount || REDUCED || LOW || anatomyBodyAuto.active) return false;
     var metrics = anatomyBodyMetrics();
@@ -5908,10 +4583,20 @@ void main(){
     function finish() {
       anatomyBodyAuto.raf = 0;
       anatomyBodyAuto.active = false;
+      anatomyBodyAuto.skip = null;
       setAnatomyHeaderHidden(false);
       root.style.scrollBehavior = previousScrollBehavior;
       onScroll();
     }
+
+    anatomyBodyAuto.skip = function (skipDirection) {
+      if (anatomyBodyAuto.raf) cancelAnimationFrame(anatomyBodyAuto.raf);
+      var target = skipDirection > 0 ? 1 : 0;
+      var scrollY = metrics.top - metrics.stickyTop + target * metrics.travel;
+      window.scrollTo(0, scrollY);
+      setAnatomyBodyFrame(skipDirection > 0 ? anatomyBodyFrameCount - 1 : 0);
+      finish();
+    };
 
     function step(now) {
       var progress = Math.min(1, (now - startedAt) / duration);
@@ -5930,11 +4615,18 @@ void main(){
 
   function onAnatomyBodyWheel(event) {
     if (!anatomyBodySequence || REDUCED || LOW || event.ctrlKey || event.deltaY === 0) return;
+    var wheelNow = performance.now();
     if (anatomyBodyAuto.active) {
       event.preventDefault();
+      var isNewGesture = wheelNow - anatomyBodyAuto.lastWheelAt > 220;
+      anatomyBodyAuto.lastWheelAt = wheelNow;
+      if (isNewGesture && anatomyBodyAuto.skip) anatomyBodyAuto.skip(event.deltaY > 0 ? 1 : -1);
       return;
     }
-    if (playAnatomyBodySequence(event.deltaY > 0 ? 1 : -1)) event.preventDefault();
+    if (playAnatomyBodySequence(event.deltaY > 0 ? 1 : -1)) {
+      anatomyBodyAuto.lastWheelAt = wheelNow;
+      event.preventDefault();
+    }
   }
 
   function heroStoryMetrics() {
@@ -6107,6 +4799,7 @@ void main(){
     }
     if (anatomyBodyAuto.active) {
       event.preventDefault();
+      if (!sequenceTouch.handled && anatomyBodyAuto.skip) anatomyBodyAuto.skip(direction);
       sequenceTouch.handled = true;
       return;
     }
@@ -6710,158 +5403,16 @@ void main(){
         if (window.__bshSyncDilute) { window.__bshSyncDilute(on ? 1 : 0); return; }
       }
       dBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
-      dBtn.textContent = on ? 'D/D로 되돌리기 (비희석)' : 'd/d로 바꾸기 (희석)';
-      dLabel.textContent = on ? 'd/d · 블루' : 'D/D 또는 D/d · 블랙';
+      dBtn.textContent = on ? '색소 다시 고르게 펴기' : '색소 알갱이 뭉쳐 보기';
+      dLabel.textContent = on ? '뭉친 색소 · 블루' : '고르게 퍼진 색소 · 블랙';
       dotsBox.setAttribute('aria-label', on
         ? '색소 알갱이 분포 그림. 현재 알갱이가 뭉쳐 있어 전체가 청회색으로 나타납니다.'
         : '색소 과립 분포 도해. 현재 상태는 균일 분포이며 전체가 검게 보입니다.');
     });
   }
 
-  /* 8-2 모색 조합 도해 */
-  var selB = $('#locusB'), selD = $('#locusD'), selC = $('#locusC');
-  if (selB && selD && selC) {
-    var BASE = {
-      BB:  { name: '블랙',   dil: '블루',   c: '#1E1E1E', dc: '#8095A3' },
-      Bb:  { name: '블랙',   dil: '블루',   c: '#1E1E1E', dc: '#8095A3', note: '초콜릿 보인자' },
-      bb:  { name: '초콜릿', dil: '라일락', c: '#4A342A', dc: '#B0A0A2' },
-      b1b1:{ name: '시나몬', dil: '폰',     c: '#8B5A3C', dc: '#C9AE93' }
-    };
-    var swEl = $('#resultSwatch'), nmEl = $('#resultName'), srcEl = $('#resultSrc');
-    function calc() {
-      var b = BASE[selB.value];
-      var diluted = selD.value === 'dd';
-      var pointed = selC.value === 'cscs';
-      var name = diluted ? b.dil : b.name;
-      var color = diluted ? b.dc : b.c;
-      var src = '근거: Lyons et al., Journal of Heredity 96(4):289 · OMIA:001249-9685';
-      if (diluted) src += ' · UC Davis VGL (MLPH 희석)';
-      if (pointed) {
-        name = name + ' 포인트';
-        src += ' · UC Davis VGL (TYR 컬러포인트)';
-      }
-      if (b.note) name += ' (' + b.note + ')';
-      nmEl.textContent = name;
-      srcEl.textContent = src + (pointed ? ' · 영국 고양이 등록 단체 SOP (희석 색일수록 포인트 발색이 늦음)' : '');
-      swEl.style.setProperty('--rc', color);
-      swEl.style.background = pointed
-        ? 'linear-gradient(135deg,' + color + ' 0 30%, #EDE4D2 30% 70%,' + color + ' 70%)'
-        : color;
-    }
-    [selB, selD, selC].forEach(function (s) { s.addEventListener('change', calc); });
-    calc();
-  }
-
   /* ======================================================================
-     10. diet · 하루 필요 칼로리 계산기
-     휴식 열량 = 70 × 체중^0.75 · 하루 필요 열량 = 휴식 열량 × 계수
-     ====================================================================== */
-  var dW = $('#dietWeight'), dS = $('#dietStage'), dT = $('#dietTarget');
-  if (dW && dS) {
-    var dRER = $('#dietRER'), dMER = $('#dietMER'),
-        dRow = $('#dietTargetRow'), dTMER = $('#dietTargetMER'), dAxis = $('#dietAxisNote');
-    var kcal = function (n) { return Math.round(n).toLocaleString('ko-KR') + ' kcal'; };
-    var rer = function (kg) { return 70 * Math.pow(kg, 0.75); };
-
-    function dietCalc() {
-      var kg = parseFloat(dW.value);
-      var opt = dS.options[dS.selectedIndex];
-      var f = parseFloat(opt.getAttribute('data-factor'));
-      var fMax = parseFloat(opt.getAttribute('data-factor-max') || 'NaN');
-
-      if (!(kg > 0)) {
-        dRER.textContent = '체중을 입력하십시오';
-        dMER.textContent = '체중을 입력하십시오';
-        if (dRow) dRow.hidden = true;
-        if (dAxis) dAxis.textContent = '기준점. 어른 고양이 평균 5.4kg, 중성화한 수컷 5.8kg, 중성화한 암컷 4.8kg.';
-        return;
-      }
-      var r = rer(kg);
-      dRER.textContent = kcal(r);
-      dMER.textContent = isNaN(fMax) ? kcal(r * f) : (kcal(r * f) + ' ~ ' + kcal(r * fMax));
-
-      var tk = dT ? parseFloat(dT.value) : NaN;
-      if (dRow) {
-        if (tk > 0) {
-          dRow.hidden = false;
-          var tr = rer(tk);
-          dTMER.textContent = (isNaN(fMax) ? kcal(tr * f) : (kcal(tr * f) + ' ~ ' + kcal(tr * fMax)))
-            + ' (목표 체중 ' + tk + 'kg 기준)';
-        } else {
-          dRow.hidden = true;
-          dTMER.textContent = '';
-        }
-      }
-      if (dAxis) {
-        var cmp;
-        if (kg < 4.8) cmp = '실측 평균보다 가벼운 쪽입니다';
-        else if (kg <= 5.4) cmp = '중성화한 암컷 평균 4.8kg과 어른 고양이 평균 5.4kg 사이입니다';
-        else if (kg <= 5.8) cmp = '어른 고양이 평균 5.4kg과 중성화한 수컷 평균 5.8kg 사이입니다';
-        else cmp = '중성화한 수컷 평균 5.8kg보다 무거운 쪽입니다';
-        dAxis.textContent = '입력한 ' + kg + 'kg은 ' + cmp
-          + '. 이 평균값은 과체중 개체가 다수 포함된 병원 내원 집단의 실측값이며 적정 체중이 아닙니다.';
-      }
-    }
-    [dW, dS, dT].forEach(function (el) {
-      if (!el) return;
-      el.addEventListener('input', dietCalc);
-      el.addEventListener('change', dietCalc);
-    });
-    dietCalc();
-  }
-
-  /* ======================================================================
-     11. diet · 몸 상태 점수 자가 점검
-     ====================================================================== */
-  var bR = $('#bcsRib'), bS = $('#bcsSide'), bT = $('#bcsTop'), bV = $('#bcsVerdict');
-  if (bR && bS && bT && bV) {
-    function bcsCalc() {
-      var scores = [bR, bS, bT].map(function (sel) {
-        var o = sel.options[sel.selectedIndex];
-        return parseInt(o.getAttribute('data-score'), 10);
-      });
-      if (scores.indexOf(-1) !== -1) {
-        bV.textContent = scores.every(function (v) { return v === -1; })
-          ? '세 단계에 모두 답하십시오'
-          : '판단 보류. 수의사 상담을 권합니다';
-        return;
-      }
-      var sum = scores.reduce(function (a, b) { return a + b; }, 0);
-      bV.textContent = sum === 0 ? '현행 유지' : (sum <= 2 ? '급여량 점검' : '수의사 상담');
-    }
-    [bR, bS, bT].forEach(function (s) { s.addEventListener('change', bcsCalc); });
-    bcsCalc();
-  }
-
-  /* ======================================================================
-     12. grooming · 스크래처 진단 (JS 없으면 세 문단 모두 노출)
-     ====================================================================== */
-  var scratchMap = [
-    ['#scratchChipVertical', '#scratchOutVertical'],
-    ['#scratchChipHorizontal', '#scratchOutHorizontal'],
-    ['#scratchChipBoth', '#scratchOutBoth']
-  ].map(function (p) { return { chip: $(p[0]), out: $(p[1]) }; })
-   .filter(function (p) { return p.chip && p.out; });
-
-  if (scratchMap.length === 3) {
-    /* idx === -1 이면 선택 해제. JS가 없을 때와 같이 세 문단을 모두 노출한다 */
-    function scratchPick(idx) {
-      scratchMap.forEach(function (p, i) {
-        var on = i === idx;
-        p.chip.setAttribute('aria-pressed', on ? 'true' : 'false');
-        p.out.hidden = idx === -1 ? false : !on;
-      });
-    }
-    scratchMap.forEach(function (p, i) {
-      p.chip.addEventListener('click', function () {
-        scratchPick(p.chip.getAttribute('aria-pressed') === 'true' ? -1 : i);
-      });
-    });
-    scratchPick(0);    /* 기본값은 수직형. 칩을 다시 누르면 세 문단이 모두 보인다 */
-  }
-
-  /* ======================================================================
-     13. adoption · 브리더 검증 체크리스트 (localStorage 저장·복원)
+     13. adoption · 가족 준비 체크리스트 (localStorage 저장·복원)
      ====================================================================== */
   var checklist = $('#adoption-checklist');
   if (checklist) {
@@ -6883,7 +5434,7 @@ void main(){
     }
     function render(msg) {
       var n = boxes.filter(function (b) { return b.checked; }).length;
-      if (countEl) countEl.textContent = msg || ('14개 중 ' + n + '개 확인');
+      if (countEl) countEl.textContent = msg || (boxes.length + '개 중 ' + n + '개 확인');
     }
     var saved = safeGet();
     boxes.forEach(function (b) { if (saved.indexOf(b.id) !== -1) b.checked = true; });
@@ -6898,8 +5449,8 @@ void main(){
     if (copyBtn) {
       copyBtn.addEventListener('click', function () {
         var rest = boxes.filter(function (b) { return !b.checked; }).map(labelText);
-        if (!rest.length) { render('열네 개 항목을 모두 확인했습니다'); setTimeout(render, 2600); return; }
-        var text = '브리더에게 물어볼 목록\n\n' + rest.join('\n');
+        if (!rest.length) { render(boxes.length + '개 항목을 모두 확인했습니다'); setTimeout(render, 2600); return; }
+        var text = '가족이 함께 확인할 목록\n\n' + rest.join('\n');
         function done(ok) {
           render(ok ? (rest.length + '개 항목을 클립보드에 담았습니다') : '복사에 실패했습니다. 목록을 직접 선택해 복사해 주십시오');
           setTimeout(render, 2600);
@@ -7076,7 +5627,7 @@ void main(){
         gc.setAttribute('aria-valuemin', '0');
         gc.setAttribute('aria-valuemax', '1');
         gc.setAttribute('aria-valuenow', '0');
-        gc.setAttribute('aria-label', '희석 정도. 좌우 화살표로 조절합니다');
+        gc.setAttribute('aria-label', '색소 알갱이가 뭉치는 정도. 좌우 화살표로 조절합니다');
 
         var hook = window.__bshDilute || {};
         var band = -1;
@@ -7090,18 +5641,18 @@ void main(){
           gc.setAttribute('aria-valuenow', t.toFixed(2));
           if (b === band && !force) return;
           band = b;
-          /* D6. 보이는 라벨은 v1과 같은 형식만 씁니다. 과립 수는 텍스트가 아니라 aria-label에만 넣습니다 */
-          var name = b === 0 ? 'D/D 또는 D/d · 블랙' : (b === 2 ? 'd/d · 블루' : '희석 진행 중');
+          /* 어린이도 바로 이해할 수 있도록 유전자 기호 대신 보이는 변화를 설명합니다. */
+          var name = b === 0 ? '고르게 퍼진 색소 · 블랙' : (b === 2 ? '뭉친 색소 · 블루' : '색소가 뭉치는 중');
           if (hook.label) hook.label.textContent = name;
           if (hook.box) hook.box.setAttribute('aria-label',
             (b === 0 ? '색소 과립 분포 도해. 현재 상태는 균일 분포이며 전체가 검게 보입니다.'
              : b === 2 ? '색소 알갱이 분포 그림. 현재 알갱이가 뭉쳐 있어 전체가 청회색으로 나타납니다.'
              : '색소 과립 분포 도해. 균일 분포와 응집 분포 사이입니다.')
-            + ' 과립 수는 ' + GN.toLocaleString('ko-KR') + '개로 두 상태가 같습니다.');
+            + ' 알갱이 수는 ' + GN.toLocaleString('ko-KR') + '개로 두 상태가 같습니다.');
           if (hook.btn && b !== 1) {
             var on = b === 2;
             hook.btn.setAttribute('aria-pressed', on ? 'true' : 'false');
-            hook.btn.textContent = on ? 'D/D로 되돌리기 (비희석)' : 'd/d로 바꾸기 (희석)';
+            hook.btn.textContent = on ? '색소 다시 고르게 펴기' : '색소 알갱이 뭉쳐 보기';
             if (hook.box) hook.box.classList.toggle('is-diluted', on);
           }
         }
