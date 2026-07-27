@@ -188,52 +188,6 @@ body{
   font-synthesis:none;
 }
 
-/* 두 번째 영상에 크기와 농도를 달리해 흩뿌린 제미나이형 워터마크 */
-.body-sequence__sparkles{
-  position:absolute;inset:0;z-index:2;overflow:hidden;pointer-events:none;
-  mix-blend-mode:plus-lighter;
-  -webkit-mask-image:radial-gradient(ellipse 70% 78% at 50% 54%,transparent 0 64%,rgba(0,0,0,.38) 72%,#000 82%);
-          mask-image:radial-gradient(ellipse 70% 78% at 50% 54%,transparent 0 64%,rgba(0,0,0,.38) 72%,#000 82%);
-}
-.body-sequence__sparkle{
-  --sparkle-size:28px;--sparkle-opacity:.1;--sparkle-x:12px;--sparkle-y:-10px;
-  position:absolute;width:var(--sparkle-size);aspect-ratio:1;opacity:var(--sparkle-opacity);
-  background:linear-gradient(145deg,rgba(255,255,255,.72),rgba(213,224,232,.4));
-  -webkit-mask:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Cpath%20d='M50%200C56%2028%2072%2044%20100%2050C72%2056%2056%2072%2050%20100C44%2072%2028%2056%200%2050C28%2044%2044%2028%2050%200Z'%20fill='black'/%3E%3C/svg%3E") center/contain no-repeat;
-          mask:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Cpath%20d='M50%200C56%2028%2072%2044%20100%2050C72%2056%2056%2072%2050%20100C44%2072%2028%2056%200%2050C28%2044%2044%2028%2050%200Z'%20fill='black'/%3E%3C/svg%3E") center/contain no-repeat;
-  filter:drop-shadow(0 0 5px rgba(232,240,245,.18));
-  animation:body-sparkle-drift var(--sparkle-duration,18s) ease-in-out var(--sparkle-delay,0s) infinite alternate;
-  animation-play-state:paused;
-  will-change:transform;
-}
-.body-sequence.is-near .body-sequence__sparkle{animation-play-state:running}
-.body-sequence__sparkle:nth-child(1){--sparkle-size:18px;--sparkle-opacity:.24;--sparkle-duration:15s;--sparkle-delay:-7s;--sparkle-x:10px;--sparkle-y:-8px;left:3%;top:12%}
-.body-sequence__sparkle:nth-child(2){--sparkle-size:34px;--sparkle-opacity:.15;--sparkle-duration:22s;--sparkle-delay:-13s;--sparkle-x:-10px;--sparkle-y:11px;left:4%;top:79%}
-.body-sequence__sparkle:nth-child(3){--sparkle-size:23px;--sparkle-opacity:.20;--sparkle-duration:17s;--sparkle-delay:-4s;--sparkle-x:13px;--sparkle-y:8px;left:23%;top:4%}
-.body-sequence__sparkle:nth-child(4){--sparkle-size:52px;--sparkle-opacity:.10;--sparkle-duration:27s;--sparkle-delay:-18s;--sparkle-x:-14px;--sparkle-y:-10px;left:43%;top:2%}
-.body-sequence__sparkle:nth-child(5){--sparkle-size:29px;--sparkle-opacity:.18;--sparkle-duration:19s;--sparkle-delay:-9s;--sparkle-x:11px;--sparkle-y:-12px;left:70%;top:5%}
-.body-sequence__sparkle:nth-child(6){--sparkle-size:64px;--sparkle-opacity:.11;--sparkle-duration:30s;--sparkle-delay:-21s;--sparkle-x:-12px;--sparkle-y:11px;right:1%;top:18%}
-.body-sequence__sparkle:nth-child(7){--sparkle-size:16px;--sparkle-opacity:.26;--sparkle-duration:14s;--sparkle-delay:-6s;--sparkle-x:9px;--sparkle-y:10px;right:3%;top:70%}
-.body-sequence__sparkle:nth-child(8){--sparkle-size:41px;--sparkle-opacity:.12;--sparkle-duration:24s;--sparkle-delay:-16s;--sparkle-x:-9px;--sparkle-y:-11px;left:1%;top:46%}
-.body-sequence__sparkle:nth-child(9){--sparkle-size:24px;--sparkle-opacity:.18;--sparkle-duration:18s;--sparkle-delay:-11s;--sparkle-x:12px;--sparkle-y:-8px;left:78%;top:91%}
-.body-sequence__sparkle:nth-child(10){--sparkle-size:31px;--sparkle-opacity:.12;--sparkle-duration:21s;--sparkle-delay:-3s;--sparkle-x:-9px;--sparkle-y:10px;left:48%;top:92%}
-.body-sequence__sparkle:nth-child(11){--sparkle-size:13px;--sparkle-opacity:.22;--sparkle-duration:13s;--sparkle-delay:-5s;--sparkle-x:8px;--sparkle-y:-7px;left:14%;top:7%}
-.body-sequence__sparkle:nth-child(12){--sparkle-size:47px;--sparkle-opacity:.09;--sparkle-duration:29s;--sparkle-delay:-20s;--sparkle-x:-15px;--sparkle-y:9px;left:31%;top:91%}
-.body-sequence__sparkle:nth-child(13){--sparkle-size:20px;--sparkle-opacity:.17;--sparkle-duration:16s;--sparkle-delay:-12s;--sparkle-x:11px;--sparkle-y:7px;left:58%;top:6%}
-.body-sequence__sparkle:nth-child(14){--sparkle-size:38px;--sparkle-opacity:.10;--sparkle-duration:25s;--sparkle-delay:-8s;--sparkle-x:-12px;--sparkle-y:-9px;right:11%;top:89%}
-.body-sequence__sparkle:nth-child(15){--sparkle-size:14px;--sparkle-opacity:.24;--sparkle-duration:12s;--sparkle-delay:-9s;--sparkle-x:7px;--sparkle-y:10px;right:2%;top:34%}
-.body-sequence__sparkle:nth-child(16){--sparkle-size:28px;--sparkle-opacity:.14;--sparkle-duration:20s;--sparkle-delay:-15s;--sparkle-x:10px;--sparkle-y:-12px;left:2%;top:62%}
-.body-sequence__sparkle:nth-child(17){--sparkle-size:56px;--sparkle-opacity:.07;--sparkle-duration:32s;--sparkle-delay:-23s;--sparkle-x:-18px;--sparkle-y:12px;right:31%;top:1%}
-.body-sequence__sparkle:nth-child(18){--sparkle-size:21px;--sparkle-opacity:.16;--sparkle-duration:17s;--sparkle-delay:-2s;--sparkle-x:12px;--sparkle-y:8px;right:9%;top:77%}
-@keyframes body-sparkle-drift{
-  0%{transform:translate3d(0,0,0) rotate(-7deg) scale(.94)}
-  52%{transform:translate3d(var(--sparkle-x),var(--sparkle-y),0) rotate(6deg) scale(1.06)}
-  100%{transform:translate3d(0,0,0) rotate(-3deg) scale(.98)}
-}
-@media (max-width:767px){
-  .body-sequence__sparkles{opacity:.92}
-  .body-sequence__sparkle:nth-child(n+9){display:none}
-}
 h1,h2,h3,h4{font-family:var(--ff-display)}
 dd{margin-inline-start:0}
 ::selection{background:rgba(224,174,107,.28);color:var(--t-1)}
@@ -602,9 +556,10 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
   transform:scale(var(--body-seq-scale,1));transform-origin:50% 50%;
   transition:box-shadow .24s ease;will-change:transform;
 }
+/* 영상을 덮던 검은 반투명 막은 걷어냈습니다.
+   테두리 한 줄과 아래쪽 비네트만 남겨 아래 섹션과의 경계를 잡습니다. */
 .body-sequence__frame::after{
   content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
-  background:rgba(3,6,8,.38);
   box-shadow:inset 0 0 0 1px var(--b-strong),inset 0 -60px 80px -70px rgba(0,0,0,.9);
   border-radius:inherit;
 }
@@ -613,6 +568,16 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
   transform:translate3d(0,var(--body-seq-y,0px),0) scale(var(--body-seq-img-scale,1.015));
   filter:saturate(var(--body-seq-sat,1)) contrast(var(--body-seq-contrast,1));
   will-change:transform;backface-visibility:hidden;
+}
+/* 히어로와 같은 물방울 입자 장.
+   BSH3D.mountHeroScene을 그대로 마운트하므로 알갱이 모양, 개수, 커서를 따라오는
+   밀어냄 움직임이 첫 번째 영상과 같습니다.
+   영상 캔버스 위, 어둠막(::after, z-index:1) 아래에 놓습니다.
+   스크롤 시차와 색보정은 영상에만 걸어야 하므로 여기서 되돌립니다. */
+.body-sequence__frame canvas.body-sequence__fx{
+  position:absolute;inset:0;z-index:0;width:100%;height:100%;
+  object-fit:fill;transform:none;filter:none;will-change:auto;
+  pointer-events:none;opacity:0;transition:opacity 900ms ease;
 }
 .body-sequence__play{
   display:none;position:absolute;z-index:3;left:50%;bottom:max(24px,env(safe-area-inset-bottom));
@@ -1491,7 +1456,6 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
   .js #galleryTrack > .gallery__card .img-slot__frame img{transform:none!important}
   .dots i{transition:none!important}
   .section-head::before{transform:none!important}
-  .body-sequence__sparkle{animation:none!important}
   .card::after,.stat::after,.gallery__card::after,.img-slot__frame::after{
     opacity:1;background:radial-gradient(180px 180px at 22% 0%, rgba(214,232,244,.07), rgba(214,232,244,0) 70%);
   }
@@ -1501,7 +1465,7 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
    10. PRINT  (다크 전용 결정의 대안 경로)
    ========================================================================== */
 @media print{
-  .site-header,.sheet,.hero__bg,.hero__veil,.hero__fx,.body-sequence__sparkles,.gallery__nav,.iconbtn,.totop{display:none!important}
+  .site-header,.sheet,.hero__bg,.hero__veil,.hero__fx,.gallery__nav,.iconbtn,.totop{display:none!important}
   html,body{background:#fff!important;color:#000!important}
   .section,.section--alt,.section--dark,.hero{background:#fff!important;color:#000!important;padding-block:16px!important;min-height:0!important}
   .section--dark::after,.section-head::before{display:none!important}
@@ -1884,26 +1848,6 @@ tbody tr:hover{background:rgba(146,174,194,.04)}
                   aria-label="골든 브리티시 숏헤어의 옆모습입니다. 아래로 스크롤하면 고양이의 짧은 등, 넓은 어깨, 굵은 다리와 둥근 발을 여러 각도에서 볼 수 있습니다.">
             골든 브리티시 숏헤어의 몸을 여러 각도에서 보여주는 장면입니다.
           </canvas>
-          <div class="body-sequence__sparkles" aria-hidden="true">
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-            <span class="body-sequence__sparkle"></span>
-          </div>
           <button class="body-sequence__play" id="anatomyBodyPlay" type="button" aria-label="몸의 특징 영상 재생">
             <svg viewBox="0 0 12 14" aria-hidden="true"><path d="M1 1.2v11.6L11 7 1 1.2Z"/></svg>
             <span>영상 재생</span>
@@ -4950,18 +4894,6 @@ void main(){
     window.addEventListener('load', preloadAnatomyBodyFrames, { once: true });
   }
 
-  /* 화면에서 멀어진 뒤에는 장식 애니메이션의 합성 작업을 멈춥니다. */
-  if (anatomyBodySequence && 'IntersectionObserver' in window) {
-    var anatomyBodyEffectsIO = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        anatomyBodySequence.classList.toggle('is-near', entry.isIntersecting);
-      });
-    }, { rootMargin: '35% 0px', threshold: 0 });
-    anatomyBodyEffectsIO.observe(anatomyBodySequence);
-  } else if (anatomyBodySequence) {
-    anatomyBodySequence.classList.add('is-near');
-  }
-
   /* 스크롤 진행률을 계속 반영하는 시네마틱 대상.
      한 번 나타나고 끝나는 reveal과 달리 위로 되돌리면 역방향으로 재생됩니다. */
   var cineHeads = [];
@@ -5577,7 +5509,7 @@ void main(){
      지원 판정 → 저사양 판정 → 성능은 모듈이 자체 처리.
      실패하면 캔버스를 만들지 않고 정적 대체 화면이 그대로 남습니다.
      ====================================================================== */
-  var heroScene = null, geneScene = null;
+  var heroScene = null, geneScene = null, bodyScene = null;
 
   if (window.BSH3D && !LOW && !MOBILE_LITE) {
     /* 17-1 히어로 털 장 */
@@ -5694,11 +5626,36 @@ void main(){
         });
       }
     }
+
+    /* 17-3 몸의 특징 털 장.
+       히어로와 같은 장면을 그대로 마운트해 물방울 모양, 개수, 커서 밀어냄이
+       첫 번째 영상과 같아지게 합니다. solo 장면이라 arbitrate가 화면에 가장 크게
+       걸린 장면 하나만 돌리므로 히어로와 동시에 돌지 않습니다. */
+    var bodyFrameEl = $('#anatomyBodyFrameWrap');
+    var bodyVideoEl = $('#anatomyBodyFrame');
+    if (bodyFrameEl && bodyVideoEl) {
+      var bc = document.createElement('canvas');
+      bc.className = 'body-sequence__fx';
+      bc.id = 'anatomyBodyFx';
+      bc.setAttribute('aria-hidden', 'true');
+      /* 영상 캔버스 바로 뒤에 넣어야 같은 z 층에서 영상 위로 칠해집니다 */
+      bodyFrameEl.insertBefore(bc, bodyVideoEl.nextSibling);
+      bodyScene = window.BSH3D.mountHeroScene(bc, {
+        transparent: true,
+        onDegrade: function () { bc.style.opacity = '0'; }
+      });
+      if (!bodyScene) {
+        bc.remove();
+      } else {
+        setTimeout(function () { bc.style.opacity = '.55'; }, 30);
+      }
+    }
   }
 
   window.addEventListener('pagehide', function () {
     if (heroScene) heroScene.destroy();
     if (geneScene) geneScene.destroy();
+    if (bodyScene) bodyScene.destroy();
   }, { once: true });
 
   /* ======================================================================
